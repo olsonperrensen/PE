@@ -1,10 +1,11 @@
 from bs4 import BeautifulSoup
+from url import *
 import urllib.error, urllib.parse, urllib.request, sys, ast
 
 # Handles
 go = open('go.txt','wb')
 come = open('come.txt','wb')
-web = urllib.request.urlopen('http://giotaugiave.dsvn.vn')
+web = urllib.request.urlopen(getURL()) # Own fn
 soup = BeautifulSoup(web, 'html.parser')
 l = list()
 
