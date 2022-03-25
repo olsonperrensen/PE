@@ -1,3 +1,6 @@
+# This program takes an online address, parses the data and converts it to a JSON format.
+# In Alpha build
+
 from bs4 import BeautifulSoup
 from url import *
 import urllib.error, urllib.parse, urllib.request, sys, ast
