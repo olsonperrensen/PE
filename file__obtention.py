@@ -1,10 +1,14 @@
+# This program takes an online address, parses the data and converts it to a JSON format.
+# In Alpha build
+
 from bs4 import BeautifulSoup
+from url import *
 import urllib.error, urllib.parse, urllib.request, sys, ast
 
 # Handles
 go = open('go.txt','wb')
 come = open('come.txt','wb')
-web = urllib.request.urlopen('http://giotaugiave.dsvn.vn')
+web = urllib.request.urlopen(getURL()) # Own fn
 soup = BeautifulSoup(web, 'html.parser')
 l = list()
 
