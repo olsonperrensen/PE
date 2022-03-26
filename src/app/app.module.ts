@@ -6,7 +6,6 @@ import { HeaderComponent } from './header/header.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
-import { DescriptionComponent } from './description/description.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { DescriptionComponent } from './description/description.component';
     HeaderComponent,
     DatepickerComponent,
     FooterComponent,
-    DescriptionComponent,
   ],
   imports: [
     BrowserModule,
