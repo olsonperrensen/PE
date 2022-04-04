@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -8,10 +8,17 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 })
 export class DatepickerComponent implements OnInit {
 
+  @Output('ealias') child = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
   model!: NgbDateStruct;
+
+  onClick()
+  {
+    this.child.emit('table');
+  }
 }
