@@ -3,10 +3,10 @@
        display: flex;
               /* The image used */
               /* Full height */
-
+       height:80%;
               /* Center and scale the image nicely */
-            
- 
+       
+       align-items: center;
 }
 #test{
        width:300px;
