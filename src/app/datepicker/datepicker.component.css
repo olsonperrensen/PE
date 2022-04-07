@@ -1,6 +1,13 @@
 input
 {
        margin: 6px;
+      display: flex;
+              /* The image used */
+              /* Full height */
+       height:80%;
+              /* Center and scale the image nicely */
+       
+       align-items: center;
 }
 button
 {
