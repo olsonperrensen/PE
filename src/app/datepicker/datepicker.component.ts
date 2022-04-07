@@ -1,4 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import {Router } from '@angular/router';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -7,18 +8,27 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./datepicker.component.css']
 })
 export class DatepickerComponent implements OnInit {
+  @ViewChild('fromInput',{static:true}) fromInput!:ElementRef;
+  @ViewChild('toInput',{static:true}) toInput!:ElementRef;
 
-  @Output('ealias') child = new EventEmitter<string>();
-
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
 
   model!: NgbDateStruct;
 
-  onClick()
+  submit()
   {
-    this.child.emit('table');
+    if(this.fromInput.nativeElement.value.length < 1 
+      ||
+      this.toInput.nativeElement.value.length < 1 )
+    {
+      this.router.navigate(['/error']);
+    }
+    else
+    {
+      this.router.navigate(['/table']);
+    }
   }
 }

@@ -1,28 +1,51 @@
-<div class="container-fluid datepicker">
+<div class="container-fluid datepicker w-25 p-3">
   <div id="test"></div>
 <form id="big-form">
     <h3><img src="../../assets/train_icon.png" width="25px" />Train</h3><hr>
     <div class="form-group">
       <label for="formGroupExampleInput">From</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+      <input 
+      type="text" 
+      class="form-control" 
+      id="formGroupExampleInput" 
+      placeholder="Example input"
+      #fromInput>
     </div>
     <div class="form-group">
       <label for="formGroupExampleInput2">To</label>
-      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+      <input 
+      type="text" 
+      class="form-control" 
+      id="formGroupExampleInput2" 
+      placeholder="Another input"
+      #toInput>
     </div>
     <div class="form-group">
         <label for="formGroupExampleInput3">Departure Date</label>
-        <form class="row row-cols-sm-auto">
+        <form 
+        
+        class="row row-cols-sm-auto">
             <div class="col-12">
               <div class="input-group">
-                <input id="formGroupExampleInput3" class="form-control" placeholder="yyyy-mm-dd"
-                       name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
+                <input 
+                id="formGroupExampleInput3" 
+                class="form-control" 
+                placeholder="yyyy-mm-dd"
+                name="dp" 
+                [(ngModel)]="model" 
+                ngbDatepicker 
+                #d="ngbDatepicker" 
+                (click)="d.toggle()">
               </div>
             </div>
           </form>
     </div>
     <div>
-        <button (click)="onClick()" type="button" class="w-100 btn btn-lg btn btn-dark">Take me there</button>
+        <button 
+        type="button"
+        class="w-100 btn btn-lg btn btn-dark"
+        (click)="submit()"
+        >Take me there</button>
     </div>
   </form>
 </div>
