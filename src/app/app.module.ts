@@ -14,6 +14,8 @@ import { ErrorComponent } from './error/error.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { TableComponent } from './table/table.component';
+import { OrderComponent } from './order/order.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent},
@@ -21,7 +23,9 @@ const appRoutes: Routes = [
   { path: 'error', component:  ErrorComponent},
   { path: 'login', component:  LoginComponent},
   { path: 'signup', component:  SignupComponent},
-  { path: 'table', component:  TableComponent}
+  { path: 'table', component:  TableComponent},
+  { path: 'order', component:  OrderComponent},
+  { path: 'thank-you', component:  ThankYouComponent},
 ];
 
 @NgModule({
@@ -37,6 +41,8 @@ const appRoutes: Routes = [
     LoginComponent,
     SignupComponent,
     TableComponent,
+    OrderComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,
