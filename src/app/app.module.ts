@@ -19,6 +19,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { FaqComponent } from './faq/faq.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { TableFilteringComponent } from './table-filtering/table-filtering.component';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent},
@@ -29,6 +30,8 @@ const appRoutes: Routes = [
   { path: 'error', component:  ErrorComponent},
   { path: 'login', component:  LoginComponent},
   { path: 'signup', component:  SignupComponent},
+  { path: 'table-filtering', component:  TableFilteringComponent},
+  { path: 'admin', redirectTo: '/table-filtering'},
   { path: 'table/:from/:to/:day', component:  TableComponent},
   { path: 'order', component:  OrderComponent},
   { path: 'thank-you', component:  ThankYouComponent},
@@ -52,7 +55,8 @@ const appRoutes: Routes = [
     ThankYouComponent,
     PricingComponent,
     FaqComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    TableFilteringComponent,
   ],
   imports: [
     BrowserModule,
