@@ -16,10 +16,16 @@ import { SignupComponent } from './signup/signup.component';
 import { TableComponent } from './table/table.component';
 import { OrderComponent } from './order/order.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { FaqComponent } from './faq/faq.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent},
   { path: 'features', component:  FeaturesComponent},
+  { path: 'pricing', component:  PricingComponent},
+  { path: 'faq', component:  FaqComponent},
+  { path: 'about-us', component:  AboutUsComponent},
   { path: 'error', component:  ErrorComponent},
   { path: 'login', component:  LoginComponent},
   { path: 'signup', component:  SignupComponent},
@@ -43,7 +49,10 @@ const appRoutes: Routes = [
     SignupComponent,
     TableComponent,
     OrderComponent,
-    ThankYouComponent
+    ThankYouComponent,
+    PricingComponent,
+    FaqComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
