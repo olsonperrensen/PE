@@ -31,7 +31,10 @@ export class DatepickerComponent implements OnInit {
   {
     if(this.fromInput.nativeElement.value.length < 1 
       ||
-      this.toInput.nativeElement.value.length < 1 )
+      this.toInput.nativeElement.value.length < 1
+      ||
+      this.d.nativeElement.value.length < 1
+       )
     {
       this.router.navigate(['/error']);
     }
