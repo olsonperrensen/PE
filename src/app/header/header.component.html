@@ -1,4 +1,4 @@
-<header class="p-3 bg-dark text-white">
+<header class="p-3 bg-dark ">
   <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-range" viewBox="0 0 16 16">
@@ -8,21 +8,42 @@
   
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a 
-            class="nav-link px-2 text-secondary"
-            routerLink="/">Home</a></li>
+            class="nav-link px-2"
+            routerLink="/"
+            routerLinkActive="text-secondary"
+            [routerLinkActiveOptions]="{exact: true}">Home</a></li>
           <li><a 
-            routerLink="/features" class="nav-link px-2 text-white">Features</a></li>
-          <li><a routerLink="/pricing" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a routerLink="/faq" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a routerLink="/about" class="nav-link px-2 text-white">About</a></li>
+            routerLink="/features" 
+            class="nav-link px-2 "
+            routerLinkActive="text-secondary"
+            [routerLinkActiveOptions]="{exact: true}">Features</a></li>
+          <li><a 
+            routerLink="/pricing" 
+            class="nav-link px-2 "
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">Pricing</a></li>
+          <li><a 
+            routerLink="/faq" 
+            class="nav-link px-2 "
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">FAQs</a></li>
+          <li><a 
+            routerLink="/about" 
+            class="nav-link px-2 "
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">About</a></li>
         </ul>
         <div class="text-end">
           <button 
           type="button" 
           class="btn btn-outline-light me-2"
-          routerLink="/login">Login</button>
+          routerLink="/login"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Login</button>
           <button type="button" class="btn btn-warning"
-          routerLink="/signup">Sign-up</button>
+          routerLink="/signup"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Sign-up</button>
         </div>
       </div>
     </div>

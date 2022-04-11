@@ -23,9 +23,10 @@ const appRoutes: Routes = [
   { path: 'error', component:  ErrorComponent},
   { path: 'login', component:  LoginComponent},
   { path: 'signup', component:  SignupComponent},
-  { path: 'table', component:  TableComponent},
+  { path: 'table/:from/:to/:day', component:  TableComponent},
   { path: 'order', component:  OrderComponent},
   { path: 'thank-you', component:  ThankYouComponent},
+  { path: '**', redirectTo: '/error'},
 ];
 
 @NgModule({

@@ -22,23 +22,12 @@
     </div>
     <div class="form-group">
         <label for="formGroupExampleInput3">Departure Date</label>
-        <form 
-        
-        class="row row-cols-sm-auto">
-            <div class="col-12">
-              <div class="input-group">
-                <input 
-                id="formGroupExampleInput3" 
-                class="form-control" 
-                placeholder="yyyy-mm-dd"
-                name="dp" 
-                [(ngModel)]="model" 
-                ngbDatepicker 
-                #d="ngbDatepicker" 
-                (click)="d.toggle()">
-              </div>
-            </div>
-          </form>
+        <input 
+      type="text" 
+      class="form-control" 
+      id="formGroupExampleInput2" 
+      placeholder="Another input"
+      #d>
     </div>
     <div>
         <button 

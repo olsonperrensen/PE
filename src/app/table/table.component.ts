@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Journey } from './journey';
 
 @Component({
   selector: 'app-table',
@@ -7,17 +8,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-  sample:{name:string,id:number}[]=[];
-  constructor(private router:Router) { }
+  user_journey!:Journey;
+
+  constructor(private router:Router, private aRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.sample = [{name:"ni",id:1},
-    {name:"ni",id:1},
-    {name:"ni",id:1},
-    {name:"ni",id:1},
-    {name:"ni",id:1},
-    {name:"ni",id:1},
-                  ]
+    this.user_journey = {
+      from: this.aRoute.snapshot.params['from'],
+      to: this.aRoute.snapshot.params['to'],
+      day: this.aRoute.snapshot.params['day'],
+    }
   }
   public onClick()
   {
