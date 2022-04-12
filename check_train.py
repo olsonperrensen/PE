@@ -1,0 +1,10 @@
+def check_train(type):
+    match type:
+        case 'SE7':
+            return "101235"
+        case 'SE5':
+            return "35529"
+        case 'SE3':
+            return "7580"
+        case _:        
+            return "-1"
