@@ -1,50 +1,65 @@
-
-<form class="form-horizontal" action='' method="POST">
-    <fieldset>
-      <div id="legend">
-        <legend class="">Register</legend>
-      </div>
-      <div class="control-group">
-        <!-- Username -->
-        <label class="control-label"  for="username">Username</label>
-        <div class="controls">
-          <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-          <p class="help-block">Username can contain any letters or numbers, without spaces</p>
-        </div>
-      </div>
-   
-      <div class="control-group">
-        <!-- E-mail -->
-        <label class="control-label" for="email">E-mail</label>
-        <div class="controls">
-          <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
-          <p class="help-block">Please provide your E-mail</p>
-        </div>
-      </div>
-   
-      <div class="control-group">
-        <!-- Password-->
-        <label class="control-label" for="password">Password</label>
-        <div class="controls">
-          <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-          <p class="help-block">Password should be at least 4 characters</p>
-        </div>
-      </div>
-   
-      <div class="control-group">
-        <!-- Password -->
-        <label class="control-label"  for="password_confirm">Password (Confirm)</label>
-        <div class="controls">
-          <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
-          <p class="help-block">Please confirm password</p>
-        </div>
-      </div>
-   
-      <div class="control-group">
-        <!-- Button -->
-        <div class="controls">
-          <button class="btn btn-success">Register</button>
-        </div>
-      </div>
-    </fieldset>
-  </form>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>
+        We would love to have you as a member!
+      </h3>
+      <p>Please fill the following fields in order to create an account:</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 form-group">
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <label for="">Username:</label>
+        <input 
+        type="text"
+        ngModel
+        required
+        name="username"
+        class="form-control"
+        #username="ngModel">
+        <p *ngIf="!username.valid&&username.touched">Please enter a valid username.</p>
+        <label for="">Email address:</label>
+        <input 
+        type="email"
+        ngModel
+        required
+        email
+        name="email"
+        class="form-control"
+        #email="ngModel">
+        <p *ngIf="!email.valid&&email.touched">Please enter a valid email address.</p>
+        <label for="">Password:</label>
+        <input 
+        type="password"
+        ngModel
+        required
+        name="password"
+        class="form-control"
+        #password="ngModel">
+        <p *ngIf="!password.valid&&password.touched">Please enter a valid password.</p>
+        <input 
+        type="checkbox"
+        ngModel
+        name="TOS"
+        required
+        id="TOS"
+        value="1"
+        #TOS="ngModel"
+        >
+        <label for="TOS">I agree to the Terms of Service and privacy policy.</label>
+        <p *ngIf="!TOS.valid&&TOS.touched">You must agree to our TOS in order to create an account.</p>
+        <hr>
+        <button 
+        type="submit" 
+        class="btn btn-warning"
+        [disabled]="!f.valid">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col xs 12">
+      <p *ngIf="submitted">Your response has been recorded successfully.</p>
+    </div>
+  </div>
+</div>
