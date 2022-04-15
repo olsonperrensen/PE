@@ -4,16 +4,23 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 import time
+from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import json
 from datetime import datetime
+
+
+
 BASE_URL = 'https://k.vnticketonline.vn/#/thongtinhanhtrinh/gadi'
-options = webdriver.ChromeOptions()
+options = Options()
+options.add_argument('disable-infobars')
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
-driver = webdriver.Chrome(options=options)
-driver.get(BASE_URL) 
-driver.implicitly_wait(10)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+driver.get(BASE_URL)
+driver.implicitly_wait(15)
 departure = driver.find_element(By.CSS_SELECTOR, '#txtgadi')
 departure.send_keys(input('from: '))
 departure.send_keys(Keys.ARROW_DOWN)
