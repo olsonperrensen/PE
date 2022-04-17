@@ -38,6 +38,15 @@
         class="form-control"
         #password="ngModel">
         <p *ngIf="!password.valid&&password.touched">Please enter a valid password.</p>
+        <label for="">Confirm password:</label>
+        <input 
+        type="password"
+        ngModel
+        required
+        name="password"
+        class="form-control"
+        #cpassword="ngModel">
+        <p *ngIf="!cpassword.valid&&cpassword.touched">Please re-enter your password.</p>
         <input 
         type="checkbox"
         ngModel

@@ -1,9 +1,6 @@
-import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm} from '@angular/forms';
 import {Router } from '@angular/router';
-import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
-import { Journey } from '../table/journey';
-
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
@@ -11,14 +8,20 @@ import { Journey } from '../table/journey';
 })
 export class DatepickerComponent implements OnInit {
 
+  @ViewChild('f') f!: NgForm;
+  
   constructor(private router:Router) { }
 
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
   onSubmit(f:NgForm)
   {
-    console.log(f)
+    this.router.navigate(['/table'+'/'+f.value['from']+'/'+f.value['to']+'/'+f.value['date']])
+  }
+
+  onNow()
+  {
+    this.f.form.patchValue({date:new Date().toISOString().split('T')[0]});
   }
 }

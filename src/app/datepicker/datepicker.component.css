@@ -24,3 +24,11 @@ button
        font-size:small;
        color: red;
 }
+.now
+{
+       float: right;
+       width: 50px;
+       height: 25px;
+       margin: 2px;
+       font-size: xx-small;
+}
