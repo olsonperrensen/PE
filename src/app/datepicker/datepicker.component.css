@@ -13,3 +13,14 @@ button
 {
        margin-top: 20px;
 }
+.arrow
+{
+       width: 12px;
+       margin-right: 12px;
+       filter: opacity(0.4) drop-shadow(0 0 0 gray); 
+}
+.invalid-input-text
+{
+       font-size:small;
+       color: red;
+}

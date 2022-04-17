@@ -1,40 +1,65 @@
 <div class="container-fluid datepicker w-25 p-3">
   <div id="test"></div>
-<form id="big-form">
+<form 
+#f="ngForm"
+(ngSubmit)="onSubmit(f)"
+id="big-form">
     <h3><img src="../../assets/train_icon.png" width="25px" />Train</h3><hr>
-    <div class="form-group">
-      <label for="formGroupExampleInput">From</label>
+    <img 
+      src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39041/preview.png" 
+      alt=""
+      class="arrow">  
+    <label for="formGroupExampleInput">From</label>
       <input 
       type="text" 
       class="form-control" 
-      id="formGroupExampleInput" 
       placeholder="Example input"
-      #fromInput>
-    </div>
-    <div class="form-group">
+      required
+      #from="ngModel"
+      ngModel
+      name="from">
+      <p 
+      class="invalid-input-text"
+      *ngIf="!from.valid && from.touched"
+      >We couldn't find the station you were looking for.</p>
+      <img 
+      src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39041/preview.png" 
+      alt=""
+      class="arrow">
       <label for="formGroupExampleInput2">To</label>
       <input 
       type="text" 
       class="form-control" 
-      id="formGroupExampleInput2" 
       placeholder="Another input"
-      #toInput>
-    </div>
-    <div class="form-group">
+      required
+      #to="ngModel"
+      ngModel
+      name="to">
+      <p 
+      class="invalid-input-text"
+      *ngIf="!to.valid && to.touched"
+      >We couldn't find the station you were looking for.</p>
+      <img 
+      src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39041/preview.png" 
+      alt=""
+      class="arrow">
         <label for="formGroupExampleInput3">Departure Date</label>
         <input 
-      type="text" 
+      type="date" 
       class="form-control" 
-      id="formGroupExampleInput2" 
       placeholder="Another input"
-      #d>
-    </div>
-    <div>
+      required
+      #date="ngModel"
+      ngModel
+      name="date">
+      <p 
+      class="invalid-input-text"
+      *ngIf="!date.valid && date.touched"
+      >You entered a non-existent date.</p>
         <button 
-        type="button"
+        type="submit"
         class="w-100 btn btn-lg btn btn-dark"
-        (click)="submit()"
+        [disabled]="!f.valid"
         >Take me there</button>
-    </div>
   </form>
 </div>
