@@ -17,7 +17,8 @@ id="big-form">
       required
       #from="ngModel"
       ngModel
-      name="from">
+      name="from"
+      >
       <p 
       class="invalid-input-text"
       *ngIf="!from.valid && from.touched"
@@ -62,5 +63,8 @@ id="big-form">
         class="w-100 btn btn-lg btn btn-dark"
         [disabled]="!f.valid"
         >Take me there</button>
+        <p 
+        class="invalid-input-text"
+        *ngIf="!isCity">We are sorry, your cities couldn't be found in our database.</p>
   </form>
 </div>

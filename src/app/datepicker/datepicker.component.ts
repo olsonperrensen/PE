@@ -1,6 +1,9 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgForm} from '@angular/forms';
+import { Component, NgModule, OnInit, ViewChild } from '@angular/core';
+import { NgForm, NgModel} from '@angular/forms';
 import {Router } from '@angular/router';
+import { type } from 'os';
+import { elementAt } from 'rxjs';
+
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
@@ -8,16 +11,54 @@ import {Router } from '@angular/router';
 })
 export class DatepickerComponent implements OnInit {
 
+  cities = require("../../assets/cities.json");
+  isFromValid:boolean = false;
+  isToValid:boolean = false;
+  isCity:boolean = true;
   @ViewChild('f') f!: NgForm;
   
   constructor(private router:Router) { }
 
 
-  ngOnInit(): void {  }
+  ngOnInit(): void { 
+   }
+
+   trainValidator(form:NgForm)
+   {
+    for (let index = 0; index < this.cities['ArrayOfDMGa']['DMGa'].length; index++) {
+     
+      if(this.isFromValid&&this.isToValid)
+      {
+        break;
+      }
+
+      const element:string = this.cities['ArrayOfDMGa']['DMGa'][index]['SKeys'];
+
+      if(typeof element === typeof '')
+      {
+        if(element.includes(form.value['from']))
+        {
+          this.isFromValid = true;
+        }
+        if(element.includes(form.value['to']))
+        {
+          this.isToValid = true;
+        }
+      }
+    }
+   }
 
   onSubmit(f:NgForm)
   {
-    this.router.navigate(['/table'+'/'+f.value['from']+'/'+f.value['to']+'/'+f.value['date']])
+    this.trainValidator(f);
+    if(this.isFromValid&&this.isToValid)
+    {
+      this.router.navigate(['/table'+'/'+f.value['from']+'/'+f.value['to']+'/'+f.value['date']]);
+    }
+    else
+    {
+      this.isCity = false;
+    }
   }
 
   onNow()
