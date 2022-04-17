@@ -65,6 +65,10 @@ id="big-form">
         >Take me there</button>
         <p 
         class="invalid-input-text"
-        *ngIf="!isCity">We are sorry, your cities couldn't be found in our database.</p>
+        *ngIf="!isCity&&!isSame">We are sorry, your cities couldn't be found in our database.</p>
+        <p 
+        class="invalid-input-text"
+        *ngIf="isSame">You chose the same city twice.</p>
+        
   </form>
 </div>

@@ -1,9 +1,6 @@
-import { Component, NgModule, OnInit, ViewChild } from '@angular/core';
-import { NgForm, NgModel} from '@angular/forms';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm} from '@angular/forms';
 import {Router } from '@angular/router';
-import { type } from 'os';
-import { elementAt } from 'rxjs';
-
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
@@ -15,6 +12,7 @@ export class DatepickerComponent implements OnInit {
   isFromValid:boolean = false;
   isToValid:boolean = false;
   isCity:boolean = true;
+  isSame:boolean = false;
   codeFrom:string = ''
   codeTo:string = ''
   
@@ -32,19 +30,28 @@ export class DatepickerComponent implements OnInit {
      
       if(this.isFromValid&&this.isToValid)
       {
+        if(this.codeFrom === this.codeTo)
+      {
+        this.isSame = true;
+        this.isFromValid = false;
+        this.isToValid = false;
+      }
+      else
+      {
         break;
+      }
       }
 
       const element:string = this.cities['ArrayOfDMGa']['DMGa'][index]['SKeys'];
 
       if(typeof element === typeof '')
       {
-        if(element.includes(form.value['from']))
+        if(element.includes(form.value['from'].toLowerCase()))
         {
           this.codeFrom = this.cities['ArrayOfDMGa']['DMGa'][index]['MaGa'];
           this.isFromValid = true;
         }
-        if(element.includes(form.value['to']))
+        if(element.includes(form.value['to'].toLowerCase()))
         {
           this.codeTo = this.cities['ArrayOfDMGa']['DMGa'][index]['MaGa'];
           this.isToValid = true;
@@ -58,7 +65,7 @@ export class DatepickerComponent implements OnInit {
     this.trainValidator(f);
     if(this.isFromValid&&this.isToValid)
     {
-      this.router.navigate(['/table'+'/'+this.codeFrom+'/'+this.codeTo+'/'+f.value['date']]);
+        this.router.navigate(['/table'+'/'+this.codeFrom+'/'+this.codeTo+'/'+f.value['date']]);
     }
     else
     {
