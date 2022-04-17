@@ -15,6 +15,9 @@ export class DatepickerComponent implements OnInit {
   isFromValid:boolean = false;
   isToValid:boolean = false;
   isCity:boolean = true;
+  codeFrom:string = ''
+  codeTo:string = ''
+  
   @ViewChild('f') f!: NgForm;
   
   constructor(private router:Router) { }
@@ -38,10 +41,12 @@ export class DatepickerComponent implements OnInit {
       {
         if(element.includes(form.value['from']))
         {
+          this.codeFrom = this.cities['ArrayOfDMGa']['DMGa'][index]['MaGa'];
           this.isFromValid = true;
         }
         if(element.includes(form.value['to']))
         {
+          this.codeTo = this.cities['ArrayOfDMGa']['DMGa'][index]['MaGa'];
           this.isToValid = true;
         }
       }
@@ -53,7 +58,7 @@ export class DatepickerComponent implements OnInit {
     this.trainValidator(f);
     if(this.isFromValid&&this.isToValid)
     {
-      this.router.navigate(['/table'+'/'+f.value['from']+'/'+f.value['to']+'/'+f.value['date']]);
+      this.router.navigate(['/table'+'/'+this.codeFrom+'/'+this.codeTo+'/'+f.value['date']]);
     }
     else
     {
