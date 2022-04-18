@@ -90,4 +90,14 @@ export class DatepickerComponent implements OnInit {
       from:this.cities['ArrayOfDMGa']['DMGa'][Math.round(Math.random()*172)]['TenGa'],
       to:this.cities['ArrayOfDMGa']['DMGa'][Math.round(Math.random()*172)]['TenGa']});
   }
+
+  lat = 14.0583;
+  lng = 108.2772;
+
+  
+  onChoseLocation(event:any)
+  {
+    this.lat = event.coords.lat;
+    this.lng = event.coords.lng;
+  }
 }

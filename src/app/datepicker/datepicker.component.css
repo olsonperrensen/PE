@@ -40,3 +40,7 @@ button
        margin-top: -35px;
        font-size: xx-small;
 }
+agm-map
+{
+       height: 400px;
+}

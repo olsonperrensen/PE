@@ -21,6 +21,7 @@ import { FaqComponent } from './faq/faq.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { TableFilteringComponent } from './table-filtering/table-filtering.component';
 import { TOSComponent } from './tos/tos.component';
+import { AgmCoreModule } from '@agm/core';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent},
@@ -65,7 +66,10 @@ const appRoutes: Routes = [
     BrowserModule,
     NgbModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AgmCoreModule.forRoot(
+      {apiKey: 'AIzaSyCsTw56lFc40e_ObgyNVmQOQCung5JGL8w'}
+    ),
   ],
   providers: [],
   bootstrap: [AppComponent]
