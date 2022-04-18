@@ -1,7 +1,13 @@
-<div class="container">
+<div *ngIf="isFetching" class="container">
+  <div class="row justify-content-center">
+    <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <h3>Loading...</h3>
+  </div>
+</div>
+<div *ngIf="!isFetching" class="container">
 <img src="https://www.customimportarts.com/wordpress-5.2.2-nl_BE/wordpress/wp-content/uploads/2019/08/12-127301_calendar-icon-png-image-download-schedule-icon.jpg" width="40px" />
-<h6>You chose: {{user_journey.from}} - {{user_journey.to}} on {{user_journey.day}}</h6>
 <div class="row justify-content-center">
+  <h6>You chose: {{user_journey.from}} - {{user_journey.to}} on {{user_journey.day}}</h6>
   <div class="col-auto">
     <table class="table">
       <thead>

@@ -13,6 +13,7 @@ export class TableComponent implements OnInit {
   ]
   
   user_journey!:Journey;
+  isFetching:boolean=true;
 
   constructor(private router:Router, private aRoute: ActivatedRoute) { }
 
@@ -22,7 +23,9 @@ export class TableComponent implements OnInit {
       to: this.aRoute.snapshot.params['to'],
       day: this.aRoute.snapshot.params['day'],
     }
-    
+    setTimeout(() => {
+      this.isFetching = false;
+    }, 3000);
   }
   public onClick()
   {
