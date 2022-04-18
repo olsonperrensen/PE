@@ -13,9 +13,13 @@ export class DatepickerComponent implements OnInit {
   isToValid:boolean = false;
   isCity:boolean = true;
   isSame:boolean = false;
-  codeFrom:string = ''
-  codeTo:string = ''
-  
+  codeFrom:string = '';
+  codeTo:string = '';
+  lat = 14.0583;
+  lng = 108.2772;
+  // reverse_key = 'AIzaSyCsTw56lFc40e_ObgyNVmQOQCung5JGL8w';
+  // url:string=`https://maps.googleapis.com/maps/api/geocode/json?latlng=${this.lat},${this.lng}&key=${this.reverse_key}`
+
   @ViewChild('f') f!: NgForm;
   
   constructor(private router:Router) { }
@@ -34,6 +38,11 @@ export class DatepickerComponent implements OnInit {
         this.lng = pos.coords.longitude;
       })
     }
+    // fetch(this.url).then(response => response.json()).then(
+    //   data => {
+    //     console.log(data)
+    //   }
+    // )  
    }
 
    trainValidator(form:NgForm)
@@ -102,10 +111,6 @@ export class DatepickerComponent implements OnInit {
       from:this.cities['ArrayOfDMGa']['DMGa'][Math.round(Math.random()*172)]['TenGa'],
       to:this.cities['ArrayOfDMGa']['DMGa'][Math.round(Math.random()*172)]['TenGa']});
   }
-
-  lat = 14.0583;
-  lng = 108.2772;
-
 
   onChoseLocation(event:any)
   {
