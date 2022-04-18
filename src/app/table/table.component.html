@@ -1,31 +1,32 @@
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </table>
-  <button (click)="onClick()" class="btn btn-primary">Order now</button>
+<div class="container">
+<img src="https://www.customimportarts.com/wordpress-5.2.2-nl_BE/wordpress/wp-content/uploads/2019/08/12-127301_calendar-icon-png-image-download-schedule-icon.jpg" width="40px" />
+<h6>You chose: {{user_journey.from}} - {{user_journey.to}} on {{user_journey.day}}</h6>
+<div class="row justify-content-center">
+  <div class="col-auto">
+    <table class="table">
+      <thead>
+        <tr>
+          <td>Departure City</td>
+          <td>Departure Date</td>
+          <td>Departure Hour</td>
+          <td>Next Arriving Hour</td>
+          <td>Total Kilometers Travelled</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of NghiTemp; 
+        let i = index;
+        let f = first;
+        let l = last;">
+          <td [ngStyle]="{'font-weight': (f||l?'bold':'')}">{{row.CITY}}</td>
+          <td>{{row.DATE}}</td>
+          <td>hr</td>
+          <td>hr</td>
+          <td>{{row.KM}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button (click)="onClick()" class="btn btn-primary">Order now</button>
+  </div>
+</div>   
+  </div>
