@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,10 +11,15 @@ export class OrderComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit(): void {
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+});
   }
  do()
  {
   this.router.navigate(['/thank-you']);
  }
-
+ 
 }
