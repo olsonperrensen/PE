@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-pricing',
@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PricingComponent implements OnInit {
 
-  constructor() { }
+  onMouseOver(div:HTMLDivElement)
+  {
+    this.renderer.setStyle(div,"border", "solid 1px skyblue");
+  }
+  onMouseLeave(div:HTMLDivElement)
+  {
+    this.renderer.setStyle(div,"border", "transparent");
+  }
+
+  constructor(private renderer:Renderer2) { }
 
   ngOnInit(): void {
   }
