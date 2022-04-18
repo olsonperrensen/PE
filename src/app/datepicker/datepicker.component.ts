@@ -43,15 +43,21 @@ export class DatepickerComponent implements OnInit {
       }
 
       const element:string = this.cities['ArrayOfDMGa']['DMGa'][index]['SKeys'];
-
+      const exact:string = this.cities['ArrayOfDMGa']['DMGa'][index]['TenGa'];
       if(typeof element === typeof '')
       {
-        if(element.includes(form.value['from'].toLowerCase()))
+        if(
+          element.includes(form.value['from'].toLowerCase())
+          ||
+          exact === form.value['from'])
         {
           this.codeFrom = this.cities['ArrayOfDMGa']['DMGa'][index]['MaGa'];
           this.isFromValid = true;
         }
-        if(element.includes(form.value['to'].toLowerCase()))
+        if(
+          element.includes(form.value['to'].toLowerCase())
+          ||
+          exact === form.value['to'])
         {
           this.codeTo = this.cities['ArrayOfDMGa']['DMGa'][index]['MaGa'];
           this.isToValid = true;
@@ -76,5 +82,12 @@ export class DatepickerComponent implements OnInit {
   onNow()
   {
     this.f.form.patchValue({date:new Date().toISOString().split('T')[0]});
+  }
+  onDemo()
+  {
+    this.f.setValue({date:new Date(2022, Math.random()*32, Math.random()*32)
+      .toISOString().split('T')[0],
+      from:this.cities['ArrayOfDMGa']['DMGa'][Math.round(Math.random()*172)]['TenGa'],
+      to:this.cities['ArrayOfDMGa']['DMGa'][Math.round(Math.random()*172)]['TenGa']});
   }
 }
