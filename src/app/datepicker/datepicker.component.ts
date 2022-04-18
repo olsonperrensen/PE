@@ -15,17 +15,16 @@ export class DatepickerComponent implements OnInit {
   isSame:boolean = false;
   codeFrom:string = '';
   codeTo:string = '';
-  lat = 14.0583;
-  lng = 108.2772;
-  // reverse_key = 'AIzaSyCsTw56lFc40e_ObgyNVmQOQCung5JGL8w';
-  // url:string=`https://maps.googleapis.com/maps/api/geocode/json?latlng=${this.lat},${this.lng}&key=${this.reverse_key}`
+  lat = 10.8231;
+  lng = 106.6297;
+  privateKey = 'AIzaSyCsTw56lFc40e_ObgyNVmQOQCung5JGL8w';
 
   @ViewChild('f') f!: NgForm;
   
   constructor(private router:Router) { }
 
-
-  ngOnInit(): void { 
+  onUserLocation()
+  {
     if(!navigator.geolocation)
     {
       alert("Your browser does not support GeoLocation.");
@@ -38,11 +37,10 @@ export class DatepickerComponent implements OnInit {
         this.lng = pos.coords.longitude;
       })
     }
-    // fetch(this.url).then(response => response.json()).then(
-    //   data => {
-    //     console.log(data)
-    //   }
-    // )  
+  }
+
+  ngOnInit(): void { 
+    this.reverseLookup(); 
    }
 
    trainValidator(form:NgForm)
@@ -116,5 +114,20 @@ export class DatepickerComponent implements OnInit {
   {
     this.lat = event.coords.lat;
     this.lng = event.coords.lng;
+    this.reverseLookup();
+  }
+  reverseLookup()
+  { 
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${this.lat},${this.lng}&key=${this.privateKey}`)
+    .then(response => response.json()).then(
+      data => {
+        data.results.forEach((element: any) => {
+          if(element.types.includes("administrative_area_level_1"))
+          {
+            this.f.form.patchValue({from:element.formatted_address.split(',')[0]});
+          }
+        });
+      }
+    ) 
   }
 }
