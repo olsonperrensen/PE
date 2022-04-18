@@ -22,6 +22,18 @@ export class DatepickerComponent implements OnInit {
 
 
   ngOnInit(): void { 
+    if(!navigator.geolocation)
+    {
+      alert("Your browser does not support GeoLocation.");
+    }
+    else
+    {
+      navigator.geolocation.getCurrentPosition((pos)=>
+      {
+        this.lat = pos.coords.latitude;
+        this.lng = pos.coords.longitude;
+      })
+    }
    }
 
    trainValidator(form:NgForm)
@@ -94,7 +106,7 @@ export class DatepickerComponent implements OnInit {
   lat = 14.0583;
   lng = 108.2772;
 
-  
+
   onChoseLocation(event:any)
   {
     this.lat = event.coords.lat;
