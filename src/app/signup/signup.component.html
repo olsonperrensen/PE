@@ -65,7 +65,7 @@
         value="1"
         #TOS="ngModel"
         >
-        <label for="TOS"><p>I agree to the <a routerLink="/TOS">Terms of Service and privacy policy.<p></a></label>
+        <label for="TOS"><p>I agree to the <a routerLink="/TOS">Terms of Service</a> and <a routerLink="/privacy-policy">Privacy Policy.</a><p></label>
         <p *ngIf="!TOS.valid&&TOS.touched">You must agree to our TOS in order to create an account.</p>
         <hr>
         <button 

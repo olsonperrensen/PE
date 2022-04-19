@@ -22,6 +22,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { TableFilteringComponent } from './table-filtering/table-filtering.component';
 import { TOSComponent } from './tos/tos.component';
 import { AgmCoreModule } from '@agm/core';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent},
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
   { path: 'table-filtering', component:  TableFilteringComponent},
   { path: 'admin', redirectTo: '/table-filtering'},
   { path: 'TOS', component:  TOSComponent},
+  { path: 'privacy-policy', component:  PrivacyPolicyComponent},
   { path: 'table/:from/:to/:day', component:  TableComponent},
   { path: 'order', component:  OrderComponent},
   { path: 'thank-you', component:  ThankYouComponent},
@@ -61,6 +63,7 @@ const appRoutes: Routes = [
     AboutUsComponent,
     TableFilteringComponent,
     TOSComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [
     BrowserModule,
