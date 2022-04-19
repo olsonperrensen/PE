@@ -9,6 +9,7 @@ import { NgForm } from '@angular/forms';
 export class SignupComponent implements OnInit {
 
   submitted:boolean=false;
+  unmatch:boolean=false;
 
   constructor() { }
 
@@ -18,9 +19,16 @@ export class SignupComponent implements OnInit {
 
   onSubmit(form:NgForm)
   {
-    console.log(form.value)
-    form.reset();
-    this.submitted = true;
+    if(form.value.password === form.value.cpassword)
+    {
+      this.unmatch = false;
+      form.reset();
+      this.submitted = true;
+    }
+    else
+    {
+      this.unmatch = true;
+    }
   }
 
 }

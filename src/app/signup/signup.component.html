@@ -43,10 +43,11 @@
         type="password"
         ngModel
         required
-        name="password"
+        name="cpassword"
         class="form-control"
         #cpassword="ngModel">
         <p *ngIf="!cpassword.valid&&cpassword.touched">Please re-enter your password.</p>
+        <p *ngIf="unmatch">Passwords do not match.</p>
         <input 
         type="checkbox"
         ngModel
