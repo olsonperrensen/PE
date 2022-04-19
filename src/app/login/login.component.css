@@ -43,3 +43,12 @@ body {
 .bxs-badge-check {
     font-size: 90px
 }
+.ffs
+{
+    font-size: small;
+    text-align: end;
+}
+input.ng-invalid.ng-touched, .invalid
+{
+    border: 1px solid red;
+}
