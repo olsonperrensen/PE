@@ -17,8 +17,10 @@
         required
         name="username"
         class="form-control"
-        #username="ngModel">
+        #username="ngModel"
+        [ngClass]="{invalid:isTooShort}">
         <p *ngIf="!username.valid&&username.touched">Please enter a valid username.</p>
+        <p *ngIf="isTooShort">At least four letters required.</p>
         <label for="">Email address:</label>
         <input 
         type="email"
@@ -27,8 +29,10 @@
         email
         name="email"
         class="form-control"
-        #email="ngModel">
+        #email="ngModel"
+        [ngClass]="{invalid:isTooShort}">
         <p *ngIf="!email.valid&&email.touched">Please enter a valid email address.</p>
+        <p *ngIf="isTooShort">At least four letters required.</p>
         <label for="">Password:</label>
         <input 
         type="password"
@@ -36,8 +40,10 @@
         required
         name="password"
         class="form-control"
-        #password="ngModel">
+        #password="ngModel"
+        [ngClass]="{invalid:isTooShort||isUnmatch}">
         <p *ngIf="!password.valid&&password.touched">Please enter a valid password.</p>
+        <p *ngIf="isTooShort">At least four letters required.</p>
         <label for="">Confirm password:</label>
         <input 
         type="password"
@@ -45,9 +51,11 @@
         required
         name="cpassword"
         class="form-control"
-        #cpassword="ngModel">
+        #cpassword="ngModel"
+        [ngClass]="{invalid:isTooShort||isUnmatch}">
         <p *ngIf="!cpassword.valid&&cpassword.touched">Please re-enter your password.</p>
-        <p *ngIf="unmatch">Passwords do not match.</p>
+        <p *ngIf="isTooShort">At least four letters required.</p>
+        <p *ngIf="isUnmatch">Passwords do not match.</p>
         <input 
         type="checkbox"
         ngModel
@@ -57,7 +65,7 @@
         value="1"
         #TOS="ngModel"
         >
-        <label for="TOS">I agree to the <a routerLink="/TOS">Terms of Service and privacy policy.</a></label>
+        <label for="TOS"><p>I agree to the <a routerLink="/TOS">Terms of Service and privacy policy.<p></a></label>
         <p *ngIf="!TOS.valid&&TOS.touched">You must agree to our TOS in order to create an account.</p>
         <hr>
         <button 

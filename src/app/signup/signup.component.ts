@@ -9,8 +9,8 @@ import { NgForm } from '@angular/forms';
 export class SignupComponent implements OnInit {
 
   submitted:boolean=false;
-  unmatch:boolean=false;
-
+  isUnmatch:boolean=false;
+  isTooShort:boolean=false;
   constructor() { }
 
   ngOnInit(): void {
@@ -19,15 +19,31 @@ export class SignupComponent implements OnInit {
 
   onSubmit(form:NgForm)
   {
+    if(form.value.username.length < 4 || form.value.email.length < 4 
+      || form.value.password.length < 4
+      || form.value.cpassword.length < 4)
+    {
+      this.isTooShort = true;
+    }
     if(form.value.password === form.value.cpassword)
     {
-      this.unmatch = false;
-      form.reset();
-      this.submitted = true;
+      if(form.value.username.length < 4 || form.value.email.length < 4 
+        || form.value.password.length < 4
+        || form.value.cpassword.length < 4)
+      {
+        this.isTooShort = true;
+      }
+      else
+      {
+        this.isTooShort = false;
+        this.isUnmatch = false;
+        form.reset();
+        this.submitted = true;
+      }  
     }
     else
     {
-      this.unmatch = true;
+      this.isUnmatch = true;
     }
   }
 
