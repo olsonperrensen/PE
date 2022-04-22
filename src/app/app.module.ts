@@ -28,6 +28,7 @@ import { JourneyDetailsService } from './journey-details.service';
 import { TableGuardServiceGuard } from './table-guard-service.guard';
 import { AppRoutingModule } from './app-routing.module';
 import { CookieDetailsComponent } from './cookie-details/cookie-details.component';
+import { ThankYouDetailsComponent } from './thank-you/thank-you-details/thank-you-details.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { CookieDetailsComponent } from './cookie-details/cookie-details.componen
     TOSComponent,
     PrivacyPolicyComponent,
     CookieDetailsComponent,
+    ThankYouDetailsComponent,
   ],
   imports: [
     BrowserModule,
