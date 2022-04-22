@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Journey } from './journey';
+import { Journey } from '../journey';
 
 @Component({
   selector: 'app-table',
@@ -21,7 +21,7 @@ export class TableComponent implements OnInit {
     this.user_journey = {
       from: this.aRoute.snapshot.params['from'],
       to: this.aRoute.snapshot.params['to'],
-      day: this.aRoute.snapshot.params['day'],
+      date: this.aRoute.snapshot.params['date'],
     }
     setTimeout(() => {
       this.isFetching = false;

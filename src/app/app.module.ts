@@ -24,6 +24,7 @@ import { TOSComponent } from './tos/tos.component';
 import { AgmCoreModule } from '@agm/core';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { NgDynamicBreadcrumbModule } from 'ng-dynamic-breadcrumb';
+import { JourneyDetailsService } from './journey-details.service';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent,
@@ -151,7 +152,7 @@ const appRoutes: Routes = [
       }
     ]
   },},
-  { path: 'table/:from/:to/:day', component:  TableComponent,
+  { path: 'table/:from/:to/:date', component:  TableComponent,
   data: {
     breadcrumb: [
       {
@@ -160,7 +161,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Table',
-        url: '/table/:from/:to/:day'
+        url: '/table/:from/:to/:date'
       }
     ]
   },},
@@ -173,7 +174,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Table',
-        url: `/table/:from/:to/:day` // BUG
+        url: `/table/:from/:to/:date` // BUG
       },
       {
         label: 'Order',
@@ -190,7 +191,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Table',
-        url: `/table/:from/:to/:day` // BUG
+        url: `/table/:from/:to/:date` // BUG
       },
       {
         label: 'Order',
@@ -238,7 +239,7 @@ const appRoutes: Routes = [
     ),
     NgDynamicBreadcrumbModule
   ],
-  providers: [],
+  providers: [JourneyDetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

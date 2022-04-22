@@ -1,27 +1,44 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { NgForm} from '@angular/forms';
 import {Router } from '@angular/router';
+import { JourneyDetailsService } from '../journey-details.service';
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
   styleUrls: ['./datepicker.component.css']
 })
-export class DatepickerComponent implements OnInit {
 
+
+export class DatepickerComponent implements OnInit, OnDestroy {
+  // native-actions
+  constructor(private router:Router, private journeyDetails:JourneyDetailsService) { }
+  ngOnInit(): void { 
+    this.reverseLookup(); 
+   }
+  ngOnDestroy(): void {
+//    this.journeyDetails.setUserJourney(this.)
+  }
+
+  // JSON list of cities
   cities = require("../../assets/cities.json");
+  
+  // booleans
   isFromValid:boolean = false;
   isToValid:boolean = false;
   isCity:boolean = true;
   isSame:boolean = false;
+ 
+  // Journey object
   codeFrom:string = '';
   codeTo:string = '';
+
+  // Google Maps coordinates + API key
   lat = 10.8231;
   lng = 106.6297;
   privateKey = 'AIzaSyCsTw56lFc40e_ObgyNVmQOQCung5JGL8w';
 
+  // Register html form
   @ViewChild('f') f!: NgForm;
-  
-  constructor(private router:Router) { }
 
   onUserLocation()
   {
@@ -38,90 +55,100 @@ export class DatepickerComponent implements OnInit {
       })
     }
   }
-
-  ngOnInit(): void { 
-    this.reverseLookup(); 
-   }
-
+    // Insert user values into Journey object.
    trainValidator(form:NgForm)
    {
-    for (let index = 0; index < this.cities['ArrayOfDMGa']['DMGa'].length; index++) {
      
-      if(this.isFromValid&&this.isToValid)
-      {
-        if(this.codeFrom === this.codeTo)
-      {
-        this.isSame = true;
-        this.isFromValid = false;
-        this.isToValid = false;
-      }
-      else
-      {
-        break;
-      }
-      }
+    // Check whether user input is in database
+    for (let index = 0; index < this.cities['ArrayOfDMGa']['DMGa'].length; index++) {
+      
+      // After n number of interations (we hope the cities have been found)
+      // Prevent nonsense travelling (same city twice)  
+      if(this.isFromValid&&this.isToValid){if(this.codeFrom === this.codeTo){
+          this.isSame = true;
+          this.isFromValid = false;
+          this.isToValid = false;}else{break;}}
 
+      // Here we get two arrays containing common words (keywords) and exact matches (Unicode)
+      // throughout all of our .db records. We will compare them to user input later.
       const element:string = this.cities['ArrayOfDMGa']['DMGa'][index]['SKeys'];
       const exact:string = this.cities['ArrayOfDMGa']['DMGa'][index]['TenGa'];
+      
+      // Check whether a record inside JSON .db actually contains a list (and is not empty) 
       if(typeof element === typeof '')
       {
-        if(
-          element.includes(form.value['from'].toLowerCase())
-          ||
-          exact === form.value['from'])
+        //  We hope our user departure matches a real city in our database, either though
+        // common words (keywords) or an exact match (with Vietnamese characters -> Unicode) 
+        if(element.includes(form.value['from'].toLowerCase())||exact === form.value['from'])
         {
           this.codeFrom = this.cities['ArrayOfDMGa']['DMGa'][index]['MaGa'];
+          // Own healthy check that says the city has been found.
           this.isFromValid = true;
         }
-        if(
-          element.includes(form.value['to'].toLowerCase())
-          ||
-          exact === form.value['to'])
+         //  We hope our user arrival matches a real city in our database, either though
+        // common words (keywords) or an exact match (with Vietnamese characters -> Unicode) 
+        if(element.includes(form.value['to'].toLowerCase())||exact === form.value['to'])
         {
           this.codeTo = this.cities['ArrayOfDMGa']['DMGa'][index]['MaGa'];
+          // Own healthy check that says the city has been found.
           this.isToValid = true;
         }
       }
     }
    }
 
+
   onSubmit(f:NgForm)
   {
+    // Own validation to check traveling makes sense. (for more details, see the function)
     this.trainValidator(f);
+
+    // Continue to the next 'step' in buying tickets. 
     if(this.isFromValid&&this.isToValid)
     {
         this.router.navigate(['/table'+'/'+this.codeFrom+'/'+this.codeTo+'/'+f.value['date']]);
     }
-    else
+    // Activate hints in CSS (see *ngIf).
+    else 
     {
       this.isCity = false;
     }
   }
 
+  // Get a working, real-time date inserted to the form.
   onNow()
   {
     this.f.form.patchValue({date:new Date().toISOString().split('T')[0]});
   }
+
+  // Random selection of valid cities so the user can quickly try the app.
   onDemo()
   {
+    // Logical (random) date from 2022 onwards. 
     this.f.setValue({date:new Date(2022, Math.random()*32, Math.random()*32)
       .toISOString().split('T')[0],
       from:this.cities['ArrayOfDMGa']['DMGa'][Math.round(Math.random()*172)]['TenGa'],
       to:this.cities['ArrayOfDMGa']['DMGa'][Math.round(Math.random()*172)]['TenGa']});
   }
 
+  // Convert where the user clicked on our map to coordinates and translate them into
+  // the nearest city.
   onChoseLocation(event:any)
   {
     this.lat = event.coords.lat;
     this.lng = event.coords.lng;
     this.reverseLookup();
   }
+
+  // GPS Coordinates to City name translation
   reverseLookup()
   { 
+    // We are using the Google Maps API (more specifically: GeoCode) to get an object back.
     fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${this.lat},${this.lng}&key=${this.privateKey}`)
     .then(response => response.json()).then(
       data => {
         data.results.forEach((element: any) => {
+          // This mostly works for cities inside of Vietnam. For Belgium it is a bit tricker.
           if(element.types.includes("administrative_area_level_1"))
           {
             this.f.form.patchValue({from:element.formatted_address.split(',')[0]});

@@ -1,10 +1,10 @@
 export class Journey {
     from:string;
     to:string;
-    day:string;
+    date:string;
     constructor(){
         this.from = '',
         this.to = '',
-        this.day = ''
+        this.date = ''
     }
 }
