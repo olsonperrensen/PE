@@ -16,6 +16,6 @@ export class AppComponent implements OnInit{
   // BUG: Best to use observables to subscribe for changes
   ngOnInit(): void {
       this.userJourney = this.journeyDetails.getUserJourney();
-      console.log(this.userJourney);
+      console.log(`From app.component:${this.userJourney.from}-${this.userJourney.to}-${this.userJourney.date}`);
   }
 }

@@ -25,6 +25,7 @@ import { AgmCoreModule } from '@agm/core';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { NgDynamicBreadcrumbModule } from 'ng-dynamic-breadcrumb';
 import { JourneyDetailsService } from './journey-details.service';
+import { TableGuardServiceGuard } from './table-guard-service.guard';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent,
@@ -165,7 +166,7 @@ const appRoutes: Routes = [
       }
     ]
   },},
-  { path: 'order', component:  OrderComponent,
+  { path: 'order', component:  OrderComponent, canActivate: [TableGuardServiceGuard],
   data: {
     breadcrumb: [
       {
