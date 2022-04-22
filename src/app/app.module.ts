@@ -26,187 +26,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { NgDynamicBreadcrumbModule } from 'ng-dynamic-breadcrumb';
 import { JourneyDetailsService } from './journey-details.service';
 import { TableGuardServiceGuard } from './table-guard-service.guard';
-
-const appRoutes: Routes = [
-  { path: '', component:  DatepickerComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home\t/',
-        url: '/'
-      }
-    ]
-  },},
-  { path: 'features', component:  FeaturesComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home',
-        url: '/'
-      },
-      {
-        label: 'Features',
-        url: '/features'
-      }
-    ]
-  },},
-  { path: 'pricing', component:  PricingComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home',
-        url: '/'
-      },
-      {
-        label: 'Pricing',
-        url: '/pricing'
-      }
-    ]
-  },},
-  { path: 'faq', component:  FaqComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home',
-        url: '/'
-      },
-      {
-        label: 'F.A.Q.',
-        url: '/faq'
-      }
-    ]
-  },},
-  { path: 'about-us', component:  AboutUsComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home',
-        url: '/'
-      },
-      {
-        label: 'About Us',
-        url: '/about-us'
-      }
-    ]
-  },},
-  { path: 'error', component:  ErrorComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: '404',
-        url: '/error'
-      }]
-  },},
-  { path: 'login', component:  LoginComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home',
-        url: '/'
-      },
-      {
-        label: 'Log in',
-        url: '/login'
-      }
-    ]
-  },},
-  { path: 'signup', component:  SignupComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home',
-        url: '/'
-      },
-      {
-        label: 'Sign up',
-        url: '/signup'
-      }
-    ]
-  },},
-  { path: 'table-filtering', component:  TableFilteringComponent},
-  { path: 'admin', redirectTo: '/table-filtering'},
-  { path: 'TOS', component:  TOSComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home',
-        url: '/'
-      },
-      {label:'Sign up',url:'/signup'},
-      {
-        label: 'Terms of Service',
-        url: '/TOS'
-      }
-    ]
-  },},
-  { path: 'privacy-policy', component:  PrivacyPolicyComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home',
-        url: '/'
-      },
-      {label:'Sign up',url:'/signup'},
-      {
-        label: 'Privacy Policy',
-        url: '/privacy-policy'
-      }
-    ]
-  },},
-  { path: 'table/:from/:to/:date', component:  TableComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home',
-        url: '/'
-      },
-      {
-        label: 'Table',
-        url: '/table/:from/:to/:date'
-      }
-    ]
-  },},
-  { path: 'order', component:  OrderComponent, canActivate: [TableGuardServiceGuard],
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home',
-        url: '/'
-      },
-      {
-        label: 'Table',
-        url: `/table/:from/:to/:date` // BUG
-      },
-      {
-        label: 'Order',
-        url: '/order'
-      }
-    ]
-  },},
-  { path: 'thank-you', component:  ThankYouComponent,
-  data: {
-    breadcrumb: [
-      {
-        label: 'Home',
-        url: '/'
-      },
-      {
-        label: 'Table',
-        url: `/table/:from/:to/:date` // BUG
-      },
-      {
-        label: 'Order',
-        url: '/order'
-      }
-      ,
-      {
-        label: 'Thank You!',
-        url:'/thank-you'
-      }
-    ]
-  },},
-  { path: '**', redirectTo: '/error'},
-];
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -234,11 +54,12 @@ const appRoutes: Routes = [
     BrowserModule,
     NgbModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes),
+    AppRoutingModule,
     AgmCoreModule.forRoot(
       {apiKey: 'AIzaSyCsTw56lFc40e_ObgyNVmQOQCung5JGL8w'}
     ),
-    NgDynamicBreadcrumbModule
+    NgDynamicBreadcrumbModule,
+    AppRoutingModule
   ],
   providers: [JourneyDetailsService],
   bootstrap: [AppComponent]
