@@ -29,6 +29,7 @@ import { TableGuardServiceGuard } from './table-guard-service.guard';
 import { AppRoutingModule } from './app-routing.module';
 import { CookieDetailsComponent } from './cookie-details/cookie-details.component';
 import { ThankYouDetailsComponent } from './thank-you/thank-you-details/thank-you-details.component';
+import { ErrorPermissionComponent } from './error-permission/error-permission.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { ThankYouDetailsComponent } from './thank-you/thank-you-details/thank-yo
     PrivacyPolicyComponent,
     CookieDetailsComponent,
     ThankYouDetailsComponent,
+    ErrorPermissionComponent,
   ],
   imports: [
     BrowserModule,

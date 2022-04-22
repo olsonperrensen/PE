@@ -17,6 +17,7 @@ import { TableComponent } from './table/table.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { TOSComponent } from './tos/tos.component';
 import { CookieDetailsComponent } from './cookie-details/cookie-details.component';
+import { ErrorPermissionComponent } from './error-permission/error-permission.component';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent,
@@ -206,6 +207,19 @@ const appRoutes: Routes = [
       {
         label: 'Cookies',
         url: '/cookies'
+      }
+    ]
+  },},
+  { path: 'error-permission', component:  ErrorPermissionComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: '403',
+        url: '/error-permission'
       }
     ]
   },},
