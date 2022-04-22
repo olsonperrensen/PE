@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { Journey } from './journey';
 
 @Injectable({
@@ -7,6 +7,9 @@ import { Journey } from './journey';
 export class JourneyDetailsService {
 
   userJourney:Journey = new Journey();
+
+  // Still has to be implemented in case the values change. Then other components can react.
+  isFilled = new EventEmitter<boolean>();
 
   constructor() {}
 
@@ -18,5 +21,4 @@ export class JourneyDetailsService {
   {
     this.userJourney = TSJourney;
   }
-
 }

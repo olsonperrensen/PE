@@ -32,7 +32,12 @@
         </tr>
       </tbody>
     </table>
-    <button (click)="onClick()" class="btn btn-primary">Order now</button>
+    <button 
+    (click)="onClick()" 
+    class="btn btn-primary"
+    [ngClass]="{'btn-warning':!isDatepicker}">Order now</button>
+    <p *ngIf="!isDatepicker" style="color: red;"><strong>Warning!</strong> You didn't come from the Home page.
+    Are you really sure you want to take this specific trip? </p>
   </div>
 </div>   
   </div>

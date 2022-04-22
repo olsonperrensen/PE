@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Journey } from '../journey';
+import { JourneyDetailsService } from '../journey-details.service';
 
 @Component({
   selector: 'app-table',
@@ -13,24 +14,47 @@ export class TableComponent implements OnInit {
   ]
   
   user_journey!:Journey;
-  isFetching:boolean=true;
 
-  constructor(private router:Router, private aRoute: ActivatedRoute) { }
+  isFetching:boolean=true;
+  isDatepicker:boolean=true;
+
+  constructor(private router:Router, private aRoute: ActivatedRoute, 
+    private journeyDetails:JourneyDetailsService) { }
 
   ngOnInit(): void {
-    this.user_journey = {
-      from: this.aRoute.snapshot.params['from'],
-      to: this.aRoute.snapshot.params['to'],
-      date: this.aRoute.snapshot.params['date'],
-    }
+
+    // DEPRECATED 
+
+    // this.user_journey = {
+    //   from: this.aRoute.snapshot.params['from'],
+    //   to: this.aRoute.snapshot.params['to'],
+    //   date: this.aRoute.snapshot.params['date'],
+    // }
+
+    // Service integration 
+    this.user_journey = this.journeyDetails.getUserJourney();
+
     setTimeout(() => {
       this.isFetching = false;
     }, 3000);
   }
+
+  // Go to the next 'step'
   public onClick()
   {
-    this.router.navigate(['/order']);
-    
+    if(!this.isDatepicker)
+    {
+      this.router.navigate(['/order']);
+    }
+    if(this.user_journey.to === '' || this.user_journey.from === '' || 
+    this.user_journey.date=== '')
+    {
+      this.isDatepicker = false;
+    }
+    else
+    {
+      this.router.navigate(['/order']);
+    }
   }
 
 }
