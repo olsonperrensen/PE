@@ -16,6 +16,7 @@ import { TableGuardServiceGuard } from './table-guard-service.guard';
 import { TableComponent } from './table/table.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { TOSComponent } from './tos/tos.component';
+import { CookieDetailsComponent } from './cookie-details/cookie-details.component';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent,
@@ -192,6 +193,19 @@ const appRoutes: Routes = [
       {
         label: 'Thank You!',
         url:'/thank-you'
+      }
+    ]
+  },},
+  { path: 'cookies', component:  CookieDetailsComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Cookies',
+        url: '/cookies'
       }
     ]
   },},

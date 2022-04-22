@@ -27,6 +27,7 @@ import { NgDynamicBreadcrumbModule } from 'ng-dynamic-breadcrumb';
 import { JourneyDetailsService } from './journey-details.service';
 import { TableGuardServiceGuard } from './table-guard-service.guard';
 import { AppRoutingModule } from './app-routing.module';
+import { CookieDetailsComponent } from './cookie-details/cookie-details.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { AppRoutingModule } from './app-routing.module';
     TableFilteringComponent,
     TOSComponent,
     PrivacyPolicyComponent,
+    CookieDetailsComponent,
   ],
   imports: [
     BrowserModule,
