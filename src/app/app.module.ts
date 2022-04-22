@@ -23,23 +23,186 @@ import { TableFilteringComponent } from './table-filtering/table-filtering.compo
 import { TOSComponent } from './tos/tos.component';
 import { AgmCoreModule } from '@agm/core';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { NgDynamicBreadcrumbModule } from 'ng-dynamic-breadcrumb';
 
 const appRoutes: Routes = [
-  { path: '', component:  DatepickerComponent},
-  { path: 'features', component:  FeaturesComponent},
-  { path: 'pricing', component:  PricingComponent},
-  { path: 'faq', component:  FaqComponent},
-  { path: 'about-us', component:  AboutUsComponent},
-  { path: 'error', component:  ErrorComponent},
-  { path: 'login', component:  LoginComponent},
-  { path: 'signup', component:  SignupComponent},
+  { path: '', component:  DatepickerComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home\t/',
+        url: '/'
+      }
+    ]
+  },},
+  { path: 'features', component:  FeaturesComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Features',
+        url: '/features'
+      }
+    ]
+  },},
+  { path: 'pricing', component:  PricingComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Pricing',
+        url: '/pricing'
+      }
+    ]
+  },},
+  { path: 'faq', component:  FaqComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'F.A.Q.',
+        url: '/faq'
+      }
+    ]
+  },},
+  { path: 'about-us', component:  AboutUsComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'About Us',
+        url: '/about-us'
+      }
+    ]
+  },},
+  { path: 'error', component:  ErrorComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: '404',
+        url: '/error'
+      }]
+  },},
+  { path: 'login', component:  LoginComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Log in',
+        url: '/login'
+      }
+    ]
+  },},
+  { path: 'signup', component:  SignupComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Sign up',
+        url: '/signup'
+      }
+    ]
+  },},
   { path: 'table-filtering', component:  TableFilteringComponent},
   { path: 'admin', redirectTo: '/table-filtering'},
-  { path: 'TOS', component:  TOSComponent},
-  { path: 'privacy-policy', component:  PrivacyPolicyComponent},
-  { path: 'table/:from/:to/:day', component:  TableComponent},
-  { path: 'order', component:  OrderComponent},
-  { path: 'thank-you', component:  ThankYouComponent},
+  { path: 'TOS', component:  TOSComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {label:'Sign up',url:'/signup'},
+      {
+        label: 'Terms of Service',
+        url: '/TOS'
+      }
+    ]
+  },},
+  { path: 'privacy-policy', component:  PrivacyPolicyComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {label:'Sign up',url:'/signup'},
+      {
+        label: 'Privacy Policy',
+        url: '/privacy-policy'
+      }
+    ]
+  },},
+  { path: 'table/:from/:to/:day', component:  TableComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Table',
+        url: '/table/:from/:to/:day'
+      }
+    ]
+  },},
+  { path: 'order', component:  OrderComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Table',
+        url: `/table/:from/:to/:day` // BUG
+      },
+      {
+        label: 'Order',
+        url: '/order'
+      }
+    ]
+  },},
+  { path: 'thank-you', component:  ThankYouComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Table',
+        url: `/table/:from/:to/:day` // BUG
+      },
+      {
+        label: 'Order',
+        url: '/order'
+      }
+      ,
+      {
+        label: 'Thank You!',
+        url:'/thank-you'
+      }
+    ]
+  },},
   { path: '**', redirectTo: '/error'},
 ];
 
@@ -73,6 +236,7 @@ const appRoutes: Routes = [
     AgmCoreModule.forRoot(
       {apiKey: 'AIzaSyCsTw56lFc40e_ObgyNVmQOQCung5JGL8w'}
     ),
+    NgDynamicBreadcrumbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
