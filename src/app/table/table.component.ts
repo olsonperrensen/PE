@@ -45,17 +45,19 @@ export class TableComponent implements OnInit {
   // Go to the next 'step'
   public onClick()
   {
-    if(!this.isDatepicker)
+    /*if(!this.isDatepicker)
     {
-      this.router.navigate(['/order']);
-    }
+      this.router.navigate(['order']);
+    }*/
     if(this.journeyCheckup.doCheckup())
     {
-      this.isDatepicker = false;
+      this.isDatepicker = true;
+      this.router.navigate(['order']);
     }
     else
     {
-      this.router.navigate(['/order']);
+      this.isDatepicker = false;
+
     }
   }
 
