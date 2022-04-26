@@ -6,7 +6,10 @@ import { JourneyDetailsService } from '../journey-details.service';
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
-  styleUrls: ['./datepicker.component.css']
+  styleUrls: ['./datepicker.component.css'],
+  animations: [
+
+  ]
 })
 
 

@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { TableListComponent } from './table-list/table-list.component';
 import { FeaturesComponent } from './features/features.component';
-import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { LoginComponent } from './login/login.component';
@@ -33,7 +32,7 @@ import { ErrorPermissionComponent } from './error-permission/error-permission.co
 import { TraintypeComponent } from './traintype/traintype.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { HelpContactComponent } from './help-contact/help-contact.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,9 +71,10 @@ import { HelpContactComponent } from './help-contact/help-contact.component';
       {apiKey: 'AIzaSyCsTw56lFc40e_ObgyNVmQOQCung5JGL8w'}
     ),
     NgDynamicBreadcrumbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
   ],
-  providers: [JourneyDetailsService],
+  providers: [JourneyDetailsService,TableGuardServiceGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
