@@ -34,6 +34,7 @@ export class NgbdModalContent {
 })
 export class ThankYouComponent implements OnInit {
   ngOnInit(): void {
+    window.scroll({top:0,left:0,behavior:'smooth'});
     const modalRef = this.modalService.open(NgbdModalContent);
     modalRef.componentInstance.name = 'Bjorn';
   }
