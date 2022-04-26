@@ -1,6 +1,16 @@
 .card
 {
-    background-color: aliceblue;
-    margin: auto;
+    background-color: black;
+    color: white;
+    margin: 20px;
     padding: 25px;
+}
+p
+{
+    margin: 20px;
+}
+
+input
+{
+    margin-right: 25px;
 }
