@@ -158,6 +158,7 @@ const appRoutes: Routes = [
       }
     ]
   },},
+  {path:'table', redirectTo:'table/undefined/undefined/undefined'},
   { path: 'order', component:  OrderComponent, canActivate: [TableGuardServiceGuard],
   data: {
     breadcrumb: [
