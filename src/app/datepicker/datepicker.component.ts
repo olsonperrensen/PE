@@ -3,12 +3,14 @@ import { NgForm} from '@angular/forms';
 import {Router } from '@angular/router';
 import { Journey } from '../journey';
 import { JourneyDetailsService } from '../journey-details.service';
+import * as a from 'angular-animations';
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
   styleUrls: ['./datepicker.component.css'],
   animations: [
-
+    a.fadeInLeftOnEnterAnimation(),
+    a.fadeInUpOnEnterAnimation() 
   ]
 })
 

@@ -37,9 +37,7 @@ import {NgbActiveModal, NgbModal} from '@ng-bootstrap/ng-bootstrap';
          You can find a list of all your trips and the corresponding costs&nbsp;over the past 18 months by going to 'My travel history' . You can also add notes or print a summary to add to your expense claim.</p>
          </li>
          <li>
-         <p><strong>View invoices</strong><br>
-         If you&nbsp;have a season ticket, you can go to&nbsp;'My invoices' to view your monthly invoices. If you have a Traject Vrij season ticket, you'll also find&nbsp;invoices for trips&nbsp;made outside your chosen route, as well as your monthly payments for your chosen&nbsp;route.</p>
-         </li>
+         <p><strong>View invoices</strong></li>
         </ul>
     </div>
     <div class="modal-footer">

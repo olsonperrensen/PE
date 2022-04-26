@@ -33,6 +33,7 @@ import { TraintypeComponent } from './traintype/traintype.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { HelpContactComponent } from './help-contact/help-contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,6 +74,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NgDynamicBreadcrumbModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
   ],
   providers: [JourneyDetailsService,TableGuardServiceGuard],
   bootstrap: [AppComponent]

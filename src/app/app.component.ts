@@ -1,3 +1,4 @@
+import *  as a from 'angular-animations';
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { Journey } from './journey';
 import { JourneyDetailsService } from './journey-details.service';
@@ -5,7 +6,9 @@ import { JourneyDetailsService } from './journey-details.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations:[
+  ]
 })
 export class AppComponent implements OnInit{
 

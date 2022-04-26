@@ -5,11 +5,11 @@
   </div>
 </div>
 <div *ngIf="!isFetching" class="container">
-<img src="../../assets/date.jpg" width="40px" />
+<img [@jackInTheBoxOnEnter] src="../../assets/date.jpg" width="40px" />
 <div class="row justify-content-center">
   <h6>You chose: {{userJourney.from}} - {{userJourney.to}} on {{userJourney.date}}</h6>
   <div class="col-auto">
-    <table class="table">
+    <table 	[@slideInUpOnEnter] class="table">
       <thead>
         <tr>
           <td>Departure City</td>
@@ -34,7 +34,8 @@
     </table>
     <form #f="ngForm" (ngSubmit)="onSubmit(f)">
       <select 
-      class="form-select form-select-sm" 
+      class="form-select form-select-sm"
+      [ngClass]="{selectValid:ticket_name.valid && ticket_name.dirty}" 
       aria-label=".form-select-sm example"
       [ngModel]="0"
       #ticket_name="ngModel"
@@ -45,7 +46,24 @@
         <option value="2">Two</option>
         <option value="3">Three</option>
       </select>
-      <div *ngIf="ticket_name.valid && ticket_name.dirty" class="col card">
+      <div 
+      [@flipInYOnEnter]
+      class="col-md-3 col-lg-3 col-xl-2 d-flex basket"
+      *ngIf="ticket_name.valid && ticket_name.dirty">
+        <button class="btn btn-link px-2"
+          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+          <fa-icon [icon]="faMinus"></fa-icon>
+        </button>
+
+        <input id="form1" min="0" name="quantity" value="1" type="number"
+          class="form-control form-control-sm" />
+
+        <button class="btn btn-link px-2"
+          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+          <fa-icon [icon]="faPlus"></fa-icon>
+        </button>
+      </div>
+      <div [@flipInXOnEnter]="ticket_name.valid && ticket_name.dirty" *ngIf="ticket_name.valid && ticket_name.dirty" class="col card">
         <p>This ticket includes the following:</p>
           <ul>
             <li>Ticket name: test</li>

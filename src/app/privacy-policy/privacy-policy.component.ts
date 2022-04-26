@@ -1,9 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as a from 'angular-animations';
 @Component({
   selector: 'app-privacy-policy',
   templateUrl: './privacy-policy.component.html',
-  styleUrls: ['./privacy-policy.component.css']
+  styleUrls: ['./privacy-policy.component.css'],
+  animations:[
+    a.
+    rotateInUpRightOnEnterAnimation(),
+    a.
+    rotateInUpLeftOnEnterAnimation()
+  ]
 })
 export class PrivacyPolicyComponent implements OnInit {
 

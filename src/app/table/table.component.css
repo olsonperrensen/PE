@@ -3,6 +3,25 @@
     text-align: center;
     margin-top: 30px;
 }
+.card
+{
+  padding: 25px;
+}
+
+li
+{
+  padding-bottom: 9px;
+}
+
+.selectValid
+{
+  width: 80%;
+  float: left;
+}
+.basket
+{
+  margin: 20px;
+}
 h6, img
 {
     margin: 8px;
