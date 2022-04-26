@@ -11,6 +11,36 @@ import {NgbActiveModal, NgbModal} from '@ng-bootstrap/ng-bootstrap';
     </div>
     <div class="modal-body">
       <p>Get all the benefits from our app, {{name}}!</p>
+      <p> 
+                   With an account, you can easily:</p>
+            <div class="bodyItem__text">
+                <div class="richText" data-controller="generic/ui/RichText" data-config="{&quot;mode&quot;:&quot;responsiveTable&quot;}" data-type="cms-Tekst">
+                    <ul>
+         <li>
+         <p><strong>Manage your account</strong><br>
+        By going to 'My details' , you can edit your personal details and subscribe to or unsubscribe from the NS newsletter.</p>
+         </li>
+        </ul>
+        
+        <ul>
+         <p><li><strong>Product status</strong><br>
+        By going to 'My products', you can view&nbsp;your NS products and check the remaining time on your&nbsp;season ticket or the status of your Keuzedagen.</li>
+    </p></ul>
+        
+        <ul>
+         <li>
+         <p><strong>Order status</strong><br>
+         For a full summary of your NS orders and their statuses,&nbsp;go to 'My Orders'.</p>
+         </li>
+                  <li>
+         <p><strong>View travel history</strong><br>
+         You can find a list of all your trips and the corresponding costs&nbsp;over the past 18 months by going to 'My travel history' . You can also add notes or print a summary to add to your expense claim.</p>
+         </li>
+         <li>
+         <p><strong>View invoices</strong><br>
+         If you&nbsp;have a season ticket, you can go to&nbsp;'My invoices' to view your monthly invoices. If you have a Traject Vrij season ticket, you'll also find&nbsp;invoices for trips&nbsp;made outside your chosen route, as well as your monthly payments for your chosen&nbsp;route.</p>
+         </li>
+        </ul>
     </div>
     <div class="modal-footer">
     <button type="button" class="btn btn-primary" 
@@ -35,7 +65,7 @@ export class NgbdModalContent {
 export class ThankYouComponent implements OnInit {
   ngOnInit(): void {
     window.scroll({top:0,left:0,behavior:'smooth'});
-    const modalRef = this.modalService.open(NgbdModalContent);
+    const modalRef = this.modalService.open(NgbdModalContent,{ scrollable: true,centered:true },);
     modalRef.componentInstance.name = 'Bjorn';
   }
   constructor(private modalService: NgbModal){}
