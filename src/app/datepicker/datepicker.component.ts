@@ -14,6 +14,7 @@ export class DatepickerComponent implements OnInit, OnDestroy {
   // native-actions
   constructor(private router:Router, private journeyDetails:JourneyDetailsService) { }
   ngOnInit(): void { 
+    window.scroll({top:0,left:0,behavior:'smooth'});
     this.reverseLookup(); 
    }
   ngOnDestroy(): void {

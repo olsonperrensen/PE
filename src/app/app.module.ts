@@ -32,6 +32,7 @@ import {ThankYouDetailsComponent } from './thank-you/thank-you-details/thank-you
 import { ErrorPermissionComponent } from './error-permission/error-permission.component';
 import { TraintypeComponent } from './traintype/traintype.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
+import { HelpContactComponent } from './help-contact/help-contact.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { SitemapComponent } from './sitemap/sitemap.component';
     NgbdModalContent,
     TraintypeComponent,
     SitemapComponent,
+    HelpContactComponent,
   ],
   imports: [
     BrowserModule,

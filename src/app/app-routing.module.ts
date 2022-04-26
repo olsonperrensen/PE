@@ -20,6 +20,7 @@ import { CookieDetailsComponent } from './cookie-details/cookie-details.componen
 import { ErrorPermissionComponent } from './error-permission/error-permission.component';
 import { TraintypeComponent } from './traintype/traintype.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
+import { HelpContactComponent } from './help-contact/help-contact.component';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent,
@@ -67,6 +68,18 @@ const appRoutes: Routes = [
       {
         label: 'Pricing',
         url: '/pricing'
+      }
+    ]
+  },},{ path: 'help-contact', component:  HelpContactComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Help & Contact',
+        url: '/help-contact'
       }
     ]
   },},
