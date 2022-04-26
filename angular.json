@@ -24,7 +24,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -32,7 +33,9 @@
             ],
             "scripts": [ "node_modules/jquery/dist/jquery.min.js",
               "node_modules/@popperjs/core/dist/esm/popper.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -94,7 +97,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.css"
