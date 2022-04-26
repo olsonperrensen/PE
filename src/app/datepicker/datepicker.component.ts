@@ -82,7 +82,8 @@ export class DatepickerComponent implements OnInit, OnDestroy {
     // Continue to the next 'step' in buying tickets. 
     if(this.isFromValid&&this.isToValid)
     {
-        this.router.navigate(['/table'+'/'+this.userJourney.from+'/'+this.userJourney.to+'/'+f.value['date']]);
+     //   this.router.navigate(['/table'+'/'+this.userJourney.from+'/'+this.userJourney.to+'/'+f.value['date']]);
+      this.router.navigate(['train-type'])
     }
     // Activate hints in CSS (see *ngIf).
     else 

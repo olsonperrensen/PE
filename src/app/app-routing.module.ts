@@ -18,6 +18,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
 import { TOSComponent } from './tos/tos.component';
 import { CookieDetailsComponent } from './cookie-details/cookie-details.component';
 import { ErrorPermissionComponent } from './error-permission/error-permission.component';
+import { TraintypeComponent } from './traintype/traintype.component';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent,
@@ -26,6 +27,19 @@ const appRoutes: Routes = [
       {
         label: 'Home\t/',
         url: '/'
+      }
+    ]
+  },},
+  { path: 'train-type', component:  TraintypeComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Train type',
+        url: '/train-type'
       }
     ]
   },},
@@ -153,6 +167,10 @@ const appRoutes: Routes = [
         url: '/'
       },
       {
+        label: 'Train type',
+        url: '/train-type'
+      },
+      {
         label: 'Table',
         url: '/table/:from/:to/:date'
       }
@@ -165,6 +183,10 @@ const appRoutes: Routes = [
       {
         label: 'Home',
         url: '/'
+      },
+      {
+        label: 'Train type',
+        url: '/train-type'
       },
       {
         label: 'Table',
@@ -182,6 +204,10 @@ const appRoutes: Routes = [
       {
         label: 'Home',
         url: '/'
+      },
+      {
+        label: 'Train type',
+        url: '/train-type'
       },
       {
         label: 'Table',

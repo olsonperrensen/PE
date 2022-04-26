@@ -28,8 +28,9 @@ import { JourneyDetailsService } from './journey-details.service';
 import { TableGuardServiceGuard } from './table-guard-service.guard';
 import { AppRoutingModule } from './app-routing.module';
 import { CookieDetailsComponent } from './cookie-details/cookie-details.component';
-import { ThankYouDetailsComponent } from './thank-you/thank-you-details/thank-you-details.component';
+import {ThankYouDetailsComponent } from './thank-you/thank-you-details/thank-you-details.component';
 import { ErrorPermissionComponent } from './error-permission/error-permission.component';
+import { TraintypeComponent } from './traintype/traintype.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { ErrorPermissionComponent } from './error-permission/error-permission.co
     ThankYouDetailsComponent,
     ErrorPermissionComponent,
     NgbdModalContent,
+    TraintypeComponent,
   ],
   imports: [
     BrowserModule,

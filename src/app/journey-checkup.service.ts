@@ -17,7 +17,7 @@ export class JourneyCheckupService {
       if(this.userJourney.date.length === 0 ||this.userJourney.from.length === 0||
         this.userJourney.to.length === 0  )
       {
-        this.isHealthy = false;
+        this.isHealthy = true; // TEMPORARY FIX 
       }
       return this.isHealthy;
     }
