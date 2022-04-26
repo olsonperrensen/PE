@@ -19,6 +19,7 @@ import { TOSComponent } from './tos/tos.component';
 import { CookieDetailsComponent } from './cookie-details/cookie-details.component';
 import { ErrorPermissionComponent } from './error-permission/error-permission.component';
 import { TraintypeComponent } from './traintype/traintype.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent,
@@ -247,6 +248,19 @@ const appRoutes: Routes = [
       {
         label: '403',
         url: '/error-permission'
+      }
+    ]
+  },},
+  { path: 'sitemap', component:  SitemapComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Sitemap',
+        url: '/sitemap'
       }
     ]
   },},

@@ -31,6 +31,7 @@ import { CookieDetailsComponent } from './cookie-details/cookie-details.componen
 import {ThankYouDetailsComponent } from './thank-you/thank-you-details/thank-you-details.component';
 import { ErrorPermissionComponent } from './error-permission/error-permission.component';
 import { TraintypeComponent } from './traintype/traintype.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { TraintypeComponent } from './traintype/traintype.component';
     ErrorPermissionComponent,
     NgbdModalContent,
     TraintypeComponent,
+    SitemapComponent,
   ],
   imports: [
     BrowserModule,
