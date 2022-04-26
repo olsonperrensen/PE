@@ -15,7 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { TableComponent } from './table/table.component';
 import { OrderComponent } from './order/order.component';
-import { ThankYouComponent } from './thank-you/thank-you.component';
+import { NgbdModalContent, ThankYouComponent } from './thank-you/thank-you.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { FaqComponent } from './faq/faq.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -55,6 +55,7 @@ import { ErrorPermissionComponent } from './error-permission/error-permission.co
     CookieDetailsComponent,
     ThankYouDetailsComponent,
     ErrorPermissionComponent,
+    NgbdModalContent,
   ],
   imports: [
     BrowserModule,
