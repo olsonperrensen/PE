@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Journey } from '../journey';
 import { JourneyCheckupService } from '../journey-checkup.service';
@@ -39,7 +40,7 @@ export class TableComponent implements OnInit {
 
     setTimeout(() => {
       this.isFetching = false;
-    }, 3000);
+    }, 300);
   }
 
   // Go to the next 'step'
@@ -61,4 +62,9 @@ export class TableComponent implements OnInit {
     }
   }
 
+
+  onSubmit(f:NgForm)
+  {
+    console.log(f)
+  }
 }

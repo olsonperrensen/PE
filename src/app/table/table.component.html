@@ -32,12 +32,60 @@
         </tr>
       </tbody>
     </table>
-    <button 
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <select 
+      class="form-select form-select-sm" 
+      aria-label=".form-select-sm example"
+      [ngModel]="0"
+      #ticket_name="ngModel"
+      name="ticket_name"
+      required>
+        <option value="0" selected>Choose your ticket</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <div *ngIf="ticket_name.valid && ticket_name.dirty" class="col card">
+        <p>This ticket includes the following:</p>
+          <ul>
+            <li>Ticket name: test</li>
+            <li>Ticket code: test</li>
+            <li>Ticket price: $4.20</li>
+          </ul>
+      </div>
+      <hr>
+      <div ngbDropdown class="d-inline-block">
+        <button type="button" class="btn btn-outline-primary" id="dropdownForm1" ngbDropdownToggle>Recently used</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownForm1">
+          <form class="px-4 py-3">
+            <div class="mb-3">
+              <label for="exampleDropdownFormEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" autocomplete="username">
+            </div>
+            <div class="mb-3">
+              <label for="exampleDropdownFormPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" autocomplete="current-password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dropdownCheck">
+              <label class="form-check-label" for="dropdownCheck">
+                Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+          <div class="dropdown-divider"></div>
+          <button type="button" ngbDropdownItem>New around here? Sign up</button>
+          <button type="button" ngbDropdownItem>Forgot password?</button>
+        </div>
+      </div>
+      <button 
     (click)="onClick()" 
     class="btn btn-primary"
     [ngClass]="{'btn-warning':!isDatepicker}">Order now</button>
     <p *ngIf="!isDatepicker" style="color: red;"><strong>Warning!</strong> You didn't come from the Home page.
     Are you really sure you want to take this specific trip? </p>
+    </form>
   </div>
 </div>   
   </div>
