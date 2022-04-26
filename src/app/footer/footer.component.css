@@ -1,4 +1,12 @@
-footer
+.gnu
 {
     font-style: italic;
+}
+.fixed-bottom
+{
+    z-index: 0;
+}
+a
+{
+    margin: auto 11px;
 }
