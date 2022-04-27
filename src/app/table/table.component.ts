@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Journey } from '../journey';
@@ -6,6 +6,7 @@ import { JourneyCheckupService } from '../journey-checkup.service';
 import { JourneyDetailsService } from '../journey-details.service';
 import * as a from 'angular-animations';
 import { faMinus,faPlus } from '@fortawesome/free-solid-svg-icons';
+import { DarkModeStatusService } from '../dark-mode-status.service';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -19,6 +20,8 @@ import { faMinus,faPlus } from '@fortawesome/free-solid-svg-icons';
   ]
 })
 export class TableComponent implements OnInit {
+  switch_status!:boolean;
+  @ViewChild('tr1') tr1!:ElementRef;
 
   faMinus = faMinus;
   faPlus = faPlus;
@@ -33,9 +36,12 @@ export class TableComponent implements OnInit {
   isDatepicker:boolean=true;
 
   constructor(private router:Router, private aRoute: ActivatedRoute, 
-    private journeyDetails:JourneyDetailsService, private journeyCheckup:JourneyCheckupService) { }
+    private journeyDetails:JourneyDetailsService, private journeyCheckup:JourneyCheckupService,
+    private R2: Renderer2,private darkModeStatus:DarkModeStatusService) { }
 
   ngOnInit(): void {
+
+    this.switch_status = this.darkModeStatus.getStatus();
 
     // DEPRECATED 
 

@@ -9,9 +9,9 @@
 <div class="row justify-content-center">
   <h6>You chose: {{userJourney.from}} - {{userJourney.to}} on {{userJourney.date}}</h6>
   <div class="col-auto">
-    <table 	[@slideInUpOnEnter] class="table">
+    <table [@slideInUpOnEnter] class="table">
       <thead>
-        <tr>
+        <tr [ngClass]="{'tr-dark':switch_status, 'tr-light': !switch_status}" #tr1 class="tr">
           <td>Departure City</td>
           <td>Departure Date</td>
           <td>Departure Hour</td>
@@ -20,7 +20,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let row of NghiTemp; 
+        <tr [ngClass]="{'tr-dark':switch_status, 'tr-light': !switch_status}" class="tr" *ngFor="let row of NghiTemp; 
         let i = index;
         let f = first;
         let l = last;">
@@ -63,7 +63,9 @@
           <fa-icon [icon]="faPlus"></fa-icon>
         </button>
       </div>
-      <div [@flipInXOnEnter]="ticket_name.valid && ticket_name.dirty" *ngIf="ticket_name.valid && ticket_name.dirty" class="col card">
+      <div 
+      [ngClass]="{'div-dark':switch_status, 'div-light': !switch_status}"
+      [@flipInXOnEnter]="ticket_name.valid && ticket_name.dirty" *ngIf="ticket_name.valid && ticket_name.dirty" class="col card">
         <p>This ticket includes the following:</p>
           <ul>
             <li>Ticket name: test</li>

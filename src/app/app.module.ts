@@ -36,6 +36,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { DarkModeStatusService } from './dark-mode-status.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,7 +85,7 @@ import { environment } from '../environments/environment';
       registrationStrategy: 'registerWhenStable:30000'
     }),
   ],
-  providers: [JourneyDetailsService,TableGuardServiceGuard],
+  providers: [JourneyDetailsService,TableGuardServiceGuard,DarkModeStatusService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

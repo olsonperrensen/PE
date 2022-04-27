@@ -1,6 +1,10 @@
-a
+a,label
 {
     cursor: default;
     text-decoration: none;
     color: white;
+}
+label
+{
+    margin-right: 20px;
 }

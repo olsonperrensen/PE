@@ -41,6 +41,7 @@
     "ajv-formats": "^2.1.1",
     "ajv-keywords": "^5.1.0",
     "angular-animations": "^0.11.0",
+    "angular-dark-mode": "^3.0.2",
     "ansi-colors": "^4.1.1",
     "ansi-escapes": "^4.3.2",
     "ansi-html-community": "^0.0.8",

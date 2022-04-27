@@ -1,6 +1,8 @@
 <header id="header" class="p-3 bg-dark ">
   <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <div 
+      class="nav-link d-flex flex-wrap align-items-center justify-content-center 
+      justify-content-lg-start">
        <a routerLink="/" 
        class="navbar-brand d-flex align-items-center"><strong>TrainAm</strong></a>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -30,6 +32,12 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="{exact: true}">About us</a></li>
         </ul>
+        <div class="form-check form-switch">
+          <input #switch="ngModel" ngModel name="switch" type="checkbox" class="form-check-input" id="darkSwitch"
+          [checked]="darkMode$ | async"
+    (change)="onToggle()" />
+          <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+        </div>
         <div class="text-end">
           <button 
           type="button" 

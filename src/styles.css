@@ -1,0 +1,12 @@
+body.dark-mode {
+    background-color: #2d3436;
+    color: #dfe6e9;
+  }
+   
+  body.light-mode {
+    background-color: white;
+    color: #2d3436;
+  }
+  body:not(.dark-mode-preloading) {
+  transition: all 0.3s linear;
+}
