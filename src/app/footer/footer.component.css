@@ -9,4 +9,9 @@
 a
 {
     margin: auto 11px;
+    text-decoration: none;
+}
+a:hover
+{
+    filter:invert(1);
 }
