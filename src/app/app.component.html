@@ -1,7 +1,7 @@
 <app-header></app-header>
 <app-ng-dynamic-breadcrumb fontSize="16px" bgColor="none" class="ll"></app-ng-dynamic-breadcrumb>
 <router-outlet></router-outlet>
-<div *ngIf="isFirstTime" class="alert text-center cookiealert" role="alert">
+<div [@hinge]="isAnim" *ngIf="isFirstTime" class="alert text-center cookiealert" role="alert">
     <b>Do you like cookies?</b> 🍪 We use cookies to ensure you get the best experience on our website. <a routerLink="/cookies">Learn more</a>
 
     <button 

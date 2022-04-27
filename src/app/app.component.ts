@@ -8,6 +8,7 @@ import { JourneyDetailsService } from './journey-details.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations:[
+    a.hingeAnimation()
   ]
 })
 export class AppComponent implements OnInit{
@@ -17,6 +18,7 @@ export class AppComponent implements OnInit{
   constructor(private journeyDetails:JourneyDetailsService){}
 
   isFirstTime:boolean = true;
+  isAnim:boolean = false;
 
   // BUG: Best to use observables to subscribe for changes
   ngOnInit(): void {
@@ -25,6 +27,9 @@ export class AppComponent implements OnInit{
   }
   onHideCookies()
   {
-    this.isFirstTime = false;
+    this.isAnim = true;
+    setTimeout(() => {
+      this.isFirstTime = false;
+    }, 1700);
   }
 }

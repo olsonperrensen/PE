@@ -11,15 +11,18 @@ import { DarkModeStatusService } from '../dark-mode-status.service';
   styleUrls: ['./datepicker.component.css'],
   animations: [
     a.fadeInLeftOnEnterAnimation(),
-    a.fadeInUpOnEnterAnimation() 
+    a.fadeInUpOnEnterAnimation(),
+    a.fadeOutRightAnimation(),
+    a.fadeOutRightOnLeaveAnimation()
   ]
 })
 
 
 export class DatepickerComponent implements OnInit, OnDestroy {
 
-  switch_status!:boolean
-
+  switch_status!:boolean;
+  isBtnClicked:boolean = false;
+  
   // native-actions
   constructor(private router:Router, private journeyDetails:JourneyDetailsService,
     private darkModeStatus:DarkModeStatusService) { }
@@ -88,7 +91,10 @@ export class DatepickerComponent implements OnInit, OnDestroy {
 
   onSubmit(f:NgForm)
   {
-    // Own validation to check traveling makes sense. (for more details, see the function)
+    this.isBtnClicked = true;
+    
+    setTimeout(() => {
+      // Own validation to check traveling makes sense. (for more details, see the function)
     this.trainValidator(f);
 
     // Continue to the next 'step' in buying tickets. 
@@ -102,6 +108,7 @@ export class DatepickerComponent implements OnInit, OnDestroy {
     {
       this.isCity = false;
     }
+    }, 600);
   }
 
     // Insert user values into Journey object.
