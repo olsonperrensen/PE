@@ -1,9 +1,32 @@
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <div *ngIf="1" [@fadeInOnEnter] [@fadeOutOnLeave]>
-                <button	*ngIf="1" [@fadeInOnEnter] [@fadeOutOnLeave] class="btn btn-warning">Touch me</button>
-            </div>
-        </div>
+<div class="card-deck">
+    <div [@rollInOnEnter] class="card" style="background-color: black;color:white">
+      <img class="card-img-top" src="../../assets/help-0.jpg" alt="Card image cap">
+      <div   class="card-body">
+        <h5 class="card-title"><a class="text-white" routerLink="/error">Tickets and travel info</a>&nbsp; <fa-icon [icon]="arrow"></fa-icon></h5>
+        <p class="card-text">Need help booking, changing or cancelling a ticket? Or do you have practical questions before you travel?</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 2 weeks ago</small>
+      </div>
     </div>
-</div>
+    <div routerLink="/error" [@rollInOnEnter]  class="card">
+      <img class="card-img-top" src="../../assets/help-1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><a class="text-dark" routerLink="/error">Compensation and discount</a> &nbsp;<fa-icon [icon]="arrow"></fa-icon></h5>
+        <p class="card-text text-dark">Here you can apply for a discount and compensation for delays, complain about conditions on your journey or get help with payment errors.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 1 month ago</small>
+      </div>
+    </div>
+    <div routerLink="/error" [@rollInOnEnter] style="background-color: black;color:white" class="card">
+      <img class="card-img-top" src="../../assets/help-2.webp" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><a class="text-white" routerLink="/error">Send us feedback</a>&nbsp; <fa-icon [icon]="arrow"></fa-icon></h5>
+        <p class="card-text">Do you want to complain or tell us something? We appreciate both praise and criticism.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 4 months ago</small>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,13 @@
+img
+{
+    margin: 10px;
+    width: 400px;
+    height: 250px;
+}
+.card
+{
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+    text-align: justify;
+}

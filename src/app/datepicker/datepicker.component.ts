@@ -13,7 +13,8 @@ import { DarkModeStatusService } from '../dark-mode-status.service';
     a.fadeInLeftOnEnterAnimation(),
     a.fadeInUpOnEnterAnimation(),
     a.fadeOutRightAnimation(),
-    a.fadeOutRightOnLeaveAnimation()
+    a.fadeOutRightOnLeaveAnimation(),
+    a.jackInTheBoxOnEnterAnimation()
   ]
 })
 
