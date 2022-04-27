@@ -5,7 +5,7 @@
   </div>
 </div>
 <div *ngIf="!isFetching" class="container">
-<img [@jackInTheBoxOnEnter] src="../../assets/date.jpg" width="40px" />
+<img [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" [@jackInTheBoxOnEnter] src="../../assets/date.png" width="40px" />
 <div class="row justify-content-center">
   <h6>You chose: {{userJourney.from}} - {{userJourney.to}} on {{userJourney.date}}</h6>
   <div class="col-auto">

@@ -4,6 +4,7 @@ import {Router } from '@angular/router';
 import { Journey } from '../journey';
 import { JourneyDetailsService } from '../journey-details.service';
 import * as a from 'angular-animations';
+import { DarkModeStatusService } from '../dark-mode-status.service';
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
@@ -16,11 +17,16 @@ import * as a from 'angular-animations';
 
 
 export class DatepickerComponent implements OnInit, OnDestroy {
+
+  switch_status!:boolean
+
   // native-actions
-  constructor(private router:Router, private journeyDetails:JourneyDetailsService) { }
+  constructor(private router:Router, private journeyDetails:JourneyDetailsService,
+    private darkModeStatus:DarkModeStatusService) { }
   ngOnInit(): void { 
     window.scroll({top:0,left:0,behavior:'smooth'});
     this.reverseLookup(); 
+    this.switch_status = this.darkModeStatus.getStatus();
    }
   ngOnDestroy(): void {
     this.journeyDetails.setUserJourney(this.userJourney);

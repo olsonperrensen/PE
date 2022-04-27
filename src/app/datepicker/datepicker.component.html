@@ -5,7 +5,7 @@
 id="big-form"
 [@fadeInLeftOnEnter]
 >
-    <h3><img src="../../assets/train_icon.png" width="25px" />Train</h3>
+    <h3><img [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" src="../../assets/train_icon.png" width="25px" />Train</h3>
     <button 
     type="button" 
     class="btn btn-dark demo"

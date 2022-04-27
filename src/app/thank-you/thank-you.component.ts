@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {NgbActiveModal, NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { DarkModeStatusService } from '../dark-mode-status.service';
 
 
 @Component({
@@ -61,10 +62,12 @@ export class NgbdModalContent {
   styleUrls: ['./thank-you.component.css']
 })
 export class ThankYouComponent implements OnInit {
+  
   ngOnInit(): void {
     window.scroll({top:0,left:0,behavior:'smooth'});
+    
     const modalRef = this.modalService.open(NgbdModalContent,{ scrollable: true,centered:true },);
     modalRef.componentInstance.name = 'Bjorn';
   }
-  constructor(private modalService: NgbModal){}
+  constructor(private modalService: NgbModal, private darkModeStatus:DarkModeStatusService){}
 }

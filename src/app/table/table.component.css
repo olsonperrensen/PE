@@ -7,7 +7,14 @@
 {
   padding: 25px;
 }
-
+.icon-dark
+{
+       filter: invert(1);
+}
+.icon-light
+{
+       filter: invert(0);
+}
 li
 {
   padding-bottom: 9px;

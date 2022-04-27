@@ -1,3 +1,12 @@
+.icon-dark
+{
+       filter: invert(1);
+}
+.icon-light
+{
+       filter: invert(0);
+}
+
 input
 {
        margin: 6px;
