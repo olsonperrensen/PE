@@ -6,11 +6,13 @@ import { DarkModeStatusService } from '../dark-mode-status.service';
 @Component({
   selector: 'ngbd-modal-content',
   template: `
-    <div class="modal-header">
+    <div [ngClass]="{dark:switch_status,light:!switch_status}" class="modal-header">
       <h4 class="modal-title">Would you like to create an account?</h4>
-      <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+      <button  
+      [ngClass]="{darkb:switch_status,lightb:!switch_status}"
+      type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
     </div>
-    <div class="modal-body">
+    <div [ngClass]="{dark:switch_status,light:!switch_status}" class="modal-body">
       <p>Get all the benefits from our app, {{name}}!</p>
       <p> 
                    With an account, you can easily:</p>
@@ -46,14 +48,26 @@ import { DarkModeStatusService } from '../dark-mode-status.service';
     routerLink="signup"
     (click)="activeModal.close('Close click')"
     >Yes</button>
-      <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+      <button 
+      [ngClass]="{darkb:switch_status,lightb:!switch_status}"
+      type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
     </div>
-  `
+  `, 
+  styles: [` 
+  .dark { color: white; background-color: black; } 
+  .darkb { filter: invert(1); } 
+  .light{color: black; background-color: white;}
+  .lightb {filter: invert(0); } 
+  `]
 })
-export class NgbdModalContent {
+export class NgbdModalContent implements OnInit{
   @Input() name: any;
-
-  constructor(public activeModal: NgbActiveModal) {}
+  switch_status!:boolean
+  constructor(public activeModal: NgbActiveModal,private darkModeStatus:DarkModeStatusService) {
+  }
+ngOnInit(): void {
+  this.switch_status = this.darkModeStatus.getStatus();
+}
 }
 
 @Component({
