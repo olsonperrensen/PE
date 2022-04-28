@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, NgModel } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Journey } from '../journey';
 import { JourneyCheckupService } from '../journey-checkup.service';
@@ -16,7 +16,8 @@ import { DarkModeStatusService } from '../dark-mode-status.service';
     a.jackInTheBoxOnEnterAnimation(),
     a.slideInUpOnEnterAnimation(),
     a.flipInXOnEnterAnimation(),
-    a.flipInYOnEnterAnimation()
+    a.flipInYOnEnterAnimation(),
+    a.rotateInAnimation()
   ]
 })
 export class TableComponent implements OnInit {
@@ -34,10 +35,35 @@ export class TableComponent implements OnInit {
 
   isFetching:boolean=true;
   isDatepicker:boolean=true;
+  isMinusSignHovered:boolean=false;
+  isPlusSignHovered:boolean=false;
 
   constructor(private router:Router, private aRoute: ActivatedRoute, 
     private journeyDetails:JourneyDetailsService, private journeyCheckup:JourneyCheckupService,
     private R2: Renderer2,private darkModeStatus:DarkModeStatusService) { }
+
+    onMouseOver(str:string)
+    {
+      if(str === 'minus')
+      {
+        this.isMinusSignHovered = true;
+        this.isPlusSignHovered = false;
+      }
+      else
+      {
+        this.isPlusSignHovered = true;
+        this.isMinusSignHovered = false;
+      }
+    }
+
+    onTicketsChange(nTickets:NgModel)
+    {
+      console.log('hiii');
+      if(+nTickets.value > 10)
+      {
+        confirm('Are you sure you want to buy more than ten tickets?');
+      }
+    }
 
   ngOnInit(): void {
 
