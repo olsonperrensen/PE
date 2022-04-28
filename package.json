@@ -128,6 +128,7 @@
     "core-util-is": "^1.0.3",
     "cors": "^2.8.5",
     "cosmiconfig": "^7.0.1",
+    "credit-card-type": "^9.1.0",
     "critters": "^0.0.16",
     "cross-spawn": "^7.0.3",
     "css": "^3.0.0",

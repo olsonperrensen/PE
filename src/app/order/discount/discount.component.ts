@@ -20,11 +20,12 @@ export class DiscountComponent implements OnInit {
 
   onSubmit(f:NgForm)
   {
+    // ex. SALESUoqLfcs2022
     for(let i = 0; i < this.coupon_list.length;i++)
     {
       if(f.value.coupon === this.coupon_list[i])
       {
-        confirm('discount added!')
+        confirm('Your discount has been successfully added!')
       }
     }
   }

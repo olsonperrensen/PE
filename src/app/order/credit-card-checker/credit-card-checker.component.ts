@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-credit-card-checker',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreditCardCheckerComponent implements OnInit {
 
+  // creditCardType = require("credit-card-type");
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  onNgModelChange(card:NgModel)
+  {
+    if(card.value.length > 5 && card.value.length < 16)
+    {
+      // TO-DO
+    }
+    else
+    {
+     console.log('invalid card') 
+    }
+  }  
 
 }

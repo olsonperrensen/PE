@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Journey } from '../journey';
 import { JourneyDetailsService } from '../journey-details.service';
 import * as a from 'angular-animations'
+import { DarkModeStatusService } from '../dark-mode-status.service';
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
@@ -13,10 +14,15 @@ import * as a from 'angular-animations'
   ]
 })
 export class OrderComponent implements OnInit {
-  constructor(private router:Router, private journeyDetails:JourneyDetailsService) { }
+
+  switch_status!:boolean;
+
+  constructor(private router:Router, private journeyDetails:JourneyDetailsService,
+    private darkModeStatus:DarkModeStatusService) { }
   ngOnInit(): void {
     window.scroll({top:0,left:0,behavior:'smooth'});
     this.userJourney = this.journeyDetails.getUserJourney();
+    this.switch_status = this.darkModeStatus.getStatus();
   }
 
   userJourney!:Journey;

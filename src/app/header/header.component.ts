@@ -11,7 +11,6 @@ import { DarkModeStatusService } from '../dark-mode-status.service';
 export class HeaderComponent implements OnInit, AfterViewInit{
 
   ngAfterViewInit(): void {
-    console.log(this.switch.value)
   }
 
   @ViewChild('switch') switch!:HTMLInputElement;
