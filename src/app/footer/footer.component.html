@@ -1,13 +1,14 @@
 <div class="container">
     <footer class="py-5">
-      <div class="d-flex justify-content-between py-4 my-4 border-top gnu">
-        <div>TrainAM is licensed under the GNU General Public License v3.0
-        </div>
-          <div class="useful-links">
+      <div  
+      class="d-flex justify-content-between py-4 my-4 border-top gnu">
+        <div [@heartBeat]="isGNUMouseOver" (mouseover)="onGNUMouseOver()">
+          TrainAM is licensed under the GNU General Public License v3.0</div>
+          <div [@tada]="isLinkMouseOver" (mouseover)="onLinkMouseOver()"  class="useful-links">
             <a class="text-dark" routerLink="/sitemap">Sitemap</a>
             <a class="text-dark" routerLink="/cookies">Cookies</a>
-          <a class="text-dark" routerLink="/TOS">Terms of Service</a>
-          <a class="text-dark" routerLink="/privacy-policy">Privacy Policy</a>
+          <a  class="text-dark" routerLink="/TOS">Terms of Service</a>
+          <a  class="text-dark" routerLink="/privacy-policy">Privacy Policy</a>
           </div>
       </div>
     </footer>
