@@ -97,7 +97,7 @@ export class TableComponent implements OnInit {
     if(this.journeyCheckup.doCheckup())
     {
       this.isDatepicker = true;
-      this.router.navigate(['order']);
+      this.router.navigate(['order'],{queryParams:{'isTable':1}});
     }
     else
     {

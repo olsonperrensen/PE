@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import * as a from 'angular-animations';
-
+import * as CryptoJS from 'crypto-js';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -24,6 +24,9 @@ export class SignupComponent implements OnInit {
 
   onSubmit(form:NgForm)
   {
+    const secret = CryptoJS.AES.encrypt(JSON.stringify(form.value),'nghimax').toString();
+    console.log(secret);
+
     if(form.value.username.length < 4 || form.value.email.length < 4 
       || form.value.password.length < 4
       || form.value.cpassword.length < 4)
