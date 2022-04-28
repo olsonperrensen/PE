@@ -87,9 +87,61 @@
           </ul>
         </div>
       </div>
+
+
+      <div class="py-5">
+        <div class="container py-5">
+          
+      <div id="jquery" class="testimonial1 py-5 bg-light">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <h4 class="my-3">Check what our Customers are Saying</h4>
+              <h6 class="subtitle font-weight-normal">You can relay on our amazing features list and also our customer services will be great experience for you without doubt</h6>
+            </div>
+          </div>
+          <!-- Row  -->
+          <footer>
+          <div id="testi2" class="owl-carousel owl-theme testi1 mt-4">
+            <!-- item -->
+            <div [@slideInLeftOnEnter] [@slideOutRight]="anim_out" *ngIf="first_visible" class="item">
+              <div class="card card-shadow border-0 mb-4">
+                <div class="card-body">
+                  <div 
+                  class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4">
+                  <img src="../../assets/user1.jpg" alt="wrapkit" 
+                  class="thumb-img position-absolute rounded-circle" /> Alfredo Vargas Paredes</div>
+                  <h5 class="font-weight-light"><strong>"</strong> I have never booked this easy. My next trip will be to Vietnam! <strong>"</strong></h5>
+                  <span class="devider d-inline-block my-3"></span>
+                  <h6 class="font-weight-normal">Early access (Alpha) tester, Investor</h6>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div [@slideInLeftOnEnter] [@slideOutRight]="anim_out" *ngIf="!first_visible" class="item">
+              <div class="card card-shadow border-0 mb-4">
+                <div class="card-body">
+                  <div 
+                  class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4">
+                  <img src="../../assets/user2.jpg" alt="wrapkit" class="thumb-img position-absolute rounded-circle" /> Endri Fuccia</div>
+                  <h5 class="font-weight-light"><strong>"</strong>The entire application delivers such a clean design. TrainAM will stay with me.<strong>"</strong></h5>
+                  <span class="devider d-inline-block my-3"></span>
+                  <h6 class="font-weight-normal">Code reviewer, colleague</h6>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+          </div>
+        </footer>
+        </div>
+      </div>
+      <hr>
       <button 
           class="btn btn-warning"
           routerLink="/">Try our app</button>
     </div>
   </div>
+</div>
+</div>
 </div>
