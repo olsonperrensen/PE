@@ -1,5 +1,5 @@
 
-<div [@fadeInOnEnter] class="container">
+<div *ngIf="isTable" [@fadeInOnEnter] class="container">
     <main>
       <div class="py-5 text-center">
         <img [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" class="d-block mx-auto mb-4" src="../../assets/checkout.png" width="70px">
@@ -566,5 +566,13 @@
       </div>
     </main>
   </div>
-  
-  
+  <div *ngIf="!isTable" [@fadeInOnEnter] class="container">
+    <main>
+      <div class="py-5 text-center">
+        <img [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" class="d-block mx-auto mb-4" src="../../assets/checkout.png" width="70px">
+        <h2>Checkout form</h2>
+        <p class="lead">Please make sure you have tickets <strong>before</strong> coming to this page. 
+          You will then be able to proceed further.</p>
+  </div>
+  </main>
+  </div>

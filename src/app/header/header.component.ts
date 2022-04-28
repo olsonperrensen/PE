@@ -2,6 +2,8 @@ import { AfterViewChecked, AfterViewInit, Component, ComponentFactoryResolver, E
 import {DarkModeService} from 'angular-dark-mode';
 import { Observable } from 'rxjs';
 import { DarkModeStatusService } from '../dark-mode-status.service';
+import {faShoppingCart} from '@fortawesome/free-solid-svg-icons'
+import { OrderBasketService } from '../order-basket.service';
 
 @Component({
   selector: 'app-header',
@@ -15,11 +17,14 @@ export class HeaderComponent implements OnInit, AfterViewInit{
 
   @ViewChild('switch') switch!:HTMLInputElement;
   switch_status!:boolean;
+  faShoppingCart = faShoppingCart;
+
 
   darkMode$: Observable<boolean> = this.darkModeService.darkMode$;
  
   constructor(private darkModeService: DarkModeService,
-    private darkModeStatus:DarkModeStatusService, private R2:Renderer2) {}
+    private darkModeStatus:DarkModeStatusService, private R2:Renderer2,
+    private orderBasket:OrderBasketService) {}
  
   onToggle(): void {
     this.darkModeService.toggle();
@@ -37,6 +42,9 @@ export class HeaderComponent implements OnInit, AfterViewInit{
       this.darkModeStatus.setStatus(true);
       this.switch_status = true;
     }
+
+   
+
     // this.darkModeService.toggle();
   }
 

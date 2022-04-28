@@ -39,6 +39,7 @@ import { environment } from '../environments/environment';
 import { DarkModeStatusService } from './dark-mode-status.service';
 import { DiscountComponent } from './order/discount/discount.component';
 import { CreditCardCheckerComponent } from './order/credit-card-checker/credit-card-checker.component';
+import { OrderBasketService } from './order-basket.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -89,7 +90,7 @@ import { CreditCardCheckerComponent } from './order/credit-card-checker/credit-c
       registrationStrategy: 'registerWhenStable:30000'
     }),
   ],
-  providers: [JourneyDetailsService,TableGuardServiceGuard,DarkModeStatusService],
+  providers: [JourneyDetailsService,TableGuardServiceGuard,DarkModeStatusService,OrderBasketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
