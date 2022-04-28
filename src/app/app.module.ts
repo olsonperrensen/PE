@@ -37,6 +37,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { DarkModeStatusService } from './dark-mode-status.service';
+import { DiscountComponent } from './order/discount/discount.component';
+import { CreditCardCheckerComponent } from './order/credit-card-checker/credit-card-checker.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,6 +67,8 @@ import { DarkModeStatusService } from './dark-mode-status.service';
     TraintypeComponent,
     SitemapComponent,
     HelpContactComponent,
+    DiscountComponent,
+    CreditCardCheckerComponent,
   ],
   imports: [
     BrowserModule,
