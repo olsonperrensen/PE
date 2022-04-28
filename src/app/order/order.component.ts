@@ -4,6 +4,7 @@ import { Journey } from '../journey';
 import { JourneyDetailsService } from '../journey-details.service';
 import * as a from 'angular-animations'
 import { DarkModeStatusService } from '../dark-mode-status.service';
+import { NgForm, NgModel } from '@angular/forms';
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
@@ -26,10 +27,12 @@ export class OrderComponent implements OnInit {
   }
 
   userJourney!:Journey;
-
  do()
  {
   this.router.navigate(['/thank-you']);
  }
- 
+ onSubmit(f:NgForm)
+ {
+   console.log(f);  
+ }
 }
