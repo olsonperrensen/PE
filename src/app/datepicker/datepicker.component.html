@@ -9,6 +9,7 @@ id="big-form"
     <h3><img [@jackInTheBoxOnEnter]
       [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" src="../../assets/train_icon.png" width="25px" />Train</h3>
     <button
+    #demo
     type="button" 
     class="btn btn-dark demo"
     (click)="onDemo()">DEMO</button><hr>

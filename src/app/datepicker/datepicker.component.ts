@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { NgForm} from '@angular/forms';
 import {Router } from '@angular/router';
 import { Journey } from '../journey';
@@ -14,19 +14,34 @@ import { DarkModeStatusService } from '../dark-mode-status.service';
     a.fadeInUpOnEnterAnimation(),
     a.fadeOutRightAnimation(),
     a.fadeOutRightOnLeaveAnimation(),
-    a.jackInTheBoxOnEnterAnimation()
+    a.jackInTheBoxOnEnterAnimation(),
+    a.hueRotateAnimation()
   ]
 })
 
 
-export class DatepickerComponent implements OnInit, OnDestroy {
+export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
+
+  css_i:number = 100;
+  myInterval!:ReturnType<typeof setInterval>
+  ngAfterViewInit(): void {
+    this.myInterval = setInterval(() => {
+      if(this.css_i >= 1111)
+      {
+        this.css_i = 0;
+      }
+      this.R2.setStyle(this.demo.nativeElement,'background-color',`#${this.css_i}`);
+      this.css_i = this.css_i+50;
+    }, 40);
+  }
+  @ViewChild('demo') demo !:ElementRef;
 
   switch_status!:boolean;
   isBtnClicked:boolean = false;
   
   // native-actions
   constructor(private router:Router, private journeyDetails:JourneyDetailsService,
-    private darkModeStatus:DarkModeStatusService) { }
+    private darkModeStatus:DarkModeStatusService, private R2:Renderer2) { }
   ngOnInit(): void { 
     window.scroll({top:0,left:0,behavior:'smooth'});
     this.reverseLookup(); 
@@ -60,6 +75,7 @@ export class DatepickerComponent implements OnInit, OnDestroy {
     // Random selection of valid cities so the user can quickly try the app.
     onDemo()
     {
+      clearInterval(this.myInterval);
       // Logical (random) date from 2022 onwards. 
       this.f.setValue({date:new Date(2022, Math.random()*32, Math.random()*32)
         .toISOString().split('T')[0],
