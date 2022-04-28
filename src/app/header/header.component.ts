@@ -1,4 +1,4 @@
-import { Component, ComponentFactoryResolver, ElementRef, EventEmitter, OnChanges, OnInit, Output, Renderer2, SimpleChanges, ViewChild } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, Component, ComponentFactoryResolver, ElementRef, EventEmitter, OnChanges, OnInit, Output, Renderer2, SimpleChanges, ViewChild } from '@angular/core';
 import {DarkModeService} from 'angular-dark-mode';
 import { Observable } from 'rxjs';
 import { DarkModeStatusService } from '../dark-mode-status.service';
@@ -8,7 +8,11 @@ import { DarkModeStatusService } from '../dark-mode-status.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit, AfterViewInit{
+
+  ngAfterViewInit(): void {
+    console.log(this.switch.value)
+  }
 
   @ViewChild('switch') switch!:HTMLInputElement;
   switch_status!:boolean;

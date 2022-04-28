@@ -33,7 +33,7 @@
             [routerLinkActiveOptions]="{exact: true}">About us</a></li>
         </ul>
         <div class="form-check form-switch">
-          <input #switch="ngModel" ngModel name="switch" type="checkbox" class="form-check-input" id="darkSwitch"
+          <input #switch type="checkbox" class="form-check-input" id="darkSwitch"
           [checked]="darkMode$ | async"
     (change)="onToggle()" />
           <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
