@@ -40,6 +40,8 @@ import { DarkModeStatusService } from './dark-mode-status.service';
 import { DiscountComponent } from './order/discount/discount.component';
 import { CreditCardCheckerComponent } from './order/credit-card-checker/credit-card-checker.component';
 import { OrderBasketService } from './order-basket.service';
+import { FakeUsersLogComponent } from './datepicker/fake-users-log/fake-users-log.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,6 +72,7 @@ import { OrderBasketService } from './order-basket.service';
     HelpContactComponent,
     DiscountComponent,
     CreditCardCheckerComponent,
+    FakeUsersLogComponent,
   ],
   imports: [
     BrowserModule,
@@ -89,6 +92,7 @@ import { OrderBasketService } from './order-basket.service';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
+    HttpClientModule
   ],
   providers: [JourneyDetailsService,TableGuardServiceGuard,DarkModeStatusService,OrderBasketService],
   bootstrap: [AppComponent]

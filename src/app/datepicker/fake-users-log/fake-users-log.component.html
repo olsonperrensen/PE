@@ -1,0 +1,10 @@
+<div class="container p-3 text-center">
+    <div [@bounceInLeftOnEnter] [@bounceOutRight]="hasLeft" *ngFor="let user of users" class="col">
+        <span class="lead"><em>{{user.username}}&nbsp;</em></span>
+        <img
+        src={{user.src}}
+        width="16"
+        height="12">
+        <span class="lead" > &nbsp;just traveled from {{station1}} to {{station2}}</span>
+    </div>
+</div>
