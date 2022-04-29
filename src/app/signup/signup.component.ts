@@ -12,12 +12,11 @@ import * as CryptoJS from 'crypto-js';
   ]
 })
 export class SignupComponent implements OnInit {
-
+  token: string|undefined;
   submitted:boolean=false;
   isUnmatch:boolean=false;
   isTooShort:boolean=false;
-  constructor() { }
-
+  constructor() {  this.token = undefined; }
   ngOnInit(): void {
   }
 

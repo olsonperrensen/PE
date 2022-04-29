@@ -5,6 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { FormsModule } from '@angular/forms';
+import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
 import { FooterComponent } from './footer/footer.component';
 import { TableListComponent } from './table-list/table-list.component';
 import { FeaturesComponent } from './features/features.component';
@@ -92,9 +93,22 @@ import { HttpClientModule } from '@angular/common/http';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    HttpClientModule
+    HttpClientModule,
+    RecaptchaModule,
+  RecaptchaFormsModule,
+
   ],
-  providers: [JourneyDetailsService,TableGuardServiceGuard,DarkModeStatusService,OrderBasketService],
+  providers: [JourneyDetailsService,
+    TableGuardServiceGuard,
+    DarkModeStatusService,
+    OrderBasketService,
+    {
+      provide: RECAPTCHA_SETTINGS,
+      useValue: {
+        siteKey: environment.recaptcha.siteKey,
+      } as RecaptchaSettings,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -56,6 +56,7 @@
         <p *ngIf="!cpassword.valid&&cpassword.touched">Please re-enter your password.</p>
         <p *ngIf="isTooShort">At least four letters required.</p>
         <p *ngIf="isUnmatch">Passwords do not match.</p>
+        <re-captcha id="recaptcha" name="recaptcha" #recaptcha="ngModel" [(ngModel)]="token" required [class.is-invalid]="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)"></re-captcha>  
         <input 
         type="checkbox"
         ngModel
@@ -66,7 +67,7 @@
         #TOS="ngModel"
         >
         <label for="TOS"><p>I agree to the <a routerLink="/TOS">Terms of Service</a> and <a routerLink="/privacy-policy">Privacy Policy.</a><p></label>
-        <p *ngIf="!TOS.valid&&TOS.touched">You must agree to our TOS in order to create an account.</p>
+          <p *ngIf="!TOS.valid&&TOS.touched">You must agree to our TOS in order to create an account.</p>
         <hr>
         <button 
         type="submit" 
