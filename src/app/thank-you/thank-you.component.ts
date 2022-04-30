@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import {NgbActiveModal, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { DarkModeStatusService } from '../dark-mode-status.service';
 import { ProgressBarService } from '../progress-bar/progress-bar.service';
@@ -77,8 +77,14 @@ ngOnInit(): void {
   templateUrl: './thank-you.component.html',
   styleUrls: ['./thank-you.component.css']
 })
-export class ThankYouComponent implements OnInit {
+export class ThankYouComponent implements OnInit, OnDestroy {
   
+  ngOnDestroy(): void {
+    setTimeout(() => {
+      this.progressBar.setProgressBar('reset');
+    }, 800);
+  }
+
   ngOnInit(): void {
     window.scroll({top:0,left:0,behavior:'smooth'});
     this.progressBar.setProgressBar('step5');

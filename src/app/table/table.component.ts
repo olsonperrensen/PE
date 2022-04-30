@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { NgForm, NgModel } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Journey } from '../journey';
@@ -21,7 +21,10 @@ import { ProgressBarService } from '../progress-bar/progress-bar.service';
     a.rotateInAnimation()
   ]
 })
-export class TableComponent implements OnInit {
+export class TableComponent implements OnInit{
+
+  public_rows = 0;
+
   switch_status!:boolean;
   @ViewChild('tr1') tr1!:ElementRef;
 

@@ -20,7 +20,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr [ngClass]="{'tr-dark':switch_status, 'tr-light': !switch_status}" class="tr" *ngFor="let row of NghiTemp; 
+        <!-- BIND index with ts and make an if statement to show the rest
+        and hide the "continue reading" div -->
+        <tr [ngClass]="{'tr-dark':switch_status, 'tr-light': !switch_status}" class="tr" 
+        *ngFor="let row of NghiTemp; 
         let i = index;
         let f = first;
         let l = last;">

@@ -1,6 +1,7 @@
 .progress {
     background: rgba(0,0,0,0.1);
     border-radius: 100px;
+    margin-bottom: 5px;
   }
   
   .progress-value {
@@ -13,26 +14,48 @@
   {
     animation: step1 1s normal 0.5s forwards;
   }
+  .step1R
+  {
+    animation: step1 1s normal 0.5s reverse;
+  }
 
   .step2
   {
-    animation: step2 1s normal 0.5s forwards;
+    animation: step2 1s normal  forwards;
+  }
+  .step2R
+  {
+    animation: step2 1s normal  reverse;
   }
 
    .step3
   {
-    animation: step3 1s normal 0.5s forwards;
+    animation: step3 1s normal  forwards;
+  }
+     .step3R
+  {
+    animation: step3 1s normal  reverse;
   }
 
   .step4
   {
-    animation: step4 1s normal 0.5s forwards;
+    animation: step4 1s normal  forwards;
+  }
+    .step4R
+  {
+    animation: step4 1s normal  reverse;
   }
 
    .step5
   {
-    animation: step5 1s normal 0.5s forwards;
+    animation: step5 1s normal  forwards;
     margin-left: 0px;
+    background: #198754;
+  }
+
+  .reset
+  {
+    animation: reset 1s normal  forwards;
   }
   
   @keyframes step1 {
@@ -40,18 +63,22 @@
     100% { width: 20%; }
   }
     @keyframes step2 {
-    0% { width: 0; }
+    0% { width: 20%; }
     100% { width: 40%; }
   }
   @keyframes step3 {
-    0% { width: 0; }
+    0% { width: 40%; }
     100% { width: 60%; }
   }
   @keyframes step4 {
-    0% { width: 0; }
+    0% { width: 60%; }
     100% { width: 80%; }
   }
   @keyframes step5 {
-    0% { width: 0; }
+    0% { width: 80%; }
     100% { width: 100%; }
+  }
+  @keyframes reset {
+    0% { width: 100%; }
+    100% { width: 0%; }
   }
