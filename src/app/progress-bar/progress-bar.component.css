@@ -4,10 +4,35 @@
   }
   
   .progress-value {
-    animation: step1 1s normal 0.5s forwards;
     border-radius: 100px;
     background: rgba(0,0,0,0.11);
     margin-left: -5px;
+  }
+
+  .step1
+  {
+    animation: step1 1s normal 0.5s forwards;
+  }
+
+  .step2
+  {
+    animation: step2 1s normal 0.5s forwards;
+  }
+
+   .step3
+  {
+    animation: step3 1s normal 0.5s forwards;
+  }
+
+  .step4
+  {
+    animation: step4 1s normal 0.5s forwards;
+  }
+
+   .step5
+  {
+    animation: step5 1s normal 0.5s forwards;
+    margin-left: 0px;
   }
   
   @keyframes step1 {

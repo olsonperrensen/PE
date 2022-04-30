@@ -7,6 +7,7 @@ import { JourneyDetailsService } from '../journey-details.service';
 import * as a from 'angular-animations';
 import { faMinus,faPlus } from '@fortawesome/free-solid-svg-icons';
 import { DarkModeStatusService } from '../dark-mode-status.service';
+import { ProgressBarService } from '../progress-bar/progress-bar.service';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -40,7 +41,7 @@ export class TableComponent implements OnInit {
 
   constructor(private router:Router, private aRoute: ActivatedRoute, 
     private journeyDetails:JourneyDetailsService, private journeyCheckup:JourneyCheckupService,
-    private R2: Renderer2,private darkModeStatus:DarkModeStatusService) { }
+    private R2: Renderer2,private darkModeStatus:DarkModeStatusService, private progressBar:ProgressBarService) { }
 
     onMouseOver(str:string)
     {
@@ -85,6 +86,8 @@ export class TableComponent implements OnInit {
     setTimeout(() => {
       this.isFetching = false;
     }, 300);
+
+    this.progressBar.setProgressBar('step3');
   }
 
   // Go to the next 'step'
@@ -98,6 +101,7 @@ export class TableComponent implements OnInit {
     {
       this.isDatepicker = true;
       this.router.navigate(['order'],{queryParams:{'isTable':1}});
+      this.progressBar.setProgressBar('step4');
     }
     else
     {

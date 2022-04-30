@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {NgbActiveModal, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { DarkModeStatusService } from '../dark-mode-status.service';
+import { ProgressBarService } from '../progress-bar/progress-bar.service';
 
 
 @Component({
@@ -63,7 +64,8 @@ import { DarkModeStatusService } from '../dark-mode-status.service';
 export class NgbdModalContent implements OnInit{
   @Input() name: any;
   switch_status!:boolean
-  constructor(public activeModal: NgbActiveModal,private darkModeStatus:DarkModeStatusService) {
+  constructor(public activeModal: NgbActiveModal,private darkModeStatus:DarkModeStatusService
+    ) {
   }
 ngOnInit(): void {
   this.switch_status = this.darkModeStatus.getStatus();
@@ -79,9 +81,10 @@ export class ThankYouComponent implements OnInit {
   
   ngOnInit(): void {
     window.scroll({top:0,left:0,behavior:'smooth'});
-    
+    this.progressBar.setProgressBar('step5');
     const modalRef = this.modalService.open(NgbdModalContent,{ scrollable: true,centered:true },);
     modalRef.componentInstance.name = 'Bjorn';
   }
-  constructor(private modalService: NgbModal, private darkModeStatus:DarkModeStatusService){}
+  constructor(private modalService: NgbModal, private darkModeStatus:DarkModeStatusService,
+    private progressBar:ProgressBarService){}
 }

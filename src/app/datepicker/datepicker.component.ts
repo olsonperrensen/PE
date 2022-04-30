@@ -5,6 +5,7 @@ import { Journey } from '../journey';
 import { JourneyDetailsService } from '../journey-details.service';
 import * as a from 'angular-animations';
 import { DarkModeStatusService } from '../dark-mode-status.service';
+import { ProgressBarService } from '../progress-bar/progress-bar.service';
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
@@ -41,11 +42,12 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
   
   // native-actions
   constructor(private router:Router, private journeyDetails:JourneyDetailsService,
-    private darkModeStatus:DarkModeStatusService, private R2:Renderer2) { }
+    private darkModeStatus:DarkModeStatusService, private R2:Renderer2, private progressBar:ProgressBarService) { }
   ngOnInit(): void { 
     window.scroll({top:0,left:0,behavior:'smooth'});
     this.reverseLookup(); 
     this.switch_status = this.darkModeStatus.getStatus();
+    this.progressBar.setProgressBar('step1');
    }
   ngOnDestroy(): void {
     this.journeyDetails.setUserJourney(this.userJourney);
@@ -118,7 +120,8 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
     if(this.isFromValid&&this.isToValid)
     {
      //   this.router.navigate(['/table'+'/'+this.userJourney.from+'/'+this.userJourney.to+'/'+f.value['date']]);
-      this.router.navigate(['train-type'])
+      this.router.navigate(['train-type']);
+      this.progressBar.setProgressBar('step2');
     }
     // Activate hints in CSS (see *ngIf).
     else 

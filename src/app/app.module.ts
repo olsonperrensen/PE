@@ -44,6 +44,7 @@ import { OrderBasketService } from './order-basket.service';
 import { FakeUsersLogComponent } from './datepicker/fake-users-log/fake-users-log.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { ProgressBarService } from './progress-bar/progress-bar.service';
 
 @NgModule({
   declarations: [
@@ -110,7 +111,9 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
       useValue: {
         siteKey: environment.recaptcha.siteKey,
       } as RecaptchaSettings,
-    }
+    },
+    ProgressBarService
+  
   ],
   bootstrap: [AppComponent]
 })
