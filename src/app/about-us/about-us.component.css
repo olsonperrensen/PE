@@ -5,7 +5,14 @@
 * ==========================================
 *
 */
-
+.notice-me
+{
+  margin-top: -166px;
+}
+.first-div
+{
+  margin-top: -90px
+}
 .social-link {
     width: 30px;
     height: 30px;
