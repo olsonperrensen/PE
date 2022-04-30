@@ -32,7 +32,7 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
       }
       this.R2.setStyle(this.demo.nativeElement,'background-color',`#${this.css_i}`);
       this.css_i = this.css_i+50;
-    }, 40);
+    }, 170);
   }
   @ViewChild('demo') demo !:ElementRef;
 

@@ -1,7 +1,7 @@
 <div class="container" [@fadeInOnEnter]>
     <div class="row">
     <div class="col-4">
-        <svg class="thumbnail" focusable="false" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 60 60" xml:space="preserve" aria-label="Våra biljetter">
+        <svg [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" class="thumbnail" focusable="false" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 60 60" xml:space="preserve" aria-label="Våra biljetter">
             <title>Våra biljetter</title>
             <g id="icon_box">
                 <rect fill="none" width="60" height="60"></rect>
@@ -29,9 +29,9 @@
     </div>
 
     <div class="col-4">
-        <img class="thumbnail" src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/200/external-login-freelancer-xnimrodx-lineal-xnimrodx.png" alt="">
+        <img [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" class="thumbnail" src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/200/external-login-freelancer-xnimrodx-lineal-xnimrodx.png" alt="">
         <h4 class="text-center">Create an account</h4>
-        <p> 
+        <p style="text-align: center;"> 
                    With an account, you can easily:</p>
             <div class="bodyItem__text">
                 <div class="richText" data-controller="generic/ui/RichText" data-config="{&quot;mode&quot;:&quot;responsiveTable&quot;}" data-type="cms-Tekst">
@@ -65,7 +65,7 @@
     </div>
 
     <div class="col-4">
-        <svg class="thumbnail" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 595.3 549.1" enable-background="new 0 0 64 64" xml:space="preserve" role="img" aria-label="Icon">
+        <svg [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" class="thumbnail" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 595.3 549.1" enable-background="new 0 0 64 64" xml:space="preserve" role="img" aria-label="Icon">
             <title>Icon</title>
             <g>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M331.4,175.1c0,0-52.6-59.4-52.6-94.4c0-31.6,21.1-52.6,52.6-52.6

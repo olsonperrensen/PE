@@ -43,6 +43,8 @@ import { CreditCardCheckerComponent } from './order/credit-card-checker/credit-c
 import { OrderBasketService } from './order-basket.service';
 import { FakeUsersLogComponent } from './datepicker/fake-users-log/fake-users-log.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,6 +76,7 @@ import { HttpClientModule } from '@angular/common/http';
     DiscountComponent,
     CreditCardCheckerComponent,
     FakeUsersLogComponent,
+    ProgressBarComponent,
   ],
   imports: [
     BrowserModule,

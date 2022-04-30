@@ -1,0 +1,32 @@
+.progress {
+    background: rgba(0,0,0,0.1);
+    border-radius: 100px;
+  }
+  
+  .progress-value {
+    animation: step1 1s normal 0.5s forwards;
+    border-radius: 100px;
+    background: rgba(0,0,0,0.11);
+    margin-left: -5px;
+  }
+  
+  @keyframes step1 {
+    0% { width: 0; }
+    100% { width: 20%; }
+  }
+    @keyframes step2 {
+    0% { width: 0; }
+    100% { width: 40%; }
+  }
+  @keyframes step3 {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+  @keyframes step4 {
+    0% { width: 0; }
+    100% { width: 80%; }
+  }
+  @keyframes step5 {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }

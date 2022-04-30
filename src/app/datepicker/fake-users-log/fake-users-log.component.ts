@@ -32,7 +32,7 @@ export class FakeUsersLogComponent implements OnInit {
     ('https://randomuser.me/api/').subscribe(res => 
     {
       this.results = res;
-      this.username = this.results.results[0].login.username;
+      this.username = this.results.results[0].name.first;
       this.nat = this.results.results[0].nat.toLowerCase();
 
       this.users.push(
@@ -49,7 +49,7 @@ export class FakeUsersLogComponent implements OnInit {
     ('https://randomuser.me/api/').subscribe(res => 
     {
       this.results = res;
-      this.username = this.results.results[0].login.username;
+      this.username = this.results.results[0].name.first;
       this.nat = this.results.results[0].nat.toLowerCase();
 
       this.users.push(
@@ -66,7 +66,7 @@ export class FakeUsersLogComponent implements OnInit {
     ('https://randomuser.me/api/').subscribe(res => 
     {
       this.results = res;
-      this.username = this.results.results[0].login.username;
+      this.username = this.results.results[0].name.first;
       this.nat = this.results.results[0].nat.toLowerCase();
 
       this.users.push(
@@ -79,7 +79,7 @@ export class FakeUsersLogComponent implements OnInit {
     );
     this.hasLeft = !this.hasLeft;
     this.users = [];
-  }, 2000);
+  }, 9000);
   
   }
 
