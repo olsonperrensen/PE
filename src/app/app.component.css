@@ -32,3 +32,21 @@
     margin-left: 10px;
     vertical-align: baseline;
 }
+.float{
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:40px;
+	right:40px;
+	background-color:#212327;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+svg
+{
+    margin-top: 25%;
+    width: 50%;
+    filter: invert(1);
+}
