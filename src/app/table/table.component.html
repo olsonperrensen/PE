@@ -19,14 +19,30 @@
           <td>Total Kilometers Travelled</td>
         </tr>
       </thead>
-      <tbody>
+      <tbody *ngIf="!isExpanding">
+        <!-- BIND index with ts and make an if statement to show the rest
+        and hide the "continue reading" div -->
+        <tr [ngClass]="{'tr-dark':switch_status, 'tr-light': !switch_status}" class="tr" 
+        *ngFor="let row of NghiTempSlice; 
+        let i = index;
+        let f = first;"
+        >
+          <td [ngStyle]="{'font-weight': (f?'bold':'')}">{{row.CITY}}</td>
+          <td>{{row.DATE}}</td>
+          <td>hr</td>
+          <td>hr</td>
+          <td>{{row.KM}}</td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="isExpanding">
         <!-- BIND index with ts and make an if statement to show the rest
         and hide the "continue reading" div -->
         <tr [ngClass]="{'tr-dark':switch_status, 'tr-light': !switch_status}" class="tr" 
         *ngFor="let row of NghiTemp; 
         let i = index;
         let f = first;
-        let l = last;">
+        let l = last;"
+        >
           <td [ngStyle]="{'font-weight': (f||l?'bold':'')}">{{row.CITY}}</td>
           <td>{{row.DATE}}</td>
           <td>hr</td>
@@ -35,9 +51,16 @@
         </tr>
       </tbody>
     </table>
-    <div class="float">
-      <fa-icon class="fa rounded mx-auto d-block my-float" [icon]="faArrowsDownToLine"></fa-icon>
+    <a 
+    *ngIf="!isExpanding"
+    (click)="onExpandClick()" class="text-light" routerLink="/table">
+    <div [@fadeOutDown]="isExpandingAnim"  class="float">
+      <!-- <fa-icon class="fa rounded mx-auto my-float" [icon]="faArrowDown"></fa-icon> -->
+      <svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down-long" 
+      class="mx-auto my-float  svg-inline--fa fa-arrow-down-long" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M9.375 329.4c12.51-12.51 32.76-12.49 45.25 0L128 402.8V32c0-17.69 14.31-32 32-32s32 14.31 32 32v370.8l73.38-73.38c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-128 128c-12.5 12.5-32.75 12.5-45.25 0l-128-128C-3.125 362.1-3.125 341.9 9.375 329.4z"></path></svg>
     </div>
+    </a>
+    <div *ngIf="isExpanding">
     <form #f="ngForm" (ngSubmit)="onSubmit(f)">
       <select 
       class="form-select form-select-sm"
@@ -48,9 +71,9 @@
       name="ticket_name"
       required>
         <option value="0" selected>Choose your ticket</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+        <option value="1">First Class</option>
+        <option value="2">Second Class</option>
+        <option value="3">Standing</option>
       </select>
       <div 
       [@flipInYOnEnter]
@@ -71,7 +94,8 @@
       </div>
       <div 
       [ngClass]="{'div-dark':switch_status, 'div-light': !switch_status}"
-      [@flipInXOnEnter]="ticket_name.valid && ticket_name.dirty" *ngIf="ticket_name.valid && ticket_name.dirty" class="col card">
+      [@flipInXOnEnter]="ticket_name.valid && ticket_name.dirty" 
+      *ngIf="ticket_name.valid && ticket_name.dirty" class="col card">
         <p>This ticket includes the following:</p>
           <ul>
             <li>Ticket name: test</li>
@@ -106,12 +130,14 @@
         </div>
       </div>
       <button 
+      [disabled]="!ticket_name.dirty"
     (click)="onClick()" 
     class="btn btn-primary"
     [ngClass]="{'btn-warning':!isDatepicker}">Order now</button>
     <p *ngIf="!isDatepicker" style="color: red;"><strong>Warning!</strong> You didn't come from the Home page.
     Are you really sure you want to take this specific trip? </p>
     </form>
+  </div>
   </div>
 </div>   
   </div>
