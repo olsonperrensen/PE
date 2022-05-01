@@ -9,6 +9,14 @@
             <a class="text-dark" routerLink="/cookies">Cookies</a>
           <a  class="text-dark" routerLink="/TOS">Terms of Service</a>
           <a  class="text-dark" routerLink="/privacy-policy">Privacy Policy</a>
+          <div class="d-inline-block">
+            <select #lang (change)="changeLang(lang.value)" class="form-select">
+              <option [selected]="lang_ts == 'en'" value="en" selected>English</option>
+              <option [selected]="lang_ts == 'es'" value="es">Spanish</option>
+              <option [selected]="lang_ts == 'nl'" value="nl">Dutch</option>
+              <option [selected]="lang_ts == 'vn'" value="vn">Vietnamese</option>
+            </select>
+          </div>
           </div>
       </div>
     </footer>

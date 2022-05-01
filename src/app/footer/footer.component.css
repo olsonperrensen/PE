@@ -23,3 +23,7 @@ a:hover
 {
        filter: invert(0);
 }
+img
+{
+    width: 17px;
+}

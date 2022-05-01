@@ -2,6 +2,7 @@ import *  as a from 'angular-animations';
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { Journey } from './journey';
 import { JourneyDetailsService } from './journey-details.service';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ export class AppComponent implements OnInit{
 
   userJourney!:Journey;
 
-  constructor(private journeyDetails:JourneyDetailsService){}
+  constructor(private journeyDetails:JourneyDetailsService,
+    private httpClient:HttpClient){}
 
   isFirstTime:boolean = true;
   isAnim:boolean = false;
@@ -24,7 +26,8 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
       this.userJourney = this.journeyDetails.getUserJourney();
       console.log(`From app.component:${this.userJourney.from}-${this.userJourney.to}-${this.userJourney.date}`.toUpperCase());
-  }
+    
+    }
   onHideCookies()
   {
     this.isAnim = true;

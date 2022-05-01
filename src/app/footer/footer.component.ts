@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import * as a from 'angular-animations';
 import { DarkModeStatusService } from '../dark-mode-status.service';
 @Component({
@@ -12,6 +12,7 @@ import { DarkModeStatusService } from '../dark-mode-status.service';
 export class FooterComponent implements OnInit {
 
   switch_status:boolean=false;
+  lang_ts = '';
 
   constructor(private darkModeStatus:DarkModeStatusService) { }
   
@@ -33,6 +34,12 @@ export class FooterComponent implements OnInit {
   }
   ngOnInit(): void {
     this.switch_status = this.darkModeStatus.getStatus();
+    this.lang_ts = localStorage.getItem('lang') || 'en';
   }
 
+    changeLang(lang:any)
+    {
+      localStorage.setItem('lang',lang);
+      window.location.reload();
+    }
 }
