@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as a from 'angular-animations';
+import { DarkModeStatusService } from '../dark-mode-status.service';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -9,7 +10,11 @@ import * as a from 'angular-animations';
   ]
 })
 export class FooterComponent implements OnInit {
-  constructor() { }
+
+  switch_status:boolean=false;
+
+  constructor(private darkModeStatus:DarkModeStatusService) { }
+  
   isLinkMouseOver:boolean = false;
   isGNUMouseOver:boolean = false;
   onLinkMouseOver()
@@ -27,6 +32,7 @@ export class FooterComponent implements OnInit {
     }, 2800);
   }
   ngOnInit(): void {
+    this.switch_status = this.darkModeStatus.getStatus();
   }
 
 }

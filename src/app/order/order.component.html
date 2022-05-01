@@ -559,7 +559,7 @@
             <app-credit-card-checker></app-credit-card-checker>
             <hr class="my-4">
   
-            <button class="w-100 btn btn-primary btn-lg" type="submit"
+            <button [disabled]="!f.dirty" class="w-100 btn btn-primary btn-lg" type="submit"
             (click)="do()">Continue to checkout</button>
           </form>
         </div>
