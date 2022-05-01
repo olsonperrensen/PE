@@ -5,8 +5,7 @@ import * as a from 'angular-animations';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
   animations:[
-    a.tadaAnimation(),
-    a.heartBeatAnimation()
+    a.fadeInOnEnterAnimation()
   ]
 })
 export class FooterComponent implements OnInit {

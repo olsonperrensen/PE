@@ -45,6 +45,7 @@ import { FakeUsersLogComponent } from './datepicker/fake-users-log/fake-users-lo
 import { HttpClientModule } from '@angular/common/http';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { ProgressBarService } from './progress-bar/progress-bar.service';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { ProgressBarService } from './progress-bar/progress-bar.service';
     CreditCardCheckerComponent,
     FakeUsersLogComponent,
     ProgressBarComponent,
+    ComingSoonComponent,
   ],
   imports: [
     BrowserModule,

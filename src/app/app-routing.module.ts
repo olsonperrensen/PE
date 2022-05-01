@@ -21,6 +21,7 @@ import { ErrorPermissionComponent } from './error-permission/error-permission.co
 import { TraintypeComponent } from './traintype/traintype.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { HelpContactComponent } from './help-contact/help-contact.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 const appRoutes: Routes = [
   { path: '', component:  DatepickerComponent,
@@ -28,7 +29,7 @@ const appRoutes: Routes = [
     breadcrumb: [
       {
         label: 'Home\t/',
-        url: '/'
+        url: ''
       }
     ]
   },},
@@ -41,7 +42,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Train type',
-        url: '/train-type'
+        url: ''
       }
     ]
   },},
@@ -54,7 +55,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Features',
-        url: '/features'
+        url: ''
       }
     ]
   },},
@@ -67,7 +68,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Pricing',
-        url: '/pricing'
+        url: ''
       }
     ]
   },},{ path: 'help-contact', component:  HelpContactComponent,
@@ -79,7 +80,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Help & Contact',
-        url: '/help-contact'
+        url: ''
       }
     ]
   },},
@@ -92,7 +93,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'F.A.Q.',
-        url: '/faq'
+        url: ''
       }
     ]
   },},
@@ -105,7 +106,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'About Us',
-        url: '/about-us'
+        url: ''
       }
     ]
   },},
@@ -114,7 +115,7 @@ const appRoutes: Routes = [
     breadcrumb: [
       {
         label: '404',
-        url: '/error'
+        url: ''
       }]
   },},
   { path: 'login', component:  LoginComponent,
@@ -126,7 +127,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Log in',
-        url: '/login'
+        url: ''
       }
     ]
   },},
@@ -139,7 +140,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Sign up',
-        url: '/signup'
+        url: ''
       }
     ]
   },},
@@ -155,7 +156,7 @@ const appRoutes: Routes = [
       {label:'Sign up',url:'/signup'},
       {
         label: 'Terms of Service',
-        url: '/TOS'
+        url: ''
       }
     ]
   },},
@@ -169,7 +170,7 @@ const appRoutes: Routes = [
       {label:'Sign up',url:'/signup'},
       {
         label: 'Privacy Policy',
-        url: '/privacy-policy'
+        url: ''
       }
     ]
   },},
@@ -186,7 +187,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Table',
-        url: '/table/:from/:to/:date'
+        url: ''
       }
     ]
   },},
@@ -208,7 +209,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Order',
-        url: '/order'
+        url: ''
       }
     ]
   },},
@@ -234,7 +235,7 @@ const appRoutes: Routes = [
       ,
       {
         label: 'Thank You!',
-        url:'/thank-you'
+        url:''
       }
     ]
   },},
@@ -247,7 +248,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Cookies',
-        url: '/cookies'
+        url: ''
       }
     ]
   },},
@@ -260,7 +261,19 @@ const appRoutes: Routes = [
       },
       {
         label: '403',
-        url: '/error-permission'
+        url: ''
+      }
+    ]
+  },},{ path: 'coming-soon', component:  ComingSoonComponent,
+  data: {
+    breadcrumb: [
+      {
+        label: 'Home',
+        url: '/'
+      },
+      {
+        label: 'Coming Soon!',
+        url: ''
       }
     ]
   },},
@@ -273,7 +286,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Sitemap',
-        url: '/sitemap'
+        url: ''
       }
     ]
   },},

@@ -2,9 +2,9 @@
     <footer class="py-5">
       <div  
       class="d-flex justify-content-between py-4 my-4 border-top gnu">
-        <div [@heartBeat]="isGNUMouseOver" (mouseover)="onGNUMouseOver()">
+        <div [@fadeInOnEnter]="isGNUMouseOver" (mouseover)="onGNUMouseOver()">
           TrainAM is licensed under the GNU General Public License v3.0</div>
-          <div [@tada]="isLinkMouseOver" (mouseover)="onLinkMouseOver()"  class="useful-links">
+          <div [@fadeInOnEnter]="isLinkMouseOver" (mouseover)="onLinkMouseOver()"  class="useful-links">
             <a class="text-dark" routerLink="/sitemap">Sitemap (All Pages)</a>
             <a class="text-dark" routerLink="/cookies">Cookies</a>
           <a  class="text-dark" routerLink="/TOS">Terms of Service</a>
