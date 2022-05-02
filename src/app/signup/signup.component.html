@@ -12,6 +12,7 @@
       <form #f="ngForm" (ngSubmit)="onSubmit(f)">
         <label for="">Username:</label>
         <input 
+        placeholder="johnsmith"
         type="text"
         ngModel
         required
@@ -23,6 +24,7 @@
         <p *ngIf="isTooShort">At least four letters required.</p>
         <label for="">Email address:</label>
         <input 
+        placeholder="john.smith@gmail.com"
         type="email"
         ngModel
         required
@@ -35,6 +37,7 @@
         <p *ngIf="isTooShort">At least four letters required.</p>
         <label for="">Password:</label>
         <input 
+        placeholder="********"
         type="password"
         ngModel
         required
@@ -46,6 +49,7 @@
         <p *ngIf="isTooShort">At least four letters required.</p>
         <label for="">Confirm password:</label>
         <input 
+        placeholder="********"
         type="password"
         ngModel
         required
@@ -55,7 +59,7 @@
         [ngClass]="{invalid:isTooShort||isUnmatch}">
         <p *ngIf="!cpassword.valid&&cpassword.touched">Please re-enter your password.</p>
         <p *ngIf="isTooShort">At least four letters required.</p>
-        <p *ngIf="isUnmatch">Passwords do not match.</p>
+        <p *ngIf="isUnmatch">Please enter the same password in both fields. Try again!</p>
         <re-captcha id="recaptcha" name="recaptcha" #recaptcha="ngModel" [(ngModel)]="token" required [class.is-invalid]="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)"></re-captcha>  
         <input 
         type="checkbox"
