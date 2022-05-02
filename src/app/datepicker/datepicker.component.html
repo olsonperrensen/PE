@@ -93,9 +93,9 @@ id="big-form"
   *ngFor="let marker of markers"
   [latitude]="+marker.lat" [longitude]="+marker.lng"
   ></agm-marker>
-  <!-- <agm-marker 
+  <agm-marker iconUrl="https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|ffc107"
   [latitude]="lat" [longitude]="lng"
-  ></agm-marker> -->
+  ></agm-marker>
 </agm-map>
 <div #map></div>
 <app-fake-users-log></app-fake-users-log>
