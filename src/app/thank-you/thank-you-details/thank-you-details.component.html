@@ -2,18 +2,23 @@
     <div class="title">Purchase Reciept</div>
     <div [ngClass]="{'thank-you-dark':switch_status,'thank-you-light':!switch_status}" class="info">
         <div class="row">
+            <div class="d-block"> <span id="heading">Full Name</span><br> <span id="details" >Mr. Sven Bjornsson</span> </div>
+        </div>
+    </div>
+    <div [ngClass]="{'thank-you-dark':switch_status,'thank-you-light':!switch_status}" class="info">
+        <div class="row">
             <div class="col-7"> <span id="heading">Date</span><br> <span id="details" >10 October 2018</span> </div>
             <div class="col-5 pull-right"> <span id="heading">Order No.</span><br> <span id="details">012j1gvs356c</span> </div>
         </div>
     </div>
     <div [ngClass]="{'thank-you-dark':switch_status,'thank-you-light':!switch_status}" class="pricing">
         <div class="row">
-            <div class="col-9"> <span id="name">BEATS Solo 3 Wireless Headphones</span> </div>
-            <div class="col-3"> <span id="price">£299.99</span> </div>
+            <div class="col-9"> <span id="name">Standard ticket</span> </div>
+            <div class="col-3"> <span id="price">£229.99</span> </div>
         </div>
         <div class="row">
-            <div class="col-9"> <span id="name">Shipping</span> </div>
-            <div class="col-3"> <span id="price">£33.00</span> </div>
+            <div class="col-9"> <span id="name">Est. Tax - 21% (Belgium)</span> </div>
+            <div class="col-3"> <span id="price">+ £33.00</span> </div>
         </div>
     </div>
     <div class="total">
@@ -36,7 +41,7 @@
     <div class="footer">
         <div class="row">
             <div class="col-2"><img class="img-fluid" src="../../../assets/trainam.PNG"></div>
-            <div class="col-10">Want any help? Please &nbsp;<a> contact us</a></div>
+            <div class="col-10">Want any help? Please &nbsp;<a routerLink="/help-contact"> contact us</a></div>
         </div>
     </div>
 </div>
