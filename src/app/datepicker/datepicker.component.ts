@@ -184,7 +184,47 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
         "lng": "106.0216335562631",
         "name": "Dong Le"
     }
-    
+    , 
+    {
+        "id": "19",
+        "lat": "18.688197740004203",
+        "lng": "105.66403429735706",
+        "name": "Vinh"
+    }   , 
+    {
+        "id": "20",
+        "lat": "19.812919811542447",
+        "lng": "105.7679245433963",
+        "name": "Thanh Hoa"
+    }  
+    , 
+    {
+        "id": "21",
+        "lat": "20.242190582318173",
+        "lng": "105.97495255078849",
+        "name": "Ninh Binh"
+    }
+    , 
+    {
+        "id": "22",
+        "lat": "20.421522668120183",
+        "lng": "106.16451479922983",
+        "name": "Nam Dinh"
+    }    
+    , 
+    {
+        "id": "23",
+        "lat": "20.421522668120183",
+        "lng": "106.16451479922983",
+        "name": "Nam Dinh"
+    } 
+    , 
+    {
+        "id": "24",
+        "lat": "20.540695666662106",
+        "lng": "105.91303641272619",
+        "name": "Phu Ly"
+    }    
 ];
 
   // Register html form
