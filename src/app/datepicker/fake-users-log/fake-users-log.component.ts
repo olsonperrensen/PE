@@ -28,6 +28,7 @@ export class FakeUsersLogComponent implements OnInit {
 
   ngOnInit(): void {  
   setInterval(() => {
+    this.hasLeft = false;
     this.http.get
     ('https://randomuser.me/api/').subscribe(res => 
     {
@@ -43,7 +44,9 @@ export class FakeUsersLogComponent implements OnInit {
         this.tmp_cities = this.fakeTrains.getCities();
     }
     );
-    this.hasLeft = !this.hasLeft;
+    setTimeout(() => {
+      this.hasLeft = true;
+    }, 3000);
     this.users = [];
     this.http.get
     ('https://randomuser.me/api/').subscribe(res => 
@@ -60,7 +63,6 @@ export class FakeUsersLogComponent implements OnInit {
         this.tmp_cities = this.fakeTrains.getCities();
     }
     );
-    this.hasLeft = !this.hasLeft;
     this.users = [];
     this.http.get
     ('https://randomuser.me/api/').subscribe(res => 
@@ -77,9 +79,8 @@ export class FakeUsersLogComponent implements OnInit {
         this.tmp_cities = this.fakeTrains.getCities();
     }
     );
-    this.hasLeft = !this.hasLeft;
     this.users = [];
-  }, 9000);
+  }, 3600);
   
   }
 

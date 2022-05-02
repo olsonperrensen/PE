@@ -22,7 +22,7 @@
    i++;
     if(i%2 === 1)
     {
-      responsiveVoice.speak('VOICE ON', "UK English Female", {rate: 0.9});
+      responsiveVoice.speak('VOICE: ON', "UK English Female", {rate: 0.9});
       setTimeout(() => {
           responsiveVoice.speak(document.getElementById("app-root").textContent
           , "UK English Female", {rate: 0.7});
@@ -30,7 +30,7 @@
     }
     else
     {
-      responsiveVoice.speak('VOICE OFF', "UK English Female", {rate: 0.9});
+      responsiveVoice.speak('VOICE: OFF', "UK English Female", {rate: 0.9});
       setTimeout(() => {
       responsiveVoice.cancel(); 
       }, 1800);
