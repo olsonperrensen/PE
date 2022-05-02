@@ -34,6 +34,8 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
       this.R2.setStyle(this.demo.nativeElement,'background-color',`#${this.css_i}`);
       this.css_i = this.css_i+50;
     }, 170);
+    this.onUserLocation();
+    
   }
   @ViewChild('demo') demo !:ElementRef;
 
@@ -66,8 +68,10 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
   userJourney:Journey = new Journey();
 
   // Google Maps coordinates + API key
-  lat = 21.027430029169917;
-  lng = 105.8351785397227;
+  lat = 0
+  lng = 0;
+  theta = 0;
+  distance = 0;
   privateKey = 'AIzaSyCsTw56lFc40e_ObgyNVmQOQCung5JGL8w';
   markers = [
     {
@@ -204,14 +208,7 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
         "lng": "105.97495255078849",
         "name": "Ninh Binh"
     }
-    , 
-    {
-        "id": "22",
-        "lat": "20.421522668120183",
-        "lng": "106.16451479922983",
-        "name": "Nam Dinh"
-    }    
-    , 
+    ,  
     {
         "id": "23",
         "lat": "20.421522668120183",
@@ -226,6 +223,10 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
         "name": "Phu Ly"
     }    
 ];
+closest_distance = -1;
+closest_station = '';
+isFullAddress = false;
+user_full_address:any;
 
   // Register html form
   @ViewChild('f') f!: NgForm;
@@ -255,8 +256,42 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
       {
         this.lat = pos.coords.latitude;
         this.lng = pos.coords.longitude;
-      })
+      });
+      this.markers.forEach(marker => {
+        this.theta = +marker.lng - this.lng;
+        this.distance = Math.sin(this.lng*(Math.PI/180)) * 
+        Math.sin(+marker.lng*(Math.PI/180)) +
+        Math.cos(this.lng*(Math.PI/180)) * 
+        Math.cos(+marker.lng*(Math.PI/180)) *
+        Math.cos(this.theta*(Math.PI/180));
+        this.distance = Math.acos(this.distance);
+        this.distance = this.distance * (180/Math.PI);
+        this.distance = this.distance  * 60 * 1.1515;
+        this.distance = this.distance / 0.62137;
+        if(this.distance > this.closest_distance)
+        {
+          this.closest_distance = Math.round(this.distance);
+          this.closest_station = marker.name;
+        }
+        
+      });
+      this.f.form.patchValue({from:this.closest_station});
+      console.log(`${this.closest_distance} KM to ${this.closest_station}`);
     }
+  // We are using the Google Maps API (more specifically: GeoCode) to get an object back.
+  fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${this.lat},${this.lng}&key=${this.privateKey}`)
+  .then(response => response.json()).then(
+    data => {
+      data.results.forEach((element: any) => {
+        // This mostly works for cities inside of Vietnam. For Belgium it is a bit tricker.
+        if(element.types.includes("administrative_area_level_3"))
+        {
+          this.isFullAddress = true;
+          this.user_full_address = element.formatted_address; 
+        }
+      });
+    }
+  );  
   }
 
   // Get a working, real-time date inserted to the form.
@@ -336,6 +371,7 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
   {
     this.lat = event.coords.lat;
     this.lng = event.coords.lng;
+    // this.onUserLocation();
     this.reverseLookup();
   }
 
@@ -354,6 +390,6 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
           }
         });
       }
-    ) 
+    ); 
   }
 }

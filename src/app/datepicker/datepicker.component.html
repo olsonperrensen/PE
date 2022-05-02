@@ -30,6 +30,10 @@ id="big-form"
       name="from"
       >
       <p 
+      class="text-secondary"
+      *ngIf="isFullAddress"
+      >This station is the closest from your location ({{user_full_address}}) by {{closest_distance}} KM</p>
+      <p 
       class="invalid-input-text"
       *ngIf="!from.valid && from.touched"
       >We couldn't find the station you were looking for.</p>
