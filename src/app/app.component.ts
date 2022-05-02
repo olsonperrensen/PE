@@ -9,7 +9,8 @@ import {HttpClient} from '@angular/common/http';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations:[
-    a.hingeAnimation()
+    a.hingeAnimation(),
+    a.fadeOutAnimation()
   ]
 })
 export class AppComponent implements OnInit{
@@ -24,15 +25,18 @@ export class AppComponent implements OnInit{
 
   // BUG: Best to use observables to subscribe for changes
   ngOnInit(): void {
+    this.onHideCookies();
       this.userJourney = this.journeyDetails.getUserJourney();
       console.log(`From app.component:${this.userJourney.from}-${this.userJourney.to}-${this.userJourney.date}`.toUpperCase());
-    
+      
     }
   onHideCookies()
   {
-    this.isAnim = true;
+    setTimeout(() => {
+      this.isAnim = true;
+    }, 300);
     setTimeout(() => {
       this.isFirstTime = false;
-    }, 1700);
+    }, 700);
   }
 }

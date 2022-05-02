@@ -102,7 +102,6 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     HttpClientModule,
     RecaptchaModule,
   RecaptchaFormsModule,
-
   ],
   providers: [JourneyDetailsService,
     TableGuardServiceGuard,
