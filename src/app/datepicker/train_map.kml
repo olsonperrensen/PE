@@ -1,0 +1,1443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Vietnam Railway Map + Train stations (2022)</name>
+    <description><![CDATA[More infos: https://north-vietnam.com/vietnamese-railways-map-stations-routes/<br>(another small and not so important railway stations are not marked.)<br><br>🚆 Where to book train tickets in Vietnam?<br>https://north-vietnam.com/where-to-buy-train-tickets-in-vietnam/]]></description>
+    <Style id="icon-1499-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1499-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1499-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1499-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1499-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1499-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1499-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1499-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1504-673AB7-normal">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1504-673AB7-highlight">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1504-673AB7">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1504-673AB7-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1504-673AB7-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1504-673AB7-nodesc-normal">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1504-673AB7-nodesc-highlight">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1504-673AB7-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1504-673AB7-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1504-673AB7-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1716-FF5252-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1716-FF5252-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1716-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1716-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1716-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1716-FF5252-nodesc-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1716-FF5252-nodesc-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1716-FF5252-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1716-FF5252-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1716-FF5252-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-000000-2163-nodesc-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>2.163</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-000000-2163-nodesc-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>3.2445</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-000000-2163-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-2163-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-2163-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-000000-2550-nodesc-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>2.55</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-000000-2550-nodesc-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>3.825</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-000000-2550-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-2550-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-2550-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-000000-2938-nodesc-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>2.938</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-000000-2938-nodesc-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>4.407</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-000000-2938-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-2938-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-2938-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-000000-3131-nodesc-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>3.131</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-000000-3131-nodesc-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>4.6965</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-000000-3131-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-3131-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-3131-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-000000-3325-nodesc-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>3.325</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-000000-3325-nodesc-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>4.9875</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-000000-3325-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-3325-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-3325-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-000000-3713-nodesc-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>3.713</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-000000-3713-nodesc-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>5.5695</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-000000-3713-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-3713-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-3713-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-000000-3906-nodesc-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>3.906</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-000000-3906-nodesc-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>5.859</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-000000-3906-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-3906-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-3906-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Railway stations in Vietnam / Network map</name>
+      <Placemark>
+        <name>Lào Cai (border crossing)</name>
+        <description><![CDATA[<img src="https://doc-0c-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/4d70e56152rggj1i6gv08ob27s/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vaAe2VnIngmf3SWPEsYooboLfw9ZH65vtbiYrKu5qSQHLtIgnHX4dx4Y30aOOdmHiprvnRdaM8xNKMt2E7jT39OnW30za_4jgtkokqvkE4-Dw7NicBfPl-O8xj3u8H9lRTHCoQnxIGk3s-4ZCqyUWo5gnU8_Q7bWqSn9OEOlCJ9ET_xM_tl2QoT6-Eo?session=0&fife" height="200" width="auto" /><br><br>How to get from Hanoi to Lao Cai and Sapa:<br>http://north-vietnam.com/how-to-get-from-hanoi-to-sapa/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-0c-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/4d70e56152rggj1i6gv08ob27s/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vaAe2VnIngmf3SWPEsYooboLfw9ZH65vtbiYrKu5qSQHLtIgnHX4dx4Y30aOOdmHiprvnRdaM8xNKMt2E7jT39OnW30za_4jgtkokqvkE4-Dw7NicBfPl-O8xj3u8H9lRTHCoQnxIGk3s-4ZCqyUWo5gnU8_Q7bWqSn9OEOlCJ9ET_xM_tl2QoT6-Eo?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            103.9782991,22.4922323,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pho Lu
+</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            104.1871583,22.3151132,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bảo Hà</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            104.3552749,22.1782663,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yên Bái</name>
+        <description><![CDATA[<img src="https://doc-0g-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/a09nm4r087ci4u7q218s9620ng/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vbLD72HhJWXXgWrM60pLGZUFueLHA3r8W5pgKwi3p8Ps7nt-95Fde7zTuLwzW3Z939nFAQa8dJQbRPnpryjpyRroZ1SbOpChFuGwlWzLRh8Z0PEcgvmqPEEswi38qT04AUxrJxwgd_VKUUdWWli2dvVfc9AXbYVLBp1_Gj0jZ71vFVbwoWTNv6ekhib?session=0&fife" height="200" width="auto" /><br><br>http://north-vietnam.com/yen-bai/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-0g-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/a09nm4r087ci4u7q218s9620ng/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vbLD72HhJWXXgWrM60pLGZUFueLHA3r8W5pgKwi3p8Ps7nt-95Fde7zTuLwzW3Z939nFAQa8dJQbRPnpryjpyRroZ1SbOpChFuGwlWzLRh8Z0PEcgvmqPEEswi38qT04AUxrJxwgd_VKUUdWWli2dvVfc9AXbYVLBp1_Gj0jZ71vFVbwoWTNv6ekhib?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            104.8799419,21.7022497,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Phú Thọ</name>
+        <description><![CDATA[How to get from Hanoi to Phu Tho:<br>http://north-vietnam.com/how-to-get-from-hanoi-to-phu-tho/]]></description>
+        <styleUrl>#icon-1499-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            105.2240548,21.4022884,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Việt Trì</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.4322591,21.3004032,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vĩnh Yên</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.6012102,21.3092967,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Phúc Yên</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.7124257,21.2399885,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đông Anh</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.852322,21.1535168,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trung Giã</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.8711366,21.3149797,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Quán Triều</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.8022283,21.6044968,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thái Nguyên</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.823657,21.5869478,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Luu Xa
+</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.8465932,21.5622377,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Noi Bai International Airport
+</name>
+        <description><![CDATA[<img src="https://doc-08-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/3m14ba8tum0a2jsqi38q9dgetc/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vbchFvMirQma-ZM3Q6_Q60mwE95dm9_HkDiIbGUDrv6swmkC-re0hcs0WdZYRlo7za_M9Y6BxH2gHvsVIwV94fvV6OziXuEyBc20V6MKrS_pyn8MvLYwNzFs2pqslgVS0hm7wd4Dthh1SlX1zo7VTIFlaNSY4a4ZwxcU2oUg68Lj9sejcglFMOc7XxC?session=0&fife" height="200" width="auto" /><br><br>Airports in Vietnam:<br>http://north-vietnam.com/international-domestic-airports-vietnam/]]></description>
+        <styleUrl>#icon-1504-673AB7</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-08-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/3m14ba8tum0a2jsqi38q9dgetc/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vbchFvMirQma-ZM3Q6_Q60mwE95dm9_HkDiIbGUDrv6swmkC-re0hcs0WdZYRlo7za_M9Y6BxH2gHvsVIwV94fvV6OziXuEyBc20V6MKrS_pyn8MvLYwNzFs2pqslgVS0hm7wd4Dthh1SlX1zo7VTIFlaNSY4a4ZwxcU2oUg68Lj9sejcglFMOc7XxC?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            105.803833,21.2183408,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hanoi (Le Duan station)
+</name>
+        <description><![CDATA[<img src="https://doc-00-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/bg5um9b40benru32s2ma35tos0/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYZfpQTM8GPi5J5D5HbXDy3TlnQFKddJAgXK9simBJ0SFxalknbT9zQvn9oa4m9sVMTFhBLhxf3LKgO8MzQdHbqD2dvvinqbSjMJS_v7eVXSlbHGYepJPQ817C8IlIkFK0aX9UjE5W-hcMQacT7QH6N4SwN2PBvo6YElfkUGVbM2msm2_giTNcQ7UxH?session=0&fife" height="200" width="auto" /><br><br>http://north-vietnam.com/hanoi-capital-vietnam/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-00-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/bg5um9b40benru32s2ma35tos0/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYZfpQTM8GPi5J5D5HbXDy3TlnQFKddJAgXK9simBJ0SFxalknbT9zQvn9oa4m9sVMTFhBLhxf3LKgO8MzQdHbqD2dvvinqbSjMJS_v7eVXSlbHGYepJPQ817C8IlIkFK0aX9UjE5W-hcMQacT7QH6N4SwN2PBvo6YElfkUGVbM2msm2_giTNcQ7UxH?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            105.841093,21.0243033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Van Dien
+</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.8440876,20.9443666,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Giap Bat
+</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.84059,20.9785458,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hanoi (Trần Quý Cáp station)</name>
+        <description><![CDATA[Trains to Lao Cai (Sapa), Yen Bai<br><br>How to get from Hanoi to Lao Cai and Sapa:<br>http://north-vietnam.com/how-to-get-from-hanoi-to-sapa/]]></description>
+        <styleUrl>#icon-1499-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            105.8404757,21.026835,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hanoi (Long Bien station)
+</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.8501835,21.0399293,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hanoi (Gia Lâm station)</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.8808053,21.0520342,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yen Vien
+</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.9169015,21.0850081,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ha Dong</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.7604818,20.9525095,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Phú Diễn</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.7644877,21.0514015,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bắc Ninh</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.0562209,21.1783969,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bắc Giang</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.1916447,21.2790205,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kép</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.2903106,21.4166619,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Song Hoa
+</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.4915085,21.5576792,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lạng Sơn</name>
+        <description>http://north-vietnam.com/lang-son/</description>
+        <styleUrl>#icon-1499-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            106.7688565,21.8556948,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đồng Đăng (border crossing)
+</name>
+        <description><![CDATA[<img src="https://doc-04-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/b6hu4udvt024mkikgduvcf1ppg/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYg38HGfIjJ1f0yP1D5wI_USaXs30YaFMe0F8eH4WJRoEblR6W7-v0p2RaRtoleej64muJWoMAi18JQXHuapUiEgGNhu9QfxRShCUgBeC2CrKy0sMdaiMsFfFKWAdluehPjTN46KdOMiTCnyN2wvLuSM9JrWI5sy5ojFaSQmFMaNbMS3JetNr2e00G3?session=0&fife" height="200" width="auto" /><br><br>How to continue from Hanoi to Nanning (China)<br>http://north-vietnam.com/how-to-get-from-hanoi-to-nanning-china]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-04-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/b6hu4udvt024mkikgduvcf1ppg/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYg38HGfIjJ1f0yP1D5wI_USaXs30YaFMe0F8eH4WJRoEblR6W7-v0p2RaRtoleej64muJWoMAi18JQXHuapUiEgGNhu9QfxRShCUgBeC2CrKy0sMdaiMsFfFKWAdluehPjTN46KdOMiTCnyN2wvLuSM9JrWI5sy5ojFaSQmFMaNbMS3JetNr2e00G3?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            106.6971052,21.9430256,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đông Triều</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.5329046,21.0953974,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Uông Bí</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.7558082,21.0347666,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yên Cư</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.9153373,20.9840239,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hạ Long</name>
+        <description><![CDATA[<img src="https://doc-14-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/84qu82rijphl8gtjnfdihm69d0/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYlah8KltjXMsGfdZ0OKmOKtdg3I5z_Jn6rmBqtKjt2u6IJQSHogeJBd5bLZrUwGYk_-ue5keKKq8TdKhlmZQFLSe2VWNIhFCb-YRqEkGiHDEwrrHHmVeGwJA-HaV2bGgpPMfJubVUMo5mK6bYeXxPYGYMujuhccQKxcQmoQQYOSrmxmGi3FzY25ITF?session=0&fife" height="200" width="auto" /><br><br>How to get from Hanoi to Ha Long:<br>http://north-vietnam.com/how-to-get-from-hanoi-to-ha-long/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-14-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/84qu82rijphl8gtjnfdihm69d0/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYlah8KltjXMsGfdZ0OKmOKtdg3I5z_Jn6rmBqtKjt2u6IJQSHogeJBd5bLZrUwGYk_-ue5keKKq8TdKhlmZQFLSe2VWNIhFCb-YRqEkGiHDEwrrHHmVeGwJA-HaV2bGgpPMfJubVUMo5mK6bYeXxPYGYMujuhccQKxcQmoQQYOSrmxmGi3FzY25ITF?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            107.0101284,20.9746167,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cẩm Giàng</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.1710982,20.967613,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hải Dương</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.3299348,20.9474136,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hải Phòng / Ha Long Bay
+</name>
+        <description><![CDATA[<img src="https://doc-0g-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/n2ia7sqntv0agoqn7vbud4qfe0/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vZcAvSQZkXX7RLgNy5hPNwRrxXv8HByjun2DPgXnRYSbDi0ikKGCxVsJCgpg8_m8n2YbD2V2y12lVn5hoq-Oc8JVkHrIGwy43za4WhOej6DE2nCSthvcoH3LRY4IWFsVD7Ws2hR_VHxxO8Hwss24kZkE1_OvcPXjeZ_wpHAeoi5IATn4y7MP2APpr9K?session=0&fife" height="200" width="auto" /><br><br>How to get from Hanoi to Hai Phong:<br>http://north-vietnam.com/how-to-get-from-hanoi-to-ha-long/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-0g-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/n2ia7sqntv0agoqn7vbud4qfe0/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vZcAvSQZkXX7RLgNy5hPNwRrxXv8HByjun2DPgXnRYSbDi0ikKGCxVsJCgpg8_m8n2YbD2V2y12lVn5hoq-Oc8JVkHrIGwy43za4WhOej6DE2nCSthvcoH3LRY4IWFsVD7Ws2hR_VHxxO8Hwss24kZkE1_OvcPXjeZ_wpHAeoi5IATn4y7MP2APpr9K?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            106.6875036,20.8560491,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Phủ Lý</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.9129935,20.5406354,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nam Định</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.1644397,20.4214523,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ninh Binh</name>
+        <description><![CDATA[<img src="https://doc-0k-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/ai20eu96m1bl775ofm4s4qt4lc/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYI8vhiTWV753Q3I-AtBMlJa9936KA2P9l-CFl0nb1W_1IAYLfpew-65pzV_ElCOIxVm-SxM2UvN1e4HS8a4ZXkiKIzaBn5vwJnRKhHVVEUqJ9ECCpUeOuS1EBg2BAgvvEsA5btqB9DmEPvJhPLiuV8DFxG6gW0CCGqH_dy4yrx6E5B31D5vHtkhVvz?session=0&fife" height="200" width="auto" /><br><br>How to get from Hanoi to Ninh Binh:<br>http://north-vietnam.com/how-to-get-from-hanoi-to-ninh-binh/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-0k-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/ai20eu96m1bl775ofm4s4qt4lc/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYI8vhiTWV753Q3I-AtBMlJa9936KA2P9l-CFl0nb1W_1IAYLfpew-65pzV_ElCOIxVm-SxM2UvN1e4HS8a4ZXkiKIzaBn5vwJnRKhHVVEUqJ9ECCpUeOuS1EBg2BAgvvEsA5btqB9DmEPvJhPLiuV8DFxG6gW0CCGqH_dy4yrx6E5B31D5vHtkhVvz?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            105.9745234,20.2421,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thanh Hóa</name>
+        <description><![CDATA[How to get from Hanoi to Thanh Hoa:<br>http://north-vietnam.com/how-to-get-from-hanoi-to-thanh-hoa/]]></description>
+        <styleUrl>#icon-1499-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            105.7677958,19.8127987,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chợ Sy</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.5761564,19.0082921,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vinh</name>
+        <styleUrl>#icon-1716-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.6639199,18.6881417,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hương Phố</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            105.707763,18.170413,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đồng Lê</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.0221715,17.8881489,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dong Hoi</name>
+        <description><![CDATA[<img src="https://doc-00-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/g7l0q3oq6rb6urc49uk7ktlmco/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vbzt2800lkvd6vdnHrZSIcfC9aEfEJuxS1LcuVbi3YYDht6yTO4wJfFjvi2y_07DusWk2nnA4bYUDiO3to7rlDp0GG2OG98C9_YPN_o9_4c4tC84SjbPgsS5xWqAsw62fw1EkW7ZjZix2dq6LIkUWud9vLH6vZbTI2I2gD3g_LAxTmY84MH7NspNidN?session=0&fife" height="200" width="auto" /><br><br>How to get from Hanoi to Dong Hoi (Phong Nha):<br>http://north-vietnam.com/how-to-get-from-hanoi-to-dong-hoi/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-00-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/g7l0q3oq6rb6urc49uk7ktlmco/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vbzt2800lkvd6vdnHrZSIcfC9aEfEJuxS1LcuVbi3YYDht6yTO4wJfFjvi2y_07DusWk2nnA4bYUDiO3to7rlDp0GG2OG98C9_YPN_o9_4c4tC84SjbPgsS5xWqAsw62fw1EkW7ZjZix2dq6LIkUWud9vLH6vZbTI2I2gD3g_LAxTmY84MH7NspNidN?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            106.599851,17.4689843,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đông Hà</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            107.1117425,16.811792,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hue</name>
+        <description><![CDATA[<img src="https://doc-08-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/9loji5n5qsgjnbe66tmpp8figk/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vbp5Qz0LnIi5nii8gAJgL4Dwtz8j6LOFsRGTP8eAr0rMT4nRsn56MtcgoJcU5SB-SlWukUzpoCxucNkvOx82YxfW7zfZfGC0kAe9oBfPJF-BSqmaUaKrGlpGZF6C4hNb5tmmkAGSi6svhDwn-ze13qn9alVYMa9WfiOa6PB6byhkWaVxFK9ReAUWHY0?session=0&fife" height="200" width="auto" /><br><br>How to get from Hanoi to Hue:<br>http://north-vietnam.com/how-to-get-from-hanoi-to-hue/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-08-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/9loji5n5qsgjnbe66tmpp8figk/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vbp5Qz0LnIi5nii8gAJgL4Dwtz8j6LOFsRGTP8eAr0rMT4nRsn56MtcgoJcU5SB-SlWukUzpoCxucNkvOx82YxfW7zfZfGC0kAe9oBfPJF-BSqmaUaKrGlpGZF6C4hNb5tmmkAGSi6svhDwn-ze13qn9alVYMa9WfiOa6PB6byhkWaVxFK9ReAUWHY0?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            107.5780223,16.4564848,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lăng Cô</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            108.0820036,16.2217772,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Da Nang</name>
+        <description><![CDATA[<img src="https://doc-10-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/9m1pqqcon8hiq7e0bgmqn7qq70/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vY5VIBmNOW7bJ0exUwqWHbv1M2o383EMCwZF8GtKV0Xv9zehb9bEjvAlr7LWJ068gGpjQji2ZDAQTjczlzjB4-eX05DtIOFB1MgQH70DnmQQC_oDHn-6czKFx4yLYl1dxHm0ZTj_mW7dUityACChVmpvueh_x4wDXRKTvC5aQkcAzdrw0QaTK0LLMVm?session=0&fife" height="200" width="auto" /><br><br>How to get from Hanoi to Da Nang and Hoi An:<br>http://north-vietnam.com/how-to-get-from-hanoi-to-hoi-an/<br><br>How to get from Da Nang to Saigon:<br>https://north-vietnam.com/from-da-nang-to-ho-chi-minh-city-train-bus-flight/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-10-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/9m1pqqcon8hiq7e0bgmqn7qq70/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vY5VIBmNOW7bJ0exUwqWHbv1M2o383EMCwZF8GtKV0Xv9zehb9bEjvAlr7LWJ068gGpjQji2ZDAQTjczlzjB4-eX05DtIOFB1MgQH70DnmQQC_oDHn-6czKFx4yLYl1dxHm0ZTj_mW7dUityACChVmpvueh_x4wDXRKTvC5aQkcAzdrw0QaTK0LLMVm?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            108.2093433,16.0715815,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đà Nẵng International Airport
+</name>
+        <styleUrl>#icon-1504-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            108.2013468,16.0552876,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trà Kiệu</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            108.2312778,15.810144,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tam Kỳ</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            108.4829676,15.5577426,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Quảng Ngãi</name>
+        <styleUrl>#icon-1716-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            108.7813511,15.1209988,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đức Phổ</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            108.9468432,14.8098323,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bồng Sơn</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            109.0191932,14.4375155,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Diêu Trì</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            109.1437949,13.8072986,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Quy Nhon</name>
+        <description><![CDATA[<img src="https://doc-08-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/fv752p6l06frmap9uoutq72c74/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYT1FC1RdCHKoq2wtL4T6MpIBQKE4l6tbWmzVQ6dkQCn06UWb3M945Hvn5BJaPjN837OwQHsmdGuT75lXbIXFpBmepl4LvGY41_TGKgAx65-_a_YxotKOUg1LdxnrieG_Pzr0ciZiwhGgI4uSwqnpjyZjXNwODitkIPILC10ObOxqeRXH3o38e_cLkq?session=0&fife" height="200" width="auto" /><br><br>How to get from Nha Trang to Quy Nhon:<br>http://north-vietnam.com/how-to-get-from-nha-trang-to-quy-nhon/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-08-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/fv752p6l06frmap9uoutq72c74/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYT1FC1RdCHKoq2wtL4T6MpIBQKE4l6tbWmzVQ6dkQCn06UWb3M945Hvn5BJaPjN837OwQHsmdGuT75lXbIXFpBmepl4LvGY41_TGKgAx65-_a_YxotKOUg1LdxnrieG_Pzr0ciZiwhGgI4uSwqnpjyZjXNwODitkIPILC10ObOxqeRXH3o38e_cLkq?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            109.2238909,13.7781303,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tuy Hoa</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            109.2972793,13.0881191,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gia</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            109.2235208,12.6996686,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ninh Hòa</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            109.1239841,12.489559,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nha Trang</name>
+        <description><![CDATA[<img src="https://doc-10-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/khjh4j7l8gvikuuok7gjatgb8g/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vZprBu-oeDkDzYXC_yryzEvi4VIup_dz6AYTcq_SU49yibY-I0MGqHC4SF4QQHS_EnhJWpYFndlyaYuMERtHqYCFZE6kcII9JjBMu9Xmi1S_oLvEz73HThzaDXt0AuNLIy2zGzysRC5KaQ4grYG2-OiU2AXDWrhBZfpaUH5oaClRXRtdr2fdMbpui2B?session=0&fife" height="200" width="auto" /><br><br>How to get from Ho Chi Minh City to Nha Trang:<br>http://north-vietnam.com/from-ho-chi-minh-city-to-nha-trang/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-10-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/khjh4j7l8gvikuuok7gjatgb8g/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vZprBu-oeDkDzYXC_yryzEvi4VIup_dz6AYTcq_SU49yibY-I0MGqHC4SF4QQHS_EnhJWpYFndlyaYuMERtHqYCFZE6kcII9JjBMu9Xmi1S_oLvEz73HThzaDXt0AuNLIy2zGzysRC5KaQ4grYG2-OiU2AXDWrhBZfpaUH5oaClRXRtdr2fdMbpui2B?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            109.1842369,12.2484625,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cam Ranh - Ngã Ba</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            109.1212084,11.9259721,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Phan Rang - Tháp Chàm</name>
+        <description><![CDATA[<img src="https://doc-0c-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/o1ga30hbthsv1tsffhrpqstiqg/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYf2fottTGyWL3GZS59w2iHGLAqMKohACI-SMVIo0AM-LxIE4jk2Zv_3M559H2JO0C4WUvFW1840Z7NSe3F1d1HvTv3y1U9WMBcFDRabnTexA6LBeYj0kL8Q7lvL8ErS5brSRe-Wt7rD-5OqjVvFruhgPcJSTwZ89Fqs2CtV4fmRhXZNxICC-7QokK7?session=0&fife" height="200" width="auto" /><br><br>From Nha Trang to Phan Rang ><br>http://north-vietnam.com/from-nha-trang-to-phan-rang-thap-cham-train-bus/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-0c-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/o1ga30hbthsv1tsffhrpqstiqg/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYf2fottTGyWL3GZS59w2iHGLAqMKohACI-SMVIo0AM-LxIE4jk2Zv_3M559H2JO0C4WUvFW1840Z7NSe3F1d1HvTv3y1U9WMBcFDRabnTexA6LBeYj0kL8Q7lvL8ErS5brSRe-Wt7rD-5OqjVvFruhgPcJSTwZ89Fqs2CtV4fmRhXZNxICC-7QokK7?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            108.9500331,11.5973105,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trại Mát</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            108.5010297,11.9462639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đà Lạt</name>
+        <description><![CDATA[<img src="https://doc-0c-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/3mbbfs4sguofr2q14vv955fh7g/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vZwhNc_ErTxCnaL3-LnR9Hi65_UuD00-RC1rbsXL-nttkv6pTtp8lYIERi8mU_RkaGRiKscYU6Mn7dlLOJlXxZNPI8ygA4SIVcJyrvRjLkfjzNHACSYAYP7lf_wdUINCS22sE7lMcMcgbHKYjP8CrkBUkUz5wmxnFPhZlsISkGKS9DjEFOmukt_A2ek?session=0&fife" height="200" width="auto" /><br><br>How to get from Nha Trang to Da Lat:<br>http://north-vietnam.com/how-to-get-from-nha-trang-to-da-lat/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-0c-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/3mbbfs4sguofr2q14vv955fh7g/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vZwhNc_ErTxCnaL3-LnR9Hi65_UuD00-RC1rbsXL-nttkv6pTtp8lYIERi8mU_RkaGRiKscYU6Mn7dlLOJlXxZNPI8ygA4SIVcJyrvRjLkfjzNHACSYAYP7lf_wdUINCS22sE7lMcMcgbHKYjP8CrkBUkUz5wmxnFPhZlsISkGKS9DjEFOmukt_A2ek?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            108.4544778,11.9417928,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sông Mao</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            108.5061009,11.2491654,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ma Lâm</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            108.1306145,11.0716941,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Phan Thiết</name>
+        <description><![CDATA[<img src="https://doc-10-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/o87qkbqb4kdgmqio2usck9475k/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vZc1b44VD8jcPHFjyuRtRzE1ouMSYi3iZzxYpYvk47uxLFLtOHcfi6NT2-1QTSmtfCKcN15GGsDezvkG8Ut_T4cVMu5o5TFen6B96SY8VVc2obJbzAAUPJQHkM9UEX6KJEiPub9eGV6QO6uH5eoNKFxwlSsZ09Hv2qgozXgNBOL_73es6iR7QOVewBr?session=0&fife" height="200" width="auto" /><br><br>How to get from Ho Chi Minh City to Phan Thiet+Mui Ne:<br>http://north-vietnam.com/how-to-get-from-ho-chi-minh-city-to-mui-ne/<br><br>How to get from Da Lat to Mui Ne:<br>https://north-vietnam.com/how-to-get-from-da-lat-to-mui-ne-bus/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-10-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/o87qkbqb4kdgmqio2usck9475k/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vZc1b44VD8jcPHFjyuRtRzE1ouMSYi3iZzxYpYvk47uxLFLtOHcfi6NT2-1QTSmtfCKcN15GGsDezvkG8Ut_T4cVMu5o5TFen6B96SY8VVc2obJbzAAUPJQHkM9UEX6KJEiPub9eGV6QO6uH5eoNKFxwlSsZ09Hv2qgozXgNBOL_73es6iR7QOVewBr?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            108.0823529,10.9418266,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Binh Tuan (Mương Mán)</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            108.0037165,10.9690787,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Long Khánh</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            107.2444341,10.933527,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bien Hoa</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.8263579,10.9508209,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dĩ An</name>
+        <styleUrl>#icon-1499-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.7694363,10.907943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ho Chi Minh City (Saigon)
+</name>
+        <description><![CDATA[<img src="https://doc-00-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/331g0dg6s883125mv7ts6o7ss4/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYrL01LDkiBta5fAqVtOvcCR1Q89DgfppUIlJ44T0vr72HtlsU_CWwfQakkYJJ7sZue0nbrJ1vQdEDs1p6F4wkidbblSDTd18q3PProRZ5Nuh9NTCn7i-741dIuyz7vWvKfCt3_creG-VwpT86q1YTeFmIQs__Y4jcSOuyGJnQeW8Ejfes8XjjNYIuo?session=0&fife" height="200" width="auto" /><br><br>How to get from Hanoi to Saigon:<br>http://north-vietnam.com/how-to-get-from-hanoi-to-saigon/]]></description>
+        <styleUrl>#icon-1716-FF5252</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-00-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/331g0dg6s883125mv7ts6o7ss4/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYrL01LDkiBta5fAqVtOvcCR1Q89DgfppUIlJ44T0vr72HtlsU_CWwfQakkYJJ7sZue0nbrJ1vQdEDs1p6F4wkidbblSDTd18q3PProRZ5Nuh9NTCn7i-741dIuyz7vWvKfCt3_creG-VwpT86q1YTeFmIQs__Y4jcSOuyGJnQeW8Ejfes8XjjNYIuo?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            106.6771786,10.7823643,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tân Sơn Nhất International Airport
+</name>
+        <description><![CDATA[<img src="https://doc-04-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/0mk8jtvvn9ethdnhpn29bspj8k/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYZ8jXtudb5qvpRnlwV45jUM4sSbV9PdZxO5PnpqROV7iKXf1HD0FNOsS5QG-BL5LxWRZPgPPooRLU-nr1HLZfnQcFwhZrdPfEfVGnjcKUVDlNvN8GSeXqHmaULuz6ModDLUaHvzX3bGS0zeD_Y5h4xB44Bn2oFZwwTUjR9ssz5CV0reh_goI0DhRsN?session=0&fife" height="200" width="auto" /><br><br>Airports in Vietnam:<br>http://north-vietnam.com/international-domestic-airports-vietnam/]]></description>
+        <styleUrl>#icon-1504-673AB7</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://doc-04-28-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/0mk8jtvvn9ethdnhpn29bspj8k/1651487400000/TFugYEZvJDzcASAc3Ab2HC3FaR_BBuf0/*/6AIsG_vYZ8jXtudb5qvpRnlwV45jUM4sSbV9PdZxO5PnpqROV7iKXf1HD0FNOsS5QG-BL5LxWRZPgPPooRLU-nr1HLZfnQcFwhZrdPfEfVGnjcKUVDlNvN8GSeXqHmaULuz6ModDLUaHvzX3bGS0zeD_Y5h4xB44Bn2oFZwwTUjR9ssz5CV0reh_goI0DhRsN?session=0&fife]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            106.6588245,10.8184631,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Čára 1
+</name>
+        <styleUrl>#line-000000-3713-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            103.9782991,22.4922323,0
+            104.1871583,22.3151132,0
+            104.3552749,22.1782663,0
+            104.8799419,21.7022497,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Čára 2
+</name>
+        <styleUrl>#line-000000-3906-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            104.8799419,21.7022497,0
+            105.2240548,21.4022884,0
+            105.4322591,21.3004032,0
+            105.5105523,21.2907965,0
+            105.6012102,21.3092967,0
+            105.7124257,21.2399885,0
+            105.7672881,21.1852432,0
+            105.852322,21.1535168,0
+            105.841093,21.0243033,0
+            105.8443135,20.9446432,0
+            105.8641081,20.8710156,0
+            105.8846792,20.8010285,0
+            105.9127817,20.7371358,0
+            105.9129935,20.5406354,0
+            106.1644397,20.4214523,0
+            105.9745234,20.2421,0
+            105.8550823,20.0816818,0
+            105.7677958,19.8127987,0
+            105.7013866,19.6337865,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Čára 3
+</name>
+        <styleUrl>#line-000000-3713-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            105.852322,21.1535168,0
+            106.2903106,21.4166619,0
+            106.4915085,21.5576792,0
+            106.7688565,21.8556948,0
+            106.6971052,21.9430256,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Čára 4
+</name>
+        <styleUrl>#line-000000-3906-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            105.852322,21.1535168,0
+            105.8711366,21.3149797,0
+            105.8460456,21.5626022,0
+            105.823657,21.5869478,0
+            105.8022283,21.6044968,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Čára 5
+</name>
+        <styleUrl>#line-000000-3325-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            105.8808053,21.0520342,0
+            105.9619133,21.004133,0
+            106.0292544,20.983602,0
+            106.1710982,20.967613,0
+            106.3299348,20.9474136,0
+            106.6875036,20.8560491,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Čára 6
+</name>
+        <styleUrl>#line-000000-3325-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            106.2903106,21.4166619,0
+            106.322239,21.355007,0
+            106.3369812,21.2914303,0
+            106.3794714,21.217045,0
+            106.5325841,21.0947654,0
+            106.6028399,21.063048,0
+            106.7558082,21.0347666,0
+            107.0101284,20.9746167,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Čára 7
+</name>
+        <styleUrl>#line-000000-3325-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            105.7013866,19.6337865,0
+            105.5761564,19.0082921,0
+            105.6639199,18.6881417,0
+            105.5876509,18.523087,0
+            105.5763571,18.4060578,0
+            105.707763,18.170413,0
+            106.0221715,17.8881489,0
+            106.599851,17.4689843,0
+            107.1117425,16.811792,0
+            107.5780223,16.4564848,0
+            108.0820036,16.2217772,0
+            108.2093433,16.0715815,0
+            108.2312778,15.810144,0
+            108.3415769,15.7048246,0
+            108.4829676,15.5577426,0
+            108.669895,15.4220998,0
+            108.7813511,15.1209988,0
+            108.9468432,14.8098323,0
+            109.0191932,14.4375155,0
+            109.1437949,13.8072986,0
+            109.2972793,13.0881191,0
+            109.2235208,12.6996686,0
+            109.1162109,12.5223906,0
+            109.1842369,12.2484625,0
+            109.1212084,11.9259721,0
+            108.9500331,11.5973105,0
+            108.5061009,11.2491654,0
+            108.1306145,11.0716941,0
+            108.0037165,10.9690787,0
+            107.2444341,10.933527,0
+            106.8263579,10.9508209,0
+            106.7694363,10.907943,0
+            106.6771786,10.7823643,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Čára 8
+</name>
+        <styleUrl>#line-000000-2938-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            108.0037165,10.9690787,0
+            108.0823529,10.9418266,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Čára 9
+</name>
+        <styleUrl>#line-000000-3131-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            108.5010297,11.9462639,0
+            108.4544778,11.9417928,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Čára 10
+</name>
+        <styleUrl>#line-000000-3131-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            109.1437949,13.8072986,0
+            109.2238909,13.7781303,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Čára 11
+</name>
+        <styleUrl>#line-000000-2163-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            105.841093,21.0243033,0
+            105.8501835,21.0399293,0
+            105.8808053,21.0520342,0
+            105.9169015,21.0850081,0
+            106.0562209,21.1783969,0
+            106.1916447,21.2790205,0
+            106.2903106,21.4166619,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Čára 12</name>
+        <styleUrl>#line-000000-2550-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            105.8440876,20.9443666,0
+            105.8419402,20.931655,0
+            105.825031,20.9282421,0
+            105.7947331,20.9416614,0
+            105.7604818,20.9525095,0
+            105.7369883,20.9652378,0
+            105.7285983,20.9782852,0
+            105.7582569,21.0469358,0
+            105.7831423,21.0639048,0
+            105.7861046,21.0958148,0
+            105.7901859,21.1765685,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
