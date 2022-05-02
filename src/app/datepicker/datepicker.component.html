@@ -87,14 +87,15 @@ id="big-form"
   (mapClick)="onChoseLocation($event)"
   [latitude]="lat" 
   [longitude]="lng"
+  [zoom]="3.5"
   >
   <agm-marker 
   *ngFor="let marker of markers"
   [latitude]="+marker.lat" [longitude]="+marker.lng"
   ></agm-marker>
-  <agm-marker 
+  <!-- <agm-marker 
   [latitude]="lat" [longitude]="lng"
-  ></agm-marker>
+  ></agm-marker> -->
 </agm-map>
 <div #map></div>
 <app-fake-users-log></app-fake-users-log>
