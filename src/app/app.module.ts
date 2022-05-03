@@ -40,7 +40,7 @@ import { environment } from '../environments/environment';
 import { DarkModeStatusService } from './dark-mode-status.service';
 import { DiscountComponent } from './order/discount/discount.component';
 import { CreditCardCheckerComponent } from './order/credit-card-checker/credit-card-checker.component';
-import { OrderBasketService } from './order-basket.service';
+import { BasketService } from './basket.service';
 import { FakeUsersLogComponent } from './datepicker/fake-users-log/fake-users-log.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
@@ -106,7 +106,7 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
   providers: [JourneyDetailsService,
     TableGuardServiceGuard,
     DarkModeStatusService,
-    OrderBasketService,
+    BasketService,
     {
       provide: RECAPTCHA_SETTINGS,
       useValue: {

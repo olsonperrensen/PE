@@ -35,13 +35,13 @@ export class FakeUsersLogComponent implements OnInit {
       this.results = res;
       this.username = this.results.results[0].name.first;
       this.nat = this.results.results[0].nat.toLowerCase();
-
+      this.tmp_cities = this.fakeTrains.getCities();
       this.users.push(
         {
           username:this.username,
-          src:'https://flagcdn.com/16x12/'+ this.nat + '.png'
+          src:'https://flagcdn.com/16x12/'+ this.nat + '.png',
+          cities:this.tmp_cities
         });
-        this.tmp_cities = this.fakeTrains.getCities();
     }
     );
     setTimeout(() => {
@@ -54,13 +54,13 @@ export class FakeUsersLogComponent implements OnInit {
       this.results = res;
       this.username = this.results.results[0].name.first;
       this.nat = this.results.results[0].nat.toLowerCase();
-
+      this.tmp_cities = this.fakeTrains.getCities();
       this.users.push(
         {
           username:this.username,
-          src:'https://flagcdn.com/16x12/'+ this.nat + '.png'
+          src:'https://flagcdn.com/16x12/'+ this.nat + '.png',
+          cities:this.tmp_cities
         });
-        this.tmp_cities = this.fakeTrains.getCities();
     }
     );
     this.users = [];
@@ -70,13 +70,14 @@ export class FakeUsersLogComponent implements OnInit {
       this.results = res;
       this.username = this.results.results[0].name.first;
       this.nat = this.results.results[0].nat.toLowerCase();
-
+      this.tmp_cities = this.fakeTrains.getCities();
       this.users.push(
         {
           username:this.username,
-          src:'https://flagcdn.com/16x12/'+ this.nat + '.png'
+          src:'https://flagcdn.com/16x12/'+ this.nat + '.png',
+          cities:this.tmp_cities
         });
-        this.tmp_cities = this.fakeTrains.getCities();
+        this.tmp_cities = ['ALWAYS','REWRITTEN'];
     }
     );
     this.users = [];
