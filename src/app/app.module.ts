@@ -46,6 +46,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { ProgressBarService } from './progress-bar/progress-bar.service';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { ReducePipe } from './reduce.pipe';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     FakeUsersLogComponent,
     ProgressBarComponent,
     ComingSoonComponent,
+    ReducePipe,
   ],
   imports: [
     BrowserModule,

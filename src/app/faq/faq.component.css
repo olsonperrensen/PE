@@ -10,3 +10,12 @@
 {
     width: 100%;
 }
+img
+{
+    margin: 6px;
+    width: 300px;
+}
+a
+{
+    text-decoration: none;
+}
