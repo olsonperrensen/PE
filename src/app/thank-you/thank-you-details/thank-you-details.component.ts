@@ -1,7 +1,9 @@
 import { Component, ElementRef, OnInit, ViewChild, ViewEncapsulation  } from '@angular/core';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import jsPDF from 'jspdf';
+import { BasketService } from 'src/app/basket.service';
 import { DarkModeStatusService } from 'src/app/dark-mode-status.service';
+import { Ticket } from 'src/app/table/ticket';
 
 @Component({
   selector: 'app-thank-you-details',
@@ -13,8 +15,11 @@ export class ThankYouDetailsComponent implements OnInit {
   public isBtnStill:boolean=true;
 
   @ViewChild('lorem') lorem!:ElementRef;
+  tickets:Ticket[] = [];
+  total = 0;
 
-  constructor(private modalService: NgbModal,private darkModeStatus:DarkModeStatusService) { }
+  constructor(private modalService: NgbModal,private darkModeStatus:DarkModeStatusService,
+    private basketService:BasketService) { }
 
   public onCreatePDF(content:any)
   {
@@ -29,6 +34,10 @@ export class ThankYouDetailsComponent implements OnInit {
   }
   ngOnInit(): void {
     this.switch_status = this.darkModeStatus.getStatus();
+    this.tickets = this.basketService.getBasket();
+    this.tickets.forEach(ticket => {
+      this.total += ticket.price;
+    });
   }
 
 }

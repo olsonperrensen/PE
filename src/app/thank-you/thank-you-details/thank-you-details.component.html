@@ -12,9 +12,9 @@
         </div>
     </div>
     <div [ngClass]="{'thank-you-dark':switch_status,'thank-you-light':!switch_status}" class="pricing">
-        <div class="row">
-            <div class="col-9"> <span id="name">Standard ticket</span> </div>
-            <div class="col-3"> <span id="price">£229.99</span> </div>
+        <div *ngFor="let ticket of tickets" class="row">
+            <div class="col-9"> <span id="name">{{ticket.name}}</span> </div>
+            <div class="col-3"> <span id="price">£{{ticket.price}}</span> </div>
         </div>
         <div class="row">
             <div class="col-9"> <span id="name">Est. Tax - 21% (Belgium)</span> </div>
@@ -24,7 +24,7 @@
     <div class="total">
         <div class="row">
             <div class="col-9"></div>
-            <div class="col-3">£262.99</div>
+            <div class="col-3">£{{total+33}}</div>
         </div>
     </div>
     <div class="tracking">
