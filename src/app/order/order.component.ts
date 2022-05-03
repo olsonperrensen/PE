@@ -22,16 +22,19 @@ export class OrderComponent implements OnInit {
   switch_status!:boolean;
   isTable!:boolean;
   total_tickets = 0;
+  total = 0;
   tickets!:Ticket[];
   isValid = false;
+  coupon = '';
 
   constructor(private router:Router, private route:ActivatedRoute, private journeyDetails:JourneyDetailsService,
     private darkModeStatus:DarkModeStatusService, private progressBar:ProgressBarService,
     private basketService:BasketService) { }
 
-    mFn(event:boolean)
+    mFn(event:{valid:boolean,coupon:string})
     {
-      this.isValid = event;
+      this.isValid = event.valid;
+      this.coupon = event.coupon;
     }
 
   ngOnInit(): void {
@@ -45,6 +48,9 @@ export class OrderComponent implements OnInit {
     this.progressBar.setProgressBar('step4');
     this.tickets = this.basketService.getBasket();
     this.total_tickets = this.tickets.length;
+    this.tickets.forEach(ticket => {
+      this.total += ticket.price;
+    });
   }
 
   userJourney!:Journey;
