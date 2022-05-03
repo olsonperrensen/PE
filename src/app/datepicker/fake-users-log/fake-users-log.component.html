@@ -1,13 +1,14 @@
 <div class="container p-3 text-center">
-    <div [@bounceInLeftOnEnter] [@bounceOutRight]="hasLeft" *ngFor="let user of users" class="col">
+    <div [@bounceInLeftOnEnter] [@bounceOutRight]="hasLeft" 
+    *ngFor="let user of users" class="col">
         <span class="lead"><em>{{user.username}}&nbsp;</em></span>
         <img
         src={{user.src}}
         width="16"
         height="12">
         <span class="lead" > &nbsp;just traveled from 
-            <strong >{{tmp_cities[0]}}</strong> to 
-            <strong >{{tmp_cities[1]}}</strong>
+            <strong >{{user.cities.first_city}}</strong> to 
+            <strong >{{user.cities.second_city}}</strong>
         </span>
     </div>
 </div>
