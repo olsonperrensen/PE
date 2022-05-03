@@ -16,10 +16,12 @@ export class BasketService {
   addToBasket(user_ticket:Ticket)
   {
     this.basket.push(user_ticket);
+    console.log(this.basket);
   }
   removeFromBasket(user_ticket:Ticket)
   {
     this.basket.pop();
+    console.log(this.basket);
   }
 
 }

@@ -99,6 +99,10 @@
           <fa-icon [icon]="faPlus"></fa-icon>
         </button>
       </div>
+      <p 
+      class="invalid-input-text"
+      *ngIf="shouldAsk"
+      >Warning: You are ordering more than 10 tickets.</p>
       <div 
       [ngClass]="{'div-dark':switch_status, 'div-light': !switch_status}"
       [@flipInXOnEnter]="ticket_name.valid && ticket_name.dirty" 

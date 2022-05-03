@@ -29,6 +29,7 @@ export class TableComponent implements OnInit{
   public_rows = 0;
 
   switch_status!:boolean;
+  shouldAsk!:boolean;
   @ViewChild('tr1') tr1!:ElementRef;
 
   faMinus = faMinus;
@@ -139,6 +140,10 @@ export class TableComponent implements OnInit{
         break;
     }
     this.ticket_quantity++;
+    if(this.ticket_quantity > 10)
+    {
+      this.shouldAsk = true;
+    }
     this.basketService.addToBasket(this.ticket);
   }
 
