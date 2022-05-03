@@ -7,14 +7,17 @@
         <h5 class="card-title">Why trains are the best way to go...
         </h5>
         <p class="card-text">
-          <a class="text-dark" routerLink="/faq">
+          <a *ngIf="!isHiddenZero" (click)="onToggle(0)" class="text-dark" routerLink="/faq">
           {{all_text[0] | reduce}}
+        </a>
+        <a *ngIf="isHiddenZero" (click)="onToggle(0)" class="text-dark" routerLink="/faq">
+          {{all_text[0]}}
         </a>
         </p>
       </div>
   </div></div>
 <div class="row-cols-1">
-  <img class="mx-auto" src="../../assets/train_moon.jpg"
+  <img [@rotateInDownLeftOnEnter] class="mx-auto" src="../../assets/train_moon.jpg"
   width="500px"
   alt="">
 </div>
@@ -24,14 +27,17 @@
         <h5 class="card-title">The view from the train...
         </h5>
         <p class="card-text">
-          <a class="text-light" routerLink="/faq">
+          <a *ngIf="!isHiddenOne" (click)="onToggle(1)" class="text-light" routerLink="/faq">
           {{all_text[1] | reduce}}
           </a>
+          <a *ngIf="isHiddenOne"(click)="onToggle(1)" class="text-light" routerLink="/faq">
+            {{all_text[1]}}
+            </a>
         </p>
       </div>
   </div></div>
   <div class="row-cols-1">
-    <img class="mx-auto" src="../../assets/faq_0.webp"
+    <img [@rotateInDownRightOnEnter] class="mx-auto" src="../../assets/faq_0.webp"
     width="500px"
     alt="">
   </div>
@@ -40,14 +46,17 @@
       <div class="card-body text-dark">
         <h5 class="card-title">Is it Ho Chi Minh or Saigon?</h5>
         <p class="card-text">
-          <a class="text-dark" routerLink="/faq">
+          <a *ngIf="!isHiddenTwo" (click)="onToggle(2)" class="text-dark" routerLink="/faq">
           {{all_text[2] | reduce}}
           </a>
+          <a *ngIf="isHiddenTwo" (click)="onToggle(2)" class="text-dark" routerLink="/faq">
+            {{all_text[2] }}
+            </a>
         </p>
       </div>
   </div></div>
   <div class="row-cols-1">
-    <img class="mx-auto" src="../../assets/faq_1.jpg"
+    <img [@rotateInDownLeftOnEnter] class="mx-auto" src="../../assets/faq_1.jpg"
     width="500px"
     alt="">
   </div>
@@ -57,15 +66,18 @@
         <h5 class="card-title">The Reunification Line...
         </h5>
         <p class="card-text">
-          <a class="text-light" routerLink="/faq">
+          <a *ngIf="!isHiddenThree" (click)="onToggle(3)" class="text-light" routerLink="/faq">
           {{all_text[3] | reduce}}
           </a>
+          <a *ngIf="isHiddenThree" (click)="onToggle(3)" class="text-light" routerLink="/faq">
+            {{all_text[3]}}
+            </a>
         </p>
       </div>
       
 </div></div>
 <div class="row-cols-1">
-  <img class="mx-auto" src="../../assets/faq_2.jpg"
+  <img [@rotateInDownRightOnEnter] class="mx-auto" src="../../assets/faq_2.jpg"
   width="500px"
   alt="">
 </div>
@@ -76,9 +88,12 @@
 
     </h5>
     <p class="card-text">
-      <a class="text-light" routerLink="/faq">
+      <a *ngIf="!isHiddenFour" (click)="onToggle(4)" class="text-light" routerLink="/faq">
       {{all_text[4] | reduce}}
       </a>
+      <a *ngIf="isHiddenFour" (click)="onToggle(4)" class="text-light" routerLink="/faq">
+        {{all_text[4]}}
+        </a>
     </p>
   </div>
 </div></div>

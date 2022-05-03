@@ -8,7 +8,10 @@ import * as a from 'angular-animations';
     a.bounceInDownOnEnterAnimation(),
     a.bounceInLeftOnEnterAnimation(),
     a.bounceInRightOnEnterAnimation(),
-    a.bounceInUpOnEnterAnimation()
+    a.bounceInUpOnEnterAnimation(),
+    a.rotateInDownRightOnEnterAnimation(),
+    a.rotateInDownLeftOnEnterAnimation(),
+    
   ]
 })
 export class FaqComponent implements OnInit {
@@ -32,9 +35,39 @@ export class FaqComponent implements OnInit {
   Trains SE3 & SE4 were equipped with smartly-refurbished cars in 2015, trains SE1 & SE2 got similar refurbished cars in 2016. Trains SE1 & SE2 also have a handful of VIP 2-berth compartments (only about 4 per train). SE1 & SE2 also convey privately-run Livitrans tourist sleepers between Hanoi, Hue & Danang. Trains SE3 & SE4 also convey privately-run Violette Trains tourist sleepers between Hanoi, Hue & Danang, see the Livitrans & Violette section below. SE5, SE6, SE9, SE10: Air-conditioned soft sleepers (4-berth), air-conditioned hard sleepers (6-berth), air-conditioned soft seats, air-conditioned hard seats, ordinary hard seats. Trains SE5 & SE6 were allegedly re-equipped with some of the latest modern seats cars & sleeping-cars in January 2018. SE7, SE8: Only runs at busy times, check online if it's running a month or two ahead. Air-con soft sleepers, air-con hard sleepers, air-con soft seats. SE19, SE20: Air-conditioned soft sleepers, air-conditioned hard sleepers, air-conditioned soft seats, air-conditioned hard seats, ordinary hard seats. SE21, SE22: Air-conditioned soft sleepers, air-conditioned hard sleepers, air-conditioned soft seats, air-conditioned hard seats. SE11, SE12, SE25, SE26: On certain dates you'll find additional seasonal trains.`
 ]
 
+  isHiddenZero = false;
+  isHiddenOne = false;
+  isHiddenTwo = false;
+  isHiddenThree = false;
+  isHiddenFour = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onToggle(a:number)
+  {
+    switch (a) {
+      case 0:
+        this.isHiddenZero = !this.isHiddenZero;
+        break;
+      case 1:
+      this.isHiddenOne = !this.isHiddenOne;
+      break;
+      case 2:
+      this.isHiddenTwo = !this.isHiddenTwo;
+      break;
+      case 3:
+      this.isHiddenThree = !this.isHiddenThree;
+      break;
+      case 4:
+      this.isHiddenFour = !this.isHiddenFour;
+      break;
+    
+      default:
+        break;
+    }
   }
 
 }
