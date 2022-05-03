@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import * as a from 'angular-animations';
 import { DarkModeStatusService } from '../dark-mode-status.service';
 @Component({
@@ -14,7 +15,7 @@ export class FooterComponent implements OnInit {
   switch_status:boolean=false;
   lang_ts = '';
 
-  constructor(private darkModeStatus:DarkModeStatusService) { }
+  constructor(private darkModeStatus:DarkModeStatusService, private translateService:TranslateService) { }
   
   isLinkMouseOver:boolean = false;
   isGNUMouseOver:boolean = false;
@@ -36,6 +37,12 @@ export class FooterComponent implements OnInit {
     this.switch_status = this.darkModeStatus.getStatus();
     this.lang_ts = localStorage.getItem('lang') || 'en';
   }
+
+  public selectLanguage(event:any)
+  {
+    this.translateService.use(event.target.value);
+  }
+
 
     changeLang(lang:any)
     {

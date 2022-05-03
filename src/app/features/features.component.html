@@ -2,7 +2,6 @@
     <div class="row">
     <div class="col-4">
         <svg [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" class="thumbnail" focusable="false" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 60 60" xml:space="preserve" aria-label="Våra biljetter">
-            <title>Våra biljetter</title>
             <g id="icon_box">
                 <rect fill="none" width="60" height="60"></rect>
             </g>
@@ -18,19 +17,13 @@
                 </g>
             </g>
         </svg>
-        <h4 class="text-center">Buy tickets</h4>
-        <p>
-            Travel through Vietnam with the use of our application.
-            We offer you the possibility to explore this wonderful country with the ease of a train ticket!
-            How does it work? 
-            Buy a one-way ticket and enter the place you are going to as the destination station.
-            Note: always take a printed version of your e-ticket with you. 
-        </p>
+        <h4 class="text-center">{{'buyTicketsKey'|translate}}</h4>
+        <p>{{'buyTicketsTextKey'|translate}}</p>
     </div>
 
     <div class="col-4">
         <img [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" class="thumbnail" src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/200/external-login-freelancer-xnimrodx-lineal-xnimrodx.png" alt="">
-        <h4 class="text-center">Create an account</h4>
+        <h4 class="text-center">{{'createAnAccountKey'|translate}}</h4>
         <p style="text-align: center;"> 
                    With an account, you can easily:</p>
             <div class="bodyItem__text">
@@ -66,7 +59,6 @@
 
     <div class="col-4">
         <svg [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" class="thumbnail" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 595.3 549.1" enable-background="new 0 0 64 64" xml:space="preserve" role="img" aria-label="Icon">
-            <title>Icon</title>
             <g>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M331.4,175.1c0,0-52.6-59.4-52.6-94.4c0-31.6,21.1-52.6,52.6-52.6
             s52.6,21.1,52.6,52.6C384.1,115.7,331.4,175.1,331.4,175.1z M331.7,94.9c-7.7,0-14-6.3-14-14c0-7.7,6.3-14,14-14c7.7,0,14,6.3,14,14
@@ -91,11 +83,8 @@
             c5.9,0,10.7,4.8,10.7,10.7C221.8,459.3,217.1,464.1,211.2,464.1z"></path>
             </g>
         </svg>
-        <h4 class="text-center">Locate nearest train</h4>
-        <p>
-        By granting us your location permission, we can help you find the nearest station based on your GPS coordinates.
-        This step is only possible thanks to thanks to the Google API services.
-        </p>
+        <h4 class="text-center">{{'locateNearestTrainKey'|translate}}</h4>
+        <p>{{'locateNearestTrainTextKey'|translate}}</p>
     </div>
 </div>
 </div>

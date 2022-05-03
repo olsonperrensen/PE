@@ -1,4 +1,5 @@
 <div class="container p-3 text-center">
+    <p class="lead">{{'customersKey'|translate}}</p>
     <div [@bounceInLeftOnEnter] [@bounceOutRight]="hasLeft" 
     *ngFor="let user of users" class="col">
         <span class="lead"><em>{{user.username}}&nbsp;</em></span>
@@ -6,8 +7,8 @@
         src={{user.src}}
         width="16"
         height="12">
-        <span class="lead" > &nbsp;just traveled from 
-            <strong >{{user.cities.first_city}}</strong> to 
+        <span class="lead" >&nbsp;{{'travelKey1'|translate}}
+            <strong >{{user.cities.first_city}}</strong>{{'travelKey2'|translate}}
             <strong >{{user.cities.second_city}}</strong>
         </span>
     </div>

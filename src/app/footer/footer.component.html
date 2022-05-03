@@ -3,18 +3,21 @@
       <div  
       class="d-flex justify-content-between py-4 my-4 border-top gnu">
         <div [@fadeInOnEnter]="isGNUMouseOver" (mouseover)="onGNUMouseOver()">
-          TrainAM is licensed under the GNU General Public License v3.0</div>
+          {{'licenseKey'|translate}}</div>
           <div [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" [@fadeInOnEnter]="isLinkMouseOver" (mouseover)="onLinkMouseOver()"  class="useful-links">
-            <a class="text-dark" routerLink="/sitemap">Sitemap (All Pages)</a>
-            <a class="text-dark" routerLink="/cookies">Cookies</a>
-          <a  class="text-dark" routerLink="/TOS">Terms of Service</a>
-          <a  class="text-dark" routerLink="/privacy-policy">Privacy Policy</a>
+            <a class="text-dark" routerLink="/sitemap">{{'sitemapKey'|translate}}</a>
+            <a class="text-dark" routerLink="/cookies">{{'cookiesKey'|translate}}</a>
+          <a  class="text-dark" routerLink="/TOS">{{'tosKey'|translate}}</a>
+          <a  class="text-dark" routerLink="/privacy-policy">{{'privacyPolicyKey'|translate}}</a>
           <div class="d-inline-block">
-            <select #lang (change)="changeLang(lang.value)" class="form-select">
-              <option [selected]="lang_ts == 'en'" value="en" selected>English</option>
-              <option [selected]="lang_ts == 'es'" value="es">Spanish</option>
-              <option [selected]="lang_ts == 'nl'" value="nl">Dutch</option>
-              <option [selected]="lang_ts == 'vn'" value="vn">Vietnamese</option>
+            <select #lang (change)="selectLanguage($event)" class="form-select">
+              <option  value="en-US" selected>{{'englishKey'|translate}}</option>
+              <option  value="fr-FR">{{'frenchKey'|translate}}</option>
+              <option  value="nl-NL">{{'dutchKey'|translate}}</option>
+              <option value="es-ES">{{'spanishKey'|translate}}</option>
+              <option value="vi-VN">{{'vietnameseKey'|translate}}</option>
+              <option value="zh-CN">{{'chineseKey'|translate}}</option>
+              <option value="ru-RU">{{'russianKey'|translate}}</option>
             </select>
           </div>
           </div>

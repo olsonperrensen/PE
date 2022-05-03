@@ -4,14 +4,14 @@
       <div class="card border-dark mb-3" style="max-width: 18rem;">
       <div class="card-header">#1</div>
       <div class="card-body text-dark">
-        <h5 class="card-title">Why trains are the best way to go...
+        <h5 class="card-title">{{'faq1Key'|translate}}
         </h5>
         <p class="card-text">
           <a *ngIf="!isHiddenZero" (click)="onToggle(0)" class="text-dark" routerLink="/faq">
-          {{all_text[0] | reduce}}
+          {{'faq1TextKey' |translate | reduce}}
         </a>
         <a *ngIf="isHiddenZero" (click)="onToggle(0)" class="text-dark" routerLink="/faq">
-          {{all_text[0]}}
+          {{'faq1TextKey' | translate }}
         </a>
         </p>
       </div>
@@ -24,14 +24,14 @@
     <div [@bounceInUpOnEnter] class="col"><div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
       <div class="card-header">#2</div>
       <div class="card-body">
-        <h5 class="card-title">The view from the train...
+        <h5 class="card-title">{{'faq2Key' |translate }}
         </h5>
         <p class="card-text">
           <a *ngIf="!isHiddenOne" (click)="onToggle(1)" class="text-light" routerLink="/faq">
-          {{all_text[1] | reduce}}
+            {{'faq2TextKey' |translate | reduce}}
           </a>
           <a *ngIf="isHiddenOne"(click)="onToggle(1)" class="text-light" routerLink="/faq">
-            {{all_text[1]}}
+            {{'faq2TextKey' |translate}}
             </a>
         </p>
       </div>
@@ -44,13 +44,13 @@
     <div [@bounceInDownOnEnter] class="col"><div class="card border-dark mb-3" style="max-width: 18rem;">
       <div class="card-header">#3</div>
       <div class="card-body text-dark">
-        <h5 class="card-title">Is it Ho Chi Minh or Saigon?</h5>
+        <h5 class="card-title">{{'faq3Key' |translate}}</h5>
         <p class="card-text">
           <a *ngIf="!isHiddenTwo" (click)="onToggle(2)" class="text-dark" routerLink="/faq">
-          {{all_text[2] | reduce}}
+            {{'faq3TextKey' |translate | reduce}}
           </a>
           <a *ngIf="isHiddenTwo" (click)="onToggle(2)" class="text-dark" routerLink="/faq">
-            {{all_text[2] }}
+            {{'faq3TextKey' |translate }}
             </a>
         </p>
       </div>
@@ -63,14 +63,14 @@
     <div [@bounceInRightOnEnter] class="col"><div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
       <div class="card-header">#4</div>
       <div class="card-body">
-        <h5 class="card-title">The Reunification Line...
+        <h5 class="card-title">{{'faq4Key' |translate }}
         </h5>
         <p class="card-text">
           <a *ngIf="!isHiddenThree" (click)="onToggle(3)" class="text-light" routerLink="/faq">
-          {{all_text[3] | reduce}}
+            {{'faq4TextKey' |translate | reduce}}
           </a>
           <a *ngIf="isHiddenThree" (click)="onToggle(3)" class="text-light" routerLink="/faq">
-            {{all_text[3]}}
+            {{'faq4TextKey' |translate }}
             </a>
         </p>
       </div>
@@ -84,15 +84,15 @@
 <div class="col-6"><div class="card text-white bg-dark mb-3">
   <div class="card-header">#5</div>
   <div class="card-body">
-    <h5 class="card-title">Notes by train number...
+    <h5 class="card-title">{{'faq5Key' |translate }}
 
     </h5>
     <p class="card-text">
       <a *ngIf="!isHiddenFour" (click)="onToggle(4)" class="text-light" routerLink="/faq">
-      {{all_text[4] | reduce}}
+        {{'faq5TextKey' |translate | reduce}}
       </a>
       <a *ngIf="isHiddenFour" (click)="onToggle(4)" class="text-light" routerLink="/faq">
-        {{all_text[4]}}
+        {{'faq5TextKey' |translate }}
         </a>
     </p>
   </div>

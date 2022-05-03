@@ -1,17 +1,16 @@
 <div *ngIf="isFetching" class="container">
     <div class="row justify-content-center">
       <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-      <h3>Loading...</h3>
+      <h3>{{'loadingKey'|translate}}</h3>
     </div>
   </div>
 <div *ngIf="!isFetching" class="container">
     <div class="row">
         <div class="col-xs-12">
           <div >
-            <h3 [@slideInDownOnEnter] style="margin-bottom: 10px;"> One more step: </h3>
-            <p [@slideInDownOnEnter] class="lead">Every trip has different train <strong>types</strong>.</p>
-            <p class="lead">Depending on your choice, a dynamic schedule will be consequently provided. 
-              Please, <strong>choose</strong> between the available options for your trip: </p>
+            <h3 [@slideInDownOnEnter] style="margin-bottom: 10px;"> {{'oneMoreStep1Key'|translate}} </h3>
+            <p [@slideInDownOnEnter] class="lead">{{'oneMoreStep2Key'|translate}} <strong>{{'oneMoreStep3Key'|translate}}</strong>.</p>
+            <p class="lead">{{'oneMoreStep4Key'|translate}}<strong>{{'oneMoreStep5Key'|translate}}</strong> {{'oneMoreStep6Key'|translate}} </p>
           </div>
             <ul class="list-group" [@fadeInOnEnter]>
                 <li 

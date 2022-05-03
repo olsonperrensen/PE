@@ -42,11 +42,13 @@ import { DiscountComponent } from './order/discount/discount.component';
 import { CreditCardCheckerComponent } from './order/credit-card-checker/credit-card-checker.component';
 import { BasketService } from './basket.service';
 import { FakeUsersLogComponent } from './datepicker/fake-users-log/fake-users-log.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { ProgressBarService } from './progress-bar/progress-bar.service';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { ReducePipe } from './reduce.pipe';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -104,6 +106,15 @@ import { ReducePipe } from './reduce.pipe';
     HttpClientModule,
     RecaptchaModule,
   RecaptchaFormsModule,
+  HttpClientModule,
+  TranslateModule.forRoot({
+    defaultLanguage: 'en-US',
+    loader: {
+      provide: TranslateLoader,
+      useFactory: HttpLoaderFactory,
+      deps: [HttpClient]
+    }
+  })
   ],
   providers: [JourneyDetailsService,
     TableGuardServiceGuard,
@@ -121,3 +132,8 @@ import { ReducePipe } from './reduce.pipe';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http:HttpClient)
+{
+  return new TranslateHttpLoader(http,'../assets/i18n/','.json'); 
+}

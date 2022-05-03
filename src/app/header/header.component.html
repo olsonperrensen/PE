@@ -10,12 +10,12 @@
             class="nav-link px-2"
             routerLink="/"
             routerLinkActive="text-secondary"
-            [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+            [routerLinkActiveOptions]="{exact: true}">{{'homeKey'|translate}}</a></li>
           <li><a 
             routerLink="/features" 
             class="nav-link px-2 "
             routerLinkActive="text-secondary"
-            [routerLinkActiveOptions]="{exact: true}">Features</a></li>
+            [routerLinkActiveOptions]="{exact: true}">{{'featuresKey'|translate}}</a></li>
           <!-- <li><a 
             routerLink="/pricing" 
             class="nav-link px-2 "
@@ -30,13 +30,13 @@
             routerLink="/about-us" 
             class="nav-link px-2 "
             routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact: true}">About us</a></li>
+            [routerLinkActiveOptions]="{exact: true}">{{'aboutUsKey'|translate}}</a></li>
         </ul>
         <div class="form-check form-switch">
           <input #switch type="checkbox" class="form-check-input" id="darkSwitch"
           [checked]="darkMode$ | async"
     (change)="onToggle()" />
-          <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          <label class="custom-control-label" for="darkSwitch">{{'darkModeKey'|translate}}</label>
         </div>
         <div class="text-end">
           <button 
@@ -44,11 +44,11 @@
           class="btn btn-outline-light me-2"
           routerLink="/login"
           routerLinkActive="active"
-          [routerLinkActiveOptions]="{exact: true}">Login</button>
+          [routerLinkActiveOptions]="{exact: true}">{{'loginKey'|translate}}</button>
           <button type="button" class="btn btn-warning"
           routerLink="/signup"
           routerLinkActive="active"
-          [routerLinkActiveOptions]="{exact: true}">Sign-up</button>
+          [routerLinkActiveOptions]="{exact: true}">{{'signUpKey'|translate}}</button>
         </div>
         <div style="margin-left: 10px;" 
         class="text-light bg-dark nav-link px-2 d-flex d-none d-md-flex flex-row align-items-center"> 

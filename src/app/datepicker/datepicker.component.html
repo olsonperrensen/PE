@@ -7,7 +7,8 @@ id="big-form"
 [@fadeOutRight]="isBtnClicked"
 >
     <h3><img [@jackInTheBoxOnEnter]
-      [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" src="../../assets/train_icon.png" width="25px" />Train</h3>
+      [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" 
+      src="../../assets/train_icon.png" width="25px" />{{'trainKey'|translate}}</h3>
     <button
     #demo
     type="button" 
@@ -17,13 +18,14 @@ id="big-form"
       src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39041/preview.png" 
       alt=""
       class="arrow">  
-    <label for="formGroupExampleInput">From</label>
+    <label for="formGroupExampleInput">
+      {{'fromKey'|translate}}</label>
     <button (click)="onUserLocation()" type="button" class="
     btn btn-dark text-center location now">GPS</button>
       <input 
       type="text" 
       class="form-control" 
-      placeholder="Example input"
+      placeholder="{{'fromInputKey'|translate}}"
       required
       #from="ngModel"
       ngModel
@@ -32,20 +34,21 @@ id="big-form"
       <p 
       class="text-secondary"
       *ngIf="isFullAddress"
-      >This station is the closest from your location ({{user_full_address}}) by {{closest_distance}} KM</p>
+      >{{'gpsTextKey'|translate}}({{user_full_address}}) 
+      {{'gpsTextKey2'|translate}} {{closest_distance}} KM</p>
       <p 
       class="invalid-input-text"
       *ngIf="!from.valid && from.touched"
-      >We couldn't find the station you were looking for.</p>
+      >{{'inputErrorKey'|translate}}</p>
       <img 
       src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39041/preview.png" 
       alt=""
       class="arrow">
-      <label for="formGroupExampleInput2">To</label>
+      <label for="formGroupExampleInput2">{{'toKey'|translate}}</label>
       <input 
       type="text" 
       class="form-control" 
-      placeholder="Another input"
+      placeholder="{{'toInputKey'|translate}}"
       required
       #to="ngModel"
       ngModel
@@ -53,17 +56,16 @@ id="big-form"
       <p 
       class="invalid-input-text"
       *ngIf="!to.valid && to.touched"
-      >We couldn't find the station you were looking for.</p>
+      >{{'inputErrorKey'|translate}}</p>
       <img 
       src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39041/preview.png" 
       alt=""
       class="arrow">
-        <label for="formGroupExampleInput3">Departure Date</label>
-        <button type="button" (click)="onNow()" class="btn btn-dark now">NOW</button>
+        <label for="formGroupExampleInput3">{{'departureDateKey'|translate}}</label>
+        <button type="button" (click)="onNow()" class="btn btn-dark now">{{'nowKey'|translate}}</button>
         <input 
       type="date" 
       class="form-control" 
-      placeholder="Another input"
       required
       #date="ngModel"
       ngModel
@@ -71,18 +73,18 @@ id="big-form"
       <p 
       class="invalid-input-text"
       *ngIf="!date.valid && date.touched"
-      >You entered a non-existent date.</p>
+      >{{'dateErrorKey'|translate}}</p>
         <button 
         type="submit"
         class="w-100 btn btn-lg btn btn-dark"
         [disabled]="!f.valid"
-        >Take me there</button>
+        >{{'submitKey'|translate}}</button>
         <p 
         class="invalid-input-text"
-        *ngIf="!isCity&&!isSame">We are sorry, your cities couldn't be found in our database.</p>
+        *ngIf="!isCity&&!isSame">{{'submitErrorKey'|translate}}</p>
         <p 
         class="invalid-input-text"
-        *ngIf="isSame">You chose the same city twice.</p>
+        *ngIf="isSame">{{'submitDuplicateKey'|translate}}</p>
         
   </form>
 </div>

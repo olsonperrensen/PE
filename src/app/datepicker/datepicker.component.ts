@@ -6,6 +6,7 @@ import { JourneyDetailsService } from '../journey-details.service';
 import * as a from 'angular-animations';
 import { DarkModeStatusService } from '../dark-mode-status.service';
 import { ProgressBarService } from '../progress-bar/progress-bar.service';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-datepicker',
   templateUrl: './datepicker.component.html',
@@ -44,7 +45,8 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
   
   // native-actions
   constructor(private router:Router, private journeyDetails:JourneyDetailsService,
-    private darkModeStatus:DarkModeStatusService, private R2:Renderer2, private progressBar:ProgressBarService) { }
+    private darkModeStatus:DarkModeStatusService, private R2:Renderer2, 
+    private progressBar:ProgressBarService, private translateService: TranslateService) { }
   ngOnInit(): void { 
     window.scroll({top:0,left:0,behavior:'smooth'});
     this.reverseLookup(); 
@@ -54,6 +56,8 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnDestroy(): void {
     this.journeyDetails.setUserJourney(this.userJourney);
   }
+
+  
 
   // JSON list of cities
   cities = require("../../assets/cities.json");

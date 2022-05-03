@@ -1,22 +1,22 @@
 <div *ngIf="isFetching" class="container">
   <div class="row justify-content-center">
     <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-    <h3>Loading...</h3>
+    <h3>{{'loadingKey'|translate}}</h3>
   </div>
 </div>
 <div *ngIf="!isFetching" class="container">
 <img [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}" [@jackInTheBoxOnEnter] src="../../assets/date.png" width="40px" />
 <div class="row justify-content-center">
-  <h6>You chose: {{userJourney.from}} - {{userJourney.to}} on {{userJourney.date}}</h6>
+  <h6>{{'youChoseKey'|translate}}{{userJourney.from}} - {{userJourney.to}} {{'onKey'|translate}} {{userJourney.date}}</h6>
   <div class="col-auto">
     <table [@slideInUpOnEnter] class="table">
       <thead>
         <tr [ngClass]="{'tr-dark':switch_status, 'tr-light': !switch_status}" #tr1 class="tr">
-          <td>Departure City</td>
-          <td>Departure Date</td>
-          <td>Departure Hour</td>
-          <td>Next Arriving Hour</td>
-          <td>Total Kilometers Travelled</td>
+          <td>{{'tableTitle1Key'|translate}}</td>
+          <td>{{'tableTitle2Key'|translate}}</td>
+          <td>{{'tableTitle3Key'|translate}}</td>
+          <td>{{'tableTitle4Key'|translate}}</td>
+          <td>{{'tableTitle5Key'|translate}}</td>
         </tr>
       </thead>
       <tbody *ngIf="!isExpanding">
@@ -70,7 +70,7 @@
       #ticket_name="ngModel"
       name="ticket_name"
       required>
-        <option value="default" selected>Choose your ticket</option>
+        <option value="default" selected>{{'choseYourTicketKey'|translate}}</option>
         <option value="first_class">First Class</option>
         <option value="second_class">Second Class</option>
         <option value="standing">Standing</option>
@@ -107,7 +107,7 @@
       [ngClass]="{'div-dark':switch_status, 'div-light': !switch_status}"
       [@flipInXOnEnter]="ticket_name.valid && ticket_name.dirty" 
       *ngIf="ticket_name.valid && ticket_name.dirty" class="col card">
-        <p>This ticket includes the following:</p>
+        <p>{{'ticketDetailsTitleKey'|translate}}</p>
           <ul>
             <li>Ticket name: test</li>
             <li>Ticket code: test</li>
@@ -116,7 +116,8 @@
       </div>
       <hr>
       <div ngbDropdown class="d-inline-block">
-        <button type="button" class="btn btn-outline-primary" id="dropdownForm1" ngbDropdownToggle>Recently used</button>
+        <button type="button" class="btn btn-outline-primary" id="dropdownForm1" ngbDropdownToggle>
+          {{'recentlyUsedKey'|translate}}</button>
         <div ngbDropdownMenu aria-labelledby="dropdownForm1">
           <form class="px-4 py-3">
             <div class="mb-3">
@@ -144,7 +145,7 @@
       [disabled]="!ticket_name.dirty"
       type="submit"
     class="btn btn-primary"
-    [ngClass]="{'btn-warning':!isDatepicker}">Order now</button>
+    [ngClass]="{'btn-warning':!isDatepicker}">{{'orderNowKey'|translate}}</button>
     <p *ngIf="!isDatepicker" style="color: red;"><strong>Warning!</strong> You didn't come from the Home page.
     Are you really sure you want to take this specific trip? </p>
     </form>

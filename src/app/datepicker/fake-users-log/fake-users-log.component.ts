@@ -47,7 +47,7 @@ export class FakeUsersLogComponent implements OnInit {
     );
     setTimeout(() => {
       this.hasLeft = true;
-    }, 3000);
+    }, 6000);
     this.users = [];
     this.http.get
     ('https://randomuser.me/api/').subscribe(res => 
@@ -81,7 +81,7 @@ export class FakeUsersLogComponent implements OnInit {
     }
     );
     this.users = [];
-  }, 3600);
+  }, 6600);
   
   }
 
