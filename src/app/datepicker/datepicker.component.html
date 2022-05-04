@@ -12,7 +12,8 @@ id="big-form"
     <button
     #demo
     type="button" 
-    class="btn btn-dark demo"
+    class="btn btn-dark demo" ngbTooltip="Randomly pick two cities." placement="right"
+    [openDelay]="100" [closeDelay]="30"
     (click)="onDemo()">DEMO</button><hr>
     <img 
       src="https://d29fhpw069ctt2.cloudfront.net/icon/image/39041/preview.png" 
@@ -20,8 +21,10 @@ id="big-form"
       class="arrow">  
     <label for="formGroupExampleInput">
       {{'fromKey'|translate}}</label>
-    <button (click)="onUserLocation()" type="button" class="
-    btn btn-dark text-center location now">GPS</button>
+    <button (click)="onUserLocation()" type="button" 
+    ngbTooltip="Take your coordinates." placement="right"
+    [openDelay]="100" [closeDelay]="30"
+    class="btn btn-dark text-center location now">GPS</button>
       <input 
       type="text" 
       class="form-control" 
@@ -62,7 +65,11 @@ id="big-form"
       alt=""
       class="arrow">
         <label for="formGroupExampleInput3">{{'departureDateKey'|translate}}</label>
-        <button type="button" (click)="onNow()" class="btn btn-dark now">{{'nowKey'|translate}}</button>
+        <button
+        ngbTooltip="Choose today."
+        placement="right"
+    [openDelay]="100" [closeDelay]="30"
+        type="button" (click)="onNow()" class="btn btn-dark now">{{'nowKey'|translate}}</button>
         <input 
       type="date" 
       class="form-control" 

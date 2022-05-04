@@ -52,6 +52,9 @@
       </tbody>
     </table>
     <a 
+    ngbTooltip="See the rest of the table."
+    placement="bottom"
+    [openDelay]="100" [closeDelay]="30"
     *ngIf="!isExpanding"
     (click)="onExpandClick()" class="text-light" routerLink="/table">
     <div [@fadeOutDown]="isExpandingAnim"  class="float">
@@ -62,11 +65,12 @@
     </a>
     <div *ngIf="isExpanding">
     <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-      <select 
+      <select triggers="mouseover" placement="right" [autoClose]="true" ngbTooltip="Be sure to have a ticket before continuing."
+      #tooltip3="ngbTooltip"
       class="form-select form-select-sm"
       [ngClass]="{selectValid:ticket_name.valid && ticket_name.dirty}" 
       aria-label=".form-select-sm example"
-      [ngModel]="0"
+      [ngModel]="'default'"
       #ticket_name="ngModel"
       name="ticket_name"
       required>
@@ -80,6 +84,8 @@
       class="col-md-3 col-lg-3 col-xl-2 d-flex basket"
       *ngIf="ticket_name.valid && ticket_name.dirty">
         <button
+        ngbTooltip="Remove ticket." placement="bottom"
+    [openDelay]="100" [closeDelay]="30"
         (click)="onRemoveTicket(f)"
         type="button" 
         (mouseover)="onMouseOver('minus')" 
@@ -93,6 +99,8 @@
           class="form-control form-control-sm" />
 
         <button 
+        ngbTooltip="Add ticket." placement="right"
+    [openDelay]="100" [closeDelay]="30"
         (mouseover)="onMouseOver('plus')" [@rotateIn]="isPlusSignHovered" 
         class="btn btn-link px-2" type="button"
         (click)="onAddTicket(f)">
@@ -116,7 +124,10 @@
       </div>
       <hr>
       <div ngbDropdown class="d-inline-block">
-        <button type="button" class="btn btn-outline-primary" id="dropdownForm1" ngbDropdownToggle>
+        <button type="button" class="btn btn-outline-primary" id="dropdownForm1" ngbDropdownToggle
+        ngbTooltip="Requires an account." placement="bottom"
+    [openDelay]="100" [closeDelay]="30"
+        >
           {{'recentlyUsedKey'|translate}}</button>
         <div ngbDropdownMenu aria-labelledby="dropdownForm1">
           <form class="px-4 py-3">
@@ -142,10 +153,12 @@
         </div>
       </div>
       <button 
+      (mouseenter)="tooltip3.toggle()"
       [disabled]="!ticket_name.dirty"
       type="submit"
     class="btn btn-primary"
-    [ngClass]="{'btn-warning':!isDatepicker}">{{'orderNowKey'|translate}}</button>
+    [ngClass]="{'btn-warning':!isDatepicker}" >{{'continueToCheckoutKey'|translate}}</button>
+      
     <p *ngIf="!isDatepicker" style="color: red;"><strong>Warning!</strong> You didn't come from the Home page.
     Are you really sure you want to take this specific trip? </p>
     </form>

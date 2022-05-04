@@ -1,6 +1,9 @@
 <form #f="ngForm" name="form" (ngSubmit)="onSubmit(f)" class="card p-2">
     <div class="input-group">
-      <input #coupon="ngModel" ngModel name="coupon" type="text" class="form-control" placeholder="Coupon code" >
+      <input #coupon="ngModel" 
+      ngbTooltip="Try: SALESUoqLfcs2022" placement="bottom"
+    [openDelay]="100" [closeDelay]="3000"
+      ngModel name="coupon" type="text" class="form-control" placeholder="Coupon code" >
       <p>&nbsp;&nbsp; </p> 
       <button 
       type="submit"

@@ -20,7 +20,8 @@
                   <button 
                   #a
                   (click)="onClick(a)" [@flipOutX]="animStateA"  
-                  style="width: 100%; margin: 15px;" 
+                  style="width: 100%; margin: 15px;" ngbTooltip="Trains SE1 & SE2 also have a handful of VIP 2-berth compartments (only about 4 per train). SE1 & SE2 also convey privately-run Livitrans tourist sleepers between Hanoi, Hue & Danang."
+                  [openDelay]="100" [closeDelay]="300"
                   class="btn btn-outline-success">SE50</button>
                   <span class="badge badge-primary badge-pill">OK</span>
                 </li>
@@ -28,7 +29,8 @@
                   <button 
                   #b
                   (click)="onClick(b)" [@flipOutX]="animStateB"
-                  style="width: 100%;margin: 15px;" 
+                  style="width: 100%;margin: 15px;"   ngbTooltip="Trains SE3 & SE4 were equipped with smartly-refurbished cars in 2015, trains SE1 & SE2 got similar refurbished cars in 2016."
+                  [openDelay]="100" [closeDelay]="300"
                   class="btn btn-outline-primary">SE70</button>
                   <span class="badge badge-primary badge-pill">OK</span>
                 </li>
@@ -36,7 +38,8 @@
                   <button 
                   #c
                   (click)="onClick(c)" [@flipOutX]="animStateC"
-                  style="width: 100%;margin: 15px;" 
+                  style="width: 100%;margin: 15px;" ngbTooltip="SE21, SE22: Air-conditioned soft sleepers, air-conditioned hard sleepers, air-conditioned soft seats, air-conditioned hard seats."
+                  [openDelay]="100" [closeDelay]="300"
                   class="btn btn-outline-warning">SE80</button>
                   <span class="badge badge-primary badge-pill badge-full">FULL</span>
                 </li>
