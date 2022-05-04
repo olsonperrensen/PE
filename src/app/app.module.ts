@@ -49,7 +49,7 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { ReducePipe } from './reduce.pipe';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-
+import { NgParticlesModule } from "ng-particles";
 @NgModule({
   declarations: [
     AppComponent,
@@ -114,7 +114,8 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
       useFactory: HttpLoaderFactory,
       deps: [HttpClient]
     }
-  })
+  }),
+  NgParticlesModule
   ],
   providers: [JourneyDetailsService,
     TableGuardServiceGuard,
