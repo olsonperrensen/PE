@@ -29,7 +29,7 @@ const appRoutes: Routes = [
     breadcrumb: [
       {
         label: 'Home\t/',
-        url: ''
+        url: '/'
       }
     ]
   },},
@@ -42,7 +42,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Train type',
-        url: ''
+        url: '/train-type'
       }
     ]
   },},
@@ -55,7 +55,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Features',
-        url: ''
+        url: '/features'
       }
     ]
   },},
@@ -68,7 +68,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Pricing',
-        url: ''
+        url: '/pricing'
       }
     ]
   },},{ path: 'help-contact', component:  HelpContactComponent,
@@ -80,7 +80,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Help & Contact',
-        url: ''
+        url: '/help-contact'
       }
     ]
   },},
@@ -93,7 +93,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'F.A.Q.',
-        url: ''
+        url: '/faq'
       }
     ]
   },},
@@ -106,7 +106,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'About Us',
-        url: ''
+        url: '/about-us'
       }
     ]
   },},
@@ -115,7 +115,7 @@ const appRoutes: Routes = [
     breadcrumb: [
       {
         label: '404',
-        url: ''
+        url: '/error'
       }]
   },},
   { path: 'login', component:  LoginComponent,
@@ -127,7 +127,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Log in',
-        url: ''
+        url: '/login'
       }
     ]
   },},
@@ -140,7 +140,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Sign up',
-        url: ''
+        url: '/signup'
       }
     ]
   },},
@@ -156,7 +156,7 @@ const appRoutes: Routes = [
       {label:'Sign up',url:'/signup'},
       {
         label: 'Terms of Service',
-        url: ''
+        url: '/tos'
       }
     ]
   },},
@@ -170,7 +170,7 @@ const appRoutes: Routes = [
       {label:'Sign up',url:'/signup'},
       {
         label: 'Privacy Policy',
-        url: ''
+        url: '/privacy-policy'
       }
     ]
   },},
@@ -187,7 +187,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Table',
-        url: ''
+        url: '/table'
       }
     ]
   },},
@@ -209,7 +209,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Order',
-        url: ''
+        url: '/order'
       }
     ]
   },},
@@ -235,7 +235,7 @@ const appRoutes: Routes = [
       ,
       {
         label: 'Thank You!',
-        url:''
+        url:'/thank-you'
       }
     ]
   },},
@@ -248,7 +248,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Cookies',
-        url: ''
+        url: '/cookies'
       }
     ]
   },},
@@ -273,7 +273,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Coming Soon!',
-        url: ''
+        url: '/coming-soon'
       }
     ]
   },},
@@ -286,7 +286,7 @@ const appRoutes: Routes = [
       },
       {
         label: 'Sitemap',
-        url: ''
+        url: '/sitemap'
       }
     ]
   },},

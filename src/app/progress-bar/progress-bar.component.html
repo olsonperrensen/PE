@@ -1,4 +1,4 @@
-<div class="container-fluid w-25">
+<div [ngClass]="{'icon-dark':switch_status,'icon-light':!switch_status}"   class="container-fluid w-25">
     <div class="progress">
         <div #progressValue class="progress-value "></div>
       </div>

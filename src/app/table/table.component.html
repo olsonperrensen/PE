@@ -65,7 +65,10 @@
     </a>
     <div *ngIf="isExpanding">
     <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-      <select triggers="mouseover" placement="right" [autoClose]="true" ngbTooltip="Be sure to have a ticket before continuing."
+      <select 
+      triggers="mouseover" placement="right" [autoClose]="true" 
+      ngbTooltip="Be sure to have a ticket before continuing."
+      [ngStyle]="{'color':switch_status===true?'white':'black'}"
       #tooltip3="ngbTooltip"
       class="form-select form-select-sm"
       [ngClass]="{selectValid:ticket_name.valid && ticket_name.dirty}" 

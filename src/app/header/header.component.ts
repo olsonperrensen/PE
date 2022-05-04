@@ -31,6 +31,8 @@ export class HeaderComponent implements OnInit, AfterViewInit{
   onToggle(): void {
     this.darkModeService.toggle();
     this.darkModeStatus.setStatus(Boolean(this.switch.value));
+    // localStorage.setItem('theme',`${Boolean(this.switch.value)}`)
+    window.location.reload();
   }
 
   ngOnInit(): void {

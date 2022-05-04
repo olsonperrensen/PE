@@ -1,5 +1,5 @@
 <app-header></app-header>
-<app-ng-dynamic-breadcrumb fontSize="16px" bgColor="none" class="ll"></app-ng-dynamic-breadcrumb>
+<app-ng-dynamic-breadcrumb [fontColor]="switchStatusFn()" fontSize="16px" bgColor="none"></app-ng-dynamic-breadcrumb>
 <app-progress-bar></app-progress-bar>
 <router-outlet></router-outlet>
 <div [@fadeOut]="isAnim" *ngIf="isFirstTime" class="alert text-center cookiealert" role="alert">
