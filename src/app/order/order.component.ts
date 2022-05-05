@@ -21,6 +21,7 @@ export class OrderComponent implements OnInit {
 
   switch_status!:boolean;
   isTable!:boolean;
+  isEditTicketsEnabled:boolean = false;
   total_tickets = 0;
   total = 0;
   tickets!:Ticket[];
@@ -62,5 +63,10 @@ export class OrderComponent implements OnInit {
  onSubmit(f:NgForm)
  {
    console.log(f);  
+ }
+
+ onEditTickets()
+ {
+   this.isEditTicketsEnabled = !this.isEditTicketsEnabled;
  }
 }

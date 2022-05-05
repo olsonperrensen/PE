@@ -21,6 +21,14 @@
                 <small class="text-muted">{{ticket.code}}</small>
               </div>
               <span class="text-muted">€{{ticket.price}}</span>
+              <div *ngIf="isEditTicketsEnabled" style="margin-bottom: 10px;">
+                <select style="font-size: small;" [(ngModel)]="ticket.name" class="form-select form-select-sm" name="" id="">
+                  <option value="default" selected>Edit tickets</option>
+            <option value="first_class">First Class</option>
+            <option value="second_class">Second Class</option>
+            <option value="standing">Standing</option>
+                </select>
+              </div>
             </li>
             <li
             *ngIf="isValid"
@@ -33,10 +41,12 @@
             </li>
             <li class="list-group-item d-flex justify-content-between">
               <span>Total (EUR)</span>
+              <a (click)="onEditTickets()" routerLink="/order"  class="link-secondary">
+              <span style="margin-left: 146px;" class="link-secondary">Edit tickets</span>
+              </a> 
               <strong>€{{total}}</strong>
             </li>
           </ul>
-  
           <app-discount (isValid)="mFn($event)" ></app-discount>
         </div>
         <div class="col-md-7 col-lg-8">
