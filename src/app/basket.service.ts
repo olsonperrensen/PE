@@ -15,7 +15,12 @@ export class BasketService {
   }
   addToBasket(user_ticket:Ticket)
   {
-    this.basket.push(user_ticket);
+    const new_ticket = {
+      name: user_ticket.name,
+      code: user_ticket.code,
+      price: user_ticket.price
+    }
+    this.basket.push(new_ticket);
     console.log(this.basket);
   }
   removeFromBasket(user_ticket:Ticket)

@@ -145,6 +145,12 @@ export class TableComponent implements OnInit{
       this.shouldAsk = true;
     }
     this.basketService.addToBasket(this.ticket);
+    
+  }
+
+  reset_form(f:NgForm) 
+  {
+    this.ticket_quantity = 0;
   }
 
 

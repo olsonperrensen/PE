@@ -76,6 +76,7 @@
       [ngModel]="'default'"
       #ticket_name="ngModel"
       name="ticket_name"
+      (change)="reset_form(f)"
       required>
         <option value="default" selected>{{'choseYourTicketKey'|translate}}</option>
         <option value="first_class">First Class</option>
