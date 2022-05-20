@@ -29,8 +29,8 @@
         >
           <td [ngStyle]="{'font-weight': (f?'bold':'')}">{{row.CITY}}</td>
           <td>{{row.DATE}}</td>
-          <td>hr</td>
-          <td>hr</td>
+          <td>{{row.ARRIVEHR}}</td>
+          <td>{{row.LEAVEHR}}</td>
           <td>{{row.KM}}</td>
         </tr>
       </tbody>
@@ -45,8 +45,8 @@
         >
           <td [ngStyle]="{'font-weight': (f||l?'bold':'')}">{{row.CITY}}</td>
           <td>{{row.DATE}}</td>
-          <td>hr</td>
-          <td>hr</td>
+          <td>{{row.ARRIVEHR}}</td>
+          <td>{{row.LEAVEHR}}</td>
           <td>{{row.KM}}</td>
         </tr>
       </tbody>
