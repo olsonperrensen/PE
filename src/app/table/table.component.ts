@@ -76,7 +76,11 @@ export class TableComponent implements OnInit{
 
     this.NghiTempSlice.push({CITY: "...", KM: "...", DATE: "...", "ARRIVEHR": "...", "LEAVEHR": "..."})
 
-    this.switch_status = this.darkModeStatus.getStatus();
+    this.darkModeStatus.getStatus().subscribe((status:any) =>
+    {
+      this.switch_status = status;
+
+    });
 
     // DEPRECATED 
 

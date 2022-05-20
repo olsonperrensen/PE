@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit, AfterViewInit{
   ngAfterViewInit(): void {
   }
 
-  @ViewChild('switch') switch!:HTMLInputElement;
+  @ViewChild('switch') switch!:ElementRef;
   switch_status!:boolean;
   faShoppingCart = faShoppingCart;
   isBasketEmpty = true;
@@ -30,9 +30,10 @@ export class HeaderComponent implements OnInit, AfterViewInit{
  
   onToggle(): void {
     this.darkModeService.toggle();
-    this.darkModeStatus.setStatus(Boolean(this.switch.value));
+    console.log(this.switch);
+    this.darkModeStatus.setStatus(Boolean(this.switch.nativeElement.checked));
     // localStorage.setItem('theme',`${Boolean(this.switch.value)}`)
-    window.location.reload();
+    // window.location.reload();
   }
 
   ngOnInit(): void {
@@ -46,6 +47,7 @@ export class HeaderComponent implements OnInit, AfterViewInit{
       this.darkModeStatus.setStatus(true);
       this.switch_status = true;
     }
+    
    
 
     // this.darkModeService.toggle();

@@ -34,7 +34,11 @@ export class FooterComponent implements OnInit {
     }, 2800);
   }
   ngOnInit(): void {
-    this.switch_status = this.darkModeStatus.getStatus();
+    this.darkModeStatus.getStatus().subscribe((status:any) =>
+    {
+      this.switch_status = status;
+
+    });
     this.lang_ts = localStorage.getItem('lang') || 'en';
   }
 

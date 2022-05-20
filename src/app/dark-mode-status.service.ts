@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DarkModeStatusService {
 
-  private status:boolean = false
+  private status= new Subject(); 
 
   public getStatus()
   {
@@ -14,7 +15,7 @@ export class DarkModeStatusService {
 
   public setStatus(u_status:boolean)
   {
-    this.status = u_status;
+    this.status.next(u_status);
   }
 
   constructor() { }

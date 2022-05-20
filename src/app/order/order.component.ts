@@ -29,6 +29,8 @@ export class OrderComponent implements OnInit {
   isValid = false;
   coupon = '';
   faClose = faClose;
+  previousIndex = 0;
+  editCounter = 0;
 
   constructor(private router:Router, private route:ActivatedRoute, private journeyDetails:JourneyDetailsService,
     private darkModeStatus:DarkModeStatusService, private progressBar:ProgressBarService,
@@ -47,7 +49,11 @@ export class OrderComponent implements OnInit {
       this.isTable = true;
     }
     this.userJourney = this.journeyDetails.getUserJourney();
-    this.switch_status = this.darkModeStatus.getStatus();
+    this.darkModeStatus.getStatus().subscribe((status:any) =>
+    {
+      this.switch_status = status;
+
+    });
     this.progressBar.setProgressBar('step4');
     this.tickets = this.basketService.getBasket();
     this.total_tickets = this.tickets.length;
@@ -71,8 +77,39 @@ export class OrderComponent implements OnInit {
  {
    this.isEditTicketsEnabled = !this.isEditTicketsEnabled;
  }
+ onEditTicket(select:NgModel,ticket:Ticket, index:number)
+ {
+   if(index !== this.previousIndex)
+   {
+    this.total -= ticket.price; 
+   }
+  //  ticket.name = select.value;
+   ticket.price =
+    select.value === 'second_class'? 10 
+    : 
+    select.value === 'first_class'?5 
+    :
+    select.value === 'standing'?20 
+    : 0
+    ;
+    if(this.editCounter < this.tickets.length)
+    {
+      this.total += 
+   select.value === 'second_class'? 10 
+   : 
+   select.value === 'first_class'?5 
+   :
+   select.value === 'standing'?20 
+   : 0
+   ;
+    }
+    this.previousIndex = index;
+    this.editCounter++;
+ }
  onRemoveTicket(ticket:any)
  {
   this.basketService.removeFromBasket(ticket);
+  this.total -= ticket.price;
+  this.total_tickets -= 1;
  }
 }

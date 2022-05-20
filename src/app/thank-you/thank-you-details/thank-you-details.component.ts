@@ -33,7 +33,11 @@ export class ThankYouDetailsComponent implements OnInit {
     }, 1000);
   }
   ngOnInit(): void {
-    this.switch_status = this.darkModeStatus.getStatus();
+    this.darkModeStatus.getStatus().subscribe((status:any) =>
+    {
+      this.switch_status = status;
+
+    });
     this.tickets = this.basketService.getBasket();
     this.tickets.forEach(ticket => {
       this.total += ticket.price;

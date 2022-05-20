@@ -10,7 +10,7 @@
           <a  class="text-dark" routerLink="/TOS">{{'tosKey'|translate}}</a>
           <a  class="text-dark" routerLink="/privacy-policy">{{'privacyPolicyKey'|translate}}</a>
           <div class="d-inline-block">
-            <select #lang (change)="selectLanguage($event)" class="form-select">
+              <select [ngStyle]="{backgroundColor:1?'#2d3436':'#fffff',color:1?'#ffffff':'#00000'}" #lang (change)="selectLanguage($event)" class="form-select">
               <option  value="en-US" selected>{{'englishKey'|translate}}</option>
               <option  value="fr-FR">{{'frenchKey'|translate}}</option>
               <option  value="nl-NL">{{'dutchKey'|translate}}</option>

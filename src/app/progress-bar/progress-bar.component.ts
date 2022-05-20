@@ -16,7 +16,11 @@ export class ProgressBarComponent implements OnInit, AfterViewInit {
     private darkModeStatus:DarkModeStatusService) { }
 
   ngOnInit(): void {
-    this.switch_status = this.darkModeStatus.getStatus();
+    this.darkModeStatus.getStatus().subscribe((status:any) =>
+    {
+      this.switch_status = status;
+
+    });
   }
   ngAfterViewInit(): void {
     setInterval(() => {

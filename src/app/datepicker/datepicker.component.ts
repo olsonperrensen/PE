@@ -50,7 +50,12 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnInit(): void { 
     window.scroll({top:0,left:0,behavior:'smooth'});
     this.reverseLookup(); 
-    this.switch_status = this.darkModeStatus.getStatus();
+    this.darkModeStatus.getStatus().subscribe((status:any) =>
+    {
+      this.switch_status = status;
+      console.log("status",this.switch_status);
+
+    });
     this.progressBar.setProgressBar('step1');
    }
   ngOnDestroy(): void {

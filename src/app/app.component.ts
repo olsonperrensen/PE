@@ -29,7 +29,11 @@ export class AppComponent implements OnInit{
     this.onHideCookies();
       this.userJourney = this.journeyDetails.getUserJourney();
       console.log(`From app.component:${this.userJourney.from}-${this.userJourney.to}-${this.userJourney.date}`.toUpperCase());
-      this.switch_status = this.darkModeStatus.getStatus();
+      this.darkModeStatus.getStatus().subscribe((status:any) =>
+    {
+      this.switch_status = status;
+
+    });
     }
 
     switchStatusFn()
