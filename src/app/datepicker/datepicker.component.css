@@ -57,8 +57,13 @@ agm-map
 {
        height: 200px;
 }
-
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 9999px){
+       .w-25
+       {
+              width: 30% !important;
+       }
+}
+@media screen and (max-width: 1350px){
        .w-25
        {
               width: 50% !important;
