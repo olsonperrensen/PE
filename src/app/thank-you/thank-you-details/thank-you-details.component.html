@@ -51,6 +51,9 @@
 <button ngbTooltip="For questions and issues." placement="bottom"
 [openDelay]="100" [closeDelay]="30" 
 routerLink="/help-contact" class="btn btn-outline-warning mb-2 me-2">Help?</button>
+<button ngbTooltip="Delete your record from our database." placement="bottom"
+[openDelay]="100" [closeDelay]="30" 
+(click)="onCancelTicket()" class="btn btn-outline-danger mb-2 me-2">Cancel ticket</button>
 <ng-template #content let-modal>
     <div class="modal-header">
       <h4 class="modal-title">Save PDF</h4>

@@ -1,9 +1,10 @@
 export class UserDetails {
-    "country": "Afganistan";
-  "email": "";
-  "firstName": "";
-  "lastName": ""
-  ;"pwd": "";
-  "username": "";
-  "zip": ""
+    "firstName": string;
+    "lastName": string;
+    "username": string;
+    "pwd": string;
+    "email": string;
+    "country": string;
+    "zip": string;
+    "id": number
 }

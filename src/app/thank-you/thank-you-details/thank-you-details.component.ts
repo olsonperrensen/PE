@@ -3,7 +3,10 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import jsPDF from 'jspdf';
 import { BasketService } from 'src/app/basket.service';
 import { DarkModeStatusService } from 'src/app/dark-mode-status.service';
+import { PlaceOrderService } from 'src/app/order/place-order.service';
+import { UserDetails } from 'src/app/order/user-details';
 import { Ticket } from 'src/app/table/ticket';
+import { CancelTicketService } from './cancel-ticket.service';
 
 @Component({
   selector: 'app-thank-you-details',
@@ -19,7 +22,17 @@ export class ThankYouDetailsComponent implements OnInit {
   total = 0;
 
   constructor(private modalService: NgbModal,private darkModeStatus:DarkModeStatusService,
-    private basketService:BasketService) { }
+    private basketService:BasketService, private cancelTicket:CancelTicketService,
+    private placeOrder:PlaceOrderService) { }
+
+    onCancelTicket()
+    {
+      const lastOrder = this.placeOrder.getLastPlacedOrder();
+      this.cancelTicket.cancelTicket(lastOrder.id).subscribe(
+        (res)=>{alert(`Your ticket (Nr: ${lastOrder.id}, email: ${lastOrder.email}) has been successfully cancelled.`)},
+        (error)=>{alert(`There was a problem canceling your ticket. 
+      Error: ${error}`)});
+    }
 
   public onCreatePDF(content:any)
   {
@@ -43,6 +56,5 @@ export class ThankYouDetailsComponent implements OnInit {
       this.total += ticket.price;
     });
   }
-
 }
 

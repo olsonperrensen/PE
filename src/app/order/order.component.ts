@@ -93,7 +93,9 @@ export class OrderComponent implements OnInit {
     {
       this.placeOrder.placeOrder(f.value).subscribe((res)=>{
     
-        console.log('successfully added to the db: ',res)}
+        console.log('successfully added to the db: ',res);
+        this.placeOrder.setLastPlacedOrder(res);
+      }
       ,(error)=>{console.log("error on adding to .db: ",error)});
       this.router.navigate(['/thank-you']);
       this.progressBar.setProgressBar('step5');
