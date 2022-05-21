@@ -393,7 +393,7 @@
               <div class="col-md-4">
                 <label for="state" class="form-label">{{'stateKey'|translate}} </label>
                 <!--- Afghanistan states -->
-<select *ngIf="'Afganistan'===country.value" class="form-select" id="country-state" name="country-state">
+<select #state="ngModel" ngModel name="state" *ngIf="'Afganistan'===country.value" class="form-select" id="country-state" name="country-state">
   <option value="BDS">Badakhshan</option>
   <option value="BDG">Badghīs</option>
   <option value="BGL">Baghlan</option>
@@ -430,7 +430,7 @@
   <option value="ZAB">Zabul</option>
 </select>
 <!--- Belgium states -->
-<select *ngIf="'Belgium'===country.value" class="form-select" id="country-state" name="country-state">
+<select #state="ngModel" ngModel name="state" *ngIf="'Belgium'===country.value" class="form-select" id="country-state" name="country-state">
   <option value="VAN">Antwerp</option>
   <option value="BRU">Brussels-Capital Region</option>
   <option value="VOV">East Flanders</option>
@@ -446,7 +446,7 @@
   <option value="VWV">West Flanders</option>
 </select>
 <!--- France states -->
-<select *ngIf="'France'===country.value" class="form-select" id="country-state" name="country-state">
+<select #state="ngModel" ngModel name="state" *ngIf="'France'===country.value" class="form-select" id="country-state" name="country-state">
   <option value="WF-AL">Alo</option>
   <option value="A">Alsace</option>
   <option value="B">Aquitaine</option>
@@ -491,7 +491,7 @@
   <option value="WF">Wallis and Futuna</option>
 </select>
 <!--- Germany states -->
-<select *ngIf="'Germany'===country.value" class="form-select" id="country-state" name="country-state">
+<select #state="ngModel" ngModel name="state" *ngIf="'Germany'===country.value" class="form-select" id="country-state" name="country-state">
   <option value="BW">Baden-Württemberg</option>
   <option value="BY">Bavaria</option>
   <option value="BE">Berlin</option>
@@ -510,7 +510,7 @@
   <option value="TH">Thuringia</option>
 </select>
 <!--- Viet Nam states -->
-<select *ngIf="'Vietnam'===country.value" class="form-select" id="country-state" name="country-state">
+<select #state="ngModel" ngModel name="state" *ngIf="'Vietnam'===country.value" class="form-select" id="country-state" name="country-state">
   <option value="44">An Giang</option>
   <option value="43">Bà Rịa-Vũng Tàu</option>
   <option value="54">Bắc Giang</option>
