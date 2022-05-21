@@ -40,6 +40,10 @@ export class OrderComponent implements OnInit {
     {
       this.isValid = event.valid;
       this.coupon = event.coupon;
+      if(this.total > 5)
+      {
+        this.total -= 5;
+      }
     }
 
   ngOnInit(): void {
@@ -108,8 +112,11 @@ export class OrderComponent implements OnInit {
  }
  onRemoveTicket(ticket:any)
  {
-  this.basketService.removeFromBasket(ticket);
-  this.total -= ticket.price;
-  this.total_tickets -= 1;
+   if(this.total_tickets > 1 && this.total > ticket.price)
+  {
+    this.basketService.removeFromBasket(ticket);
+    this.total -= ticket.price;
+    this.total_tickets -= 1;
+  }
  }
 }
