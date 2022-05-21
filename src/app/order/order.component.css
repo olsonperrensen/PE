@@ -6,3 +6,7 @@
 {
        filter: invert(0);
 }
+li
+{
+       padding: 7px;
+}
