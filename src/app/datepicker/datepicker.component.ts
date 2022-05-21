@@ -42,9 +42,10 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
   }
   @ViewChild('demo') demo !:ElementRef;
 
+  today = new Date().toISOString().split('T')[0];
   switch_status!:boolean;
   isBtnClicked:boolean = false;
-  
+  minTravelDate:any;
   // native-actions
   constructor(private router:Router, private journeyDetails:JourneyDetailsService,
     private darkModeStatus:DarkModeStatusService, private R2:Renderer2, 

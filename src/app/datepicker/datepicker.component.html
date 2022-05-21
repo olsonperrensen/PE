@@ -76,7 +76,7 @@ id="big-form"
       required
       #date="ngModel"
       ngModel
-      name="date">
+      name="date" [min]="today">
       <p 
       class="invalid-input-text"
       *ngIf="!date.valid && date.touched"
