@@ -10,6 +10,7 @@ import { BasketService } from '../basket.service';
 import { Ticket } from '../table/ticket';
 import {faClose} from '@fortawesome/free-solid-svg-icons'
 import { PlaceOrderService } from './place-order.service';
+import { CheckEmailService } from './check-email.service';
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
@@ -32,10 +33,11 @@ export class OrderComponent implements OnInit {
   faClose = faClose;
   previousIndex = 0;
   editCounter = 0;
-
+  domain_checker_response!:any;
   constructor(private router:Router, private route:ActivatedRoute, private journeyDetails:JourneyDetailsService,
     private darkModeStatus:DarkModeStatusService, private progressBar:ProgressBarService,
-    private basketService:BasketService, private placeOrder:PlaceOrderService) { }
+    private basketService:BasketService, private placeOrder:PlaceOrderService,
+    private checkEmail:CheckEmailService) { }
 
     mFn(event:{valid:boolean,coupon:string})
     {
@@ -71,12 +73,30 @@ export class OrderComponent implements OnInit {
  do(f:NgForm)
  {
   console.log(f.value);
-  this.placeOrder.placeOrder(f.value).subscribe((res)=>{
+  const email_domain = f.value['email'].split('@')[1];
+  this.checkEmail.setDomainnCheck(email_domain).subscribe((res)=>{
+    this.domain_checker_response = res;
+    console.log(`${email_domain} is FAKE: ${this.domain_checker_response['disposable']}`)
+    if(this.domain_checker_response['disposable'])
+    {
+      alert("You can't place an order with a fake email address.")
+      this.checkEmail.setDomainnCheck(email_domain).subscribe((res)=>{
+        this.domain_checker_response = res;})
+    }
+    else if (f.value['email'] === '' || !(f.value['email'].indexOf('@')!==-1))
+    {
+      alert("You can't place an order with an empty email address.")
+    }
+    else
+    {
+      this.placeOrder.placeOrder(f.value).subscribe((res)=>{
     
-    console.log('successfully added to the db: ',res)}
-  ,(error)=>{console.log("error on adding to .db: ",error)});
-  this.router.navigate(['/thank-you']);
-  this.progressBar.setProgressBar('step5');
+        console.log('successfully added to the db: ',res)}
+      ,(error)=>{console.log("error on adding to .db: ",error)});
+      this.router.navigate(['/thank-you']);
+      this.progressBar.setProgressBar('step5');
+    }
+  })
  }
  onSubmit(f:NgForm)
  {
