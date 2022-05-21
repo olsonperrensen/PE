@@ -9,6 +9,7 @@ import { ProgressBarService } from '../progress-bar/progress-bar.service';
 import { BasketService } from '../basket.service';
 import { Ticket } from '../table/ticket';
 import {faClose} from '@fortawesome/free-solid-svg-icons'
+import { PlaceOrderService } from './place-order.service';
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
@@ -34,7 +35,7 @@ export class OrderComponent implements OnInit {
 
   constructor(private router:Router, private route:ActivatedRoute, private journeyDetails:JourneyDetailsService,
     private darkModeStatus:DarkModeStatusService, private progressBar:ProgressBarService,
-    private basketService:BasketService) { }
+    private basketService:BasketService, private placeOrder:PlaceOrderService) { }
 
     mFn(event:{valid:boolean,coupon:string})
     {
@@ -67,8 +68,13 @@ export class OrderComponent implements OnInit {
   }
 
   userJourney!:Journey;
- do()
+ do(f:NgForm)
  {
+  console.log(f.value);
+  this.placeOrder.placeOrder(f.value).subscribe((res)=>{
+    
+    console.log('successfully added to the db: ',res)}
+  ,(error)=>{console.log("error on adding to .db: ",error)});
   this.router.navigate(['/thank-you']);
   this.progressBar.setProgressBar('step5');
  }
