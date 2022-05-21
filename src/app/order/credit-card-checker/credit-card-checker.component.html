@@ -20,6 +20,7 @@
               </div>
             </div>
   
+            <form (change)="onValid()" #f="ngForm">
             <div class="row gy-3">
               <div class="col-md-4">
                 <label for="cc-number" class="form-label">Credit card number</label>
@@ -39,6 +40,7 @@
               <div class="col-md-4">
                 <label for="cc-expiration" class="form-label">Expiration</label>
                 <input 
+                #expiryDate="ngModel" ngModel name="expiryDate"
                 [min]="minExpDate"
                 type="date" class="form-control" id="cc-expiration" placeholder="" required>
                 <div class="invalid-feedback">
@@ -48,7 +50,9 @@
   
               <div class="col-md-4">
                 <label for="cc-cvv" class="form-label">CVV</label>
-                <input type="number" class="form-control" id="cc-cvv" placeholder="000" 
+                <input 
+                #cvv="ngModel" ngModel name="cvv"
+                type="number" class="form-control" id="cc-cvv" placeholder="000" 
                 required
                 min="100" max="999"
                 >
@@ -57,3 +61,4 @@
                 </div>
               </div>
             </div>
+          </form>

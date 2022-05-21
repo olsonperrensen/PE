@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { NgModel } from '@angular/forms';
 
 @Component({
@@ -7,6 +7,16 @@ import { NgModel } from '@angular/forms';
   styleUrls: ['./credit-card-checker.component.css']
 })
 export class CreditCardCheckerComponent implements OnInit {
+
+  changes = 0;
+  @Output('child') isCCValid = new EventEmitter<number>();
+
+  onValid()
+  {
+    this.changes++;
+    this.isCCValid.emit(this.changes);
+  }
+
   today = new Date();
   minExpDate:any;
   // creditCardType = require("credit-card-type");

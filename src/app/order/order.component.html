@@ -109,7 +109,7 @@
               </div>
   
               <div class="col-sm-4">
-                <label for="username" class="form-label">{{'usernameKey'|translate}}</label>
+                <label for="username" class="form-label">{{'usernameKey'|translate}}</label><span class="text-danger"> *</span>
                 <div class="input-group has-validation">
                   <span class="input-group-text">@</span>
                   <input
@@ -121,7 +121,7 @@
                 </div>
               </div>
               <div class="col-sm-4">
-                <label for="username" class="form-label">{{'passwordKey'|translate}}</label>
+                <label for="username" class="form-label">{{'passwordKey'|translate}}</label><span class="text-danger"> *</span>
                 <div class="input-group has-validation">
                   <input 
                   #pwd="ngModel" ngModel name="pwd"
@@ -139,9 +139,9 @@
                 class="form-label">Email <span class="text-muted">(for PDF) </span> <span class="text-danger">*</span></label>
                 <input 
                 #email="ngModel" ngModel name="email"
-                type="email" required email class="form-control" id="email" placeholder="you@example.com">
-                <div class="invalid-feedback">
-                  Please enter a valid email address for shipping updates.
+                type="email" required email class="form-control" id="email" placeholder="you@gmail.com">
+                <div style="font-size:small" class="help-block text-danger">
+                  Valid domains only.
                 </div>
               </div>
   
@@ -595,7 +595,7 @@
               </div>
   
               <div class="col-md-3">
-                <label for="zip" class="form-label">Zip</label>
+                <label for="zip" class="form-label">Zip</label><span class="text-danger"> *</span>
                 <input 
                 type="text" 
                 class="form-control" 
@@ -609,11 +609,11 @@
             </div>
   
             <hr class="my-4">
-            <app-credit-card-checker></app-credit-card-checker>
+            <app-credit-card-checker (child)="mFnCC($event)"></app-credit-card-checker>
             <hr class="my-4">
   
             <button ngbTooltip="Are you sure you want to place this order? Click to finish." placement="right"
-            [openDelay]="100" [closeDelay]="30" [disabled]="!f.dirty" class="w-100 btn btn-primary btn-lg" type="submit"
+            [openDelay]="100" [closeDelay]="30" [disabled]="!f.valid||!isCCValid" class="w-100 btn btn-primary btn-lg" type="submit"
             (click)="do(f)">{{'orderNowKey'|translate}}</button>
           </form>
         </div>

@@ -26,6 +26,7 @@ export class OrderComponent implements OnInit {
   isTable!:boolean;
   isEditTicketsEnabled:boolean = false;
   total_tickets = 0;
+  isCCValid!:boolean;
   total = 0;
   tickets!:Ticket[];
   isValid = false;
@@ -46,6 +47,15 @@ export class OrderComponent implements OnInit {
       if(this.total > 5)
       {
         this.total -= 5;
+      }
+    }
+
+    mFnCC(event:number)
+    {
+      if(event >= 3)
+      {
+        this.isCCValid = true;
+        console.log(`total changes made in CC: ${event}... Valid? ${this.isCCValid}`);
       }
     }
 
@@ -85,10 +95,11 @@ export class OrderComponent implements OnInit {
       this.checkEmail.setDomainnCheck(email_domain).subscribe((res)=>{
         this.domain_checker_response = res;})
     }
-    else if (f.value['email'] === '' || !(f.value['email'].indexOf('@')!==-1))
-    {
-      alert("You can't place an order with an empty email address.")
-    }
+    // else if (f.value['email'] === '' || !(f.value['email'].indexOf('@')!==-1) || f.value['email'].length < 3)
+    // {
+    //   console.warn(this);
+      
+    // }
     else
     {
       this.placeOrder.placeOrder(f.value).subscribe((res)=>{

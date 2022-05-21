@@ -6,7 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class CheckEmailService {
 
-  private url = ''
+  
+  private url:any
 
   public setDomainnCheck(user_domain:string)
   {
