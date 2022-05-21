@@ -2,7 +2,10 @@
   
             <div class="my-3">
               <div class="form-check">
-                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" 
+                checked 
+                required
+                >
                 <label class="form-check-label" for="credit">Credit card</label>
               </div>
               <div class="form-check">
@@ -24,7 +27,10 @@
                 (ngModelChange)="onNgModelChange(card)" 
                 #card="ngModel" ngModel name="card" 
                 type="number" class="form-control" 
-                id="cc-number" placeholder="4047 2021 1234 5678" required>
+                id="cc-number" placeholder="4047 2021 1234 5678"
+                min="4000000000000000"
+                max="9000000000000000"
+                required>
                 <div class="invalid-feedback">
                   Credit card number is required
                 </div>
@@ -32,7 +38,9 @@
   
               <div class="col-md-4">
                 <label for="cc-expiration" class="form-label">Expiration</label>
-                <input type="date" class="form-control" id="cc-expiration" placeholder="" required>
+                <input 
+                [min]="minExpDate"
+                type="date" class="form-control" id="cc-expiration" placeholder="" required>
                 <div class="invalid-feedback">
                   Expiration date required
                 </div>
@@ -40,7 +48,10 @@
   
               <div class="col-md-4">
                 <label for="cc-cvv" class="form-label">CVV</label>
-                <input type="number" class="form-control" id="cc-cvv" placeholder="000" required>
+                <input type="number" class="form-control" id="cc-cvv" placeholder="000" 
+                required
+                min="100" max="999"
+                >
                 <div class="invalid-feedback">
                   Security code required
                 </div>

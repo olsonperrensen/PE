@@ -7,12 +7,14 @@ import { NgModel } from '@angular/forms';
   styleUrls: ['./credit-card-checker.component.css']
 })
 export class CreditCardCheckerComponent implements OnInit {
-
+  today = new Date();
+  minExpDate:any;
   // creditCardType = require("credit-card-type");
 
   constructor() { }
 
   ngOnInit(): void {
+    this.minExpDate = new Date(`2022-${this.today.getMonth()+2}-${this.today.getDay()}`).toISOString().split('T')[0];
   }
 
   onNgModelChange(card:NgModel)
