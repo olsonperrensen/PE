@@ -1,1553 +1,1751 @@
-{ "tableContent": [
-  {"CITY": "S\u00e0i G\u00f2n", "KM": "0", "DATE": "13/04/2022", "ARRIVEHR": "20:10", "LEAVEHR": "20:10"}, {"CITY": "D\u0129 An", "KM": "19", "DATE": "13/04/2022", "ARRIVEHR": "20:39", "LEAVEHR": "20:42"}, {"CITY": "Bi\u00ean H\u00f2a", "KM": "29", "DATE": "13/04/2022", "ARRIVEHR": "20:54", "LEAVEHR": "20:57"}, {"CITY": "Long Kh\u00e1nh", "KM": "77", "DATE": "13/04/2022", "ARRIVEHR": "21:57", "LEAVEHR": "22:00"}, {"CITY": "B\u00ecnh Thu\u1eadn", "KM": "175", "DATE": "13/04/2022", "ARRIVEHR": "23:51", "LEAVEHR": "23:56"}, {"CITY": "Nha Trang", "KM": "411", "DATE": "14/04/2022", "ARRIVEHR": "04:16", "LEAVEHR": "04:23"}, {"CITY": "Tuy Ho\u00e0", "KM": "528", "DATE": "14/04/2022", "ARRIVEHR": "06:39", "LEAVEHR": "06:42"}, {"CITY": "Di\u00eau Tr\u00ec", "KM": "630", "DATE": "14/04/2022", "ARRIVEHR": "08:39", "LEAVEHR": "08:54"}, {"CITY": "B\u1ed3ng S\u01a1n", "KM": "709", "DATE": "14/04/2022", "ARRIVEHR": "10:21", "LEAVEHR": "10:24"}, {"CITY": "Qu\u1ea3ng Ng\u00e3i", "KM": "798", "DATE": "14/04/2022", "ARRIVEHR": "11:55", "LEAVEHR": "12:00"}, {"CITY": "Tam K\u1ef3", "KM": "861", "DATE": "14/04/2022", "ARRIVEHR": "13:06", "LEAVEHR": "13:09"}, {"CITY": "Tr\u00e0 Ki\u1ec7u", "KM": "901", "DATE": "14/04/2022", "ARRIVEHR": "14:05", "LEAVEHR": "14:08"}, {"CITY": "\u0110\u00e0 N\u1eb5ng", "KM": "935", "DATE": "14/04/2022", "ARRIVEHR": "14:51", "LEAVEHR": "15:16"}, {"CITY": "Hu\u1ebf", "KM": "1038", "DATE": "14/04/2022", "ARRIVEHR": "17:48", "LEAVEHR": "17:55"}, {"CITY": "\u0110\u00f4ng H\u00e0", "KM": "1104", "DATE": "14/04/2022", "ARRIVEHR": "19:14", "LEAVEHR": "19:17"}, {"CITY": "\u0110\u1ed3ng H\u1edbi", "KM": "1204", "DATE": "14/04/2022", "ARRIVEHR": "21:00", "LEAVEHR": "21:15"}, {"CITY": "\u0110\u1ed3ng L\u00ea", "KM": "1290", "DATE": "14/04/2022", "ARRIVEHR": "23:03", "LEAVEHR": "23:06"}, {"CITY": "H\u01b0\u01a1ng Ph\u1ed1", "KM": "1339", "DATE": "15/04/2022", "ARRIVEHR": "00:09", "LEAVEHR": "00:12"}, {"CITY": "Y\u00ean Trung", "KM": "1386", "DATE": "15/04/2022", "ARRIVEHR": "01:10", "LEAVEHR": "01:13"}, {"CITY": "Vinh", "KM": "1407", "DATE": "15/04/2022", "ARRIVEHR": "01:38", "LEAVEHR": "01:48"}, {"CITY": "Thanh Ho\u00e1", "KM": "1551", "DATE": "15/04/2022", "ARRIVEHR": "04:27", "LEAVEHR": "04:30"}, {"CITY": "Ninh B\u00ecnh", "KM": "1611", "DATE": "15/04/2022", "ARRIVEHR": "05:39", "LEAVEHR": "05:42"}, {"CITY": "Nam \u0110\u1ecbnh", "KM": "1639", "DATE": "15/04/2022", "ARRIVEHR": "06:14", "LEAVEHR": "06:17"}, {"CITY": "Ph\u1ee7 L\u00fd", "KM": "1670", "DATE": "15/04/2022", "ARRIVEHR": "06:56", "LEAVEHR": "07:08"}, {"CITY": "H\u00e0 N\u1ed9i", "KM": "1726", "DATE": "15/04/2022", "ARRIVEHR": "08:21", "LEAVEHR": "08:21"}
-]
-,"SmallTableContent": [
-  {"CITY": "S\u00e0i G\u00f2n", "KM": "0", "DATE": "13/04/2022", "ARRIVEHR": "20:10", "LEAVEHR": "20:10"},
-  {"CITY": "D\u0129 An", "KM": "19", "DATE": "13/04/2022", "ARRIVEHR": "20:39", "LEAVEHR": "20:42"}, 
-  {"CITY": "Bi\u00ean H\u00f2a", "KM": "29", "DATE": "13/04/2022", "ARRIVEHR": "20:54", "LEAVEHR": "20:57"}, 
-  {"CITY": "...", "KM": "...", "DATE": "...", "ARRIVEHR": "...", "LEAVEHR": "..."}
-],
-"gpsMarkers": [
-  {
+{
+  "tableContent": [
+    {
+      "CITY": "Sài Gòn",
+      "KM": "0",
+      "DATE": "13/04/2022",
+      "ARRIVEHR": "20:10",
+      "LEAVEHR": "20:10"
+    },
+    {
+      "CITY": "Dĩ An",
+      "KM": "19",
+      "DATE": "13/04/2022",
+      "ARRIVEHR": "20:39",
+      "LEAVEHR": "20:42"
+    },
+    {
+      "CITY": "Biên Hòa",
+      "KM": "29",
+      "DATE": "13/04/2022",
+      "ARRIVEHR": "20:54",
+      "LEAVEHR": "20:57"
+    },
+    {
+      "CITY": "Long Khánh",
+      "KM": "77",
+      "DATE": "13/04/2022",
+      "ARRIVEHR": "21:57",
+      "LEAVEHR": "22:00"
+    },
+    {
+      "CITY": "Bình Thuận",
+      "KM": "175",
+      "DATE": "13/04/2022",
+      "ARRIVEHR": "23:51",
+      "LEAVEHR": "23:56"
+    },
+    {
+      "CITY": "Nha Trang",
+      "KM": "411",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "04:16",
+      "LEAVEHR": "04:23"
+    },
+    {
+      "CITY": "Tuy Hoà",
+      "KM": "528",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "06:39",
+      "LEAVEHR": "06:42"
+    },
+    {
+      "CITY": "Diêu Trì",
+      "KM": "630",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "08:39",
+      "LEAVEHR": "08:54"
+    },
+    {
+      "CITY": "Bồng Sơn",
+      "KM": "709",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "10:21",
+      "LEAVEHR": "10:24"
+    },
+    {
+      "CITY": "Quảng Ngãi",
+      "KM": "798",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "11:55",
+      "LEAVEHR": "12:00"
+    },
+    {
+      "CITY": "Tam Kỳ",
+      "KM": "861",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "13:06",
+      "LEAVEHR": "13:09"
+    },
+    {
+      "CITY": "Trà Kiệu",
+      "KM": "901",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "14:05",
+      "LEAVEHR": "14:08"
+    },
+    {
+      "CITY": "Đà Nẵng",
+      "KM": "935",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "14:51",
+      "LEAVEHR": "15:16"
+    },
+    {
+      "CITY": "Huế",
+      "KM": "1038",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "17:48",
+      "LEAVEHR": "17:55"
+    },
+    {
+      "CITY": "Đông Hà",
+      "KM": "1104",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "19:14",
+      "LEAVEHR": "19:17"
+    },
+    {
+      "CITY": "Đồng Hới",
+      "KM": "1204",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "21:00",
+      "LEAVEHR": "21:15"
+    },
+    {
+      "CITY": "Đồng Lê",
+      "KM": "1290",
+      "DATE": "14/04/2022",
+      "ARRIVEHR": "23:03",
+      "LEAVEHR": "23:06"
+    },
+    {
+      "CITY": "Hương Phố",
+      "KM": "1339",
+      "DATE": "15/04/2022",
+      "ARRIVEHR": "00:09",
+      "LEAVEHR": "00:12"
+    },
+    {
+      "CITY": "Yên Trung",
+      "KM": "1386",
+      "DATE": "15/04/2022",
+      "ARRIVEHR": "01:10",
+      "LEAVEHR": "01:13"
+    },
+    {
+      "CITY": "Vinh",
+      "KM": "1407",
+      "DATE": "15/04/2022",
+      "ARRIVEHR": "01:38",
+      "LEAVEHR": "01:48"
+    },
+    {
+      "CITY": "Thanh Hoá",
+      "KM": "1551",
+      "DATE": "15/04/2022",
+      "ARRIVEHR": "04:27",
+      "LEAVEHR": "04:30"
+    },
+    {
+      "CITY": "Ninh Bình",
+      "KM": "1611",
+      "DATE": "15/04/2022",
+      "ARRIVEHR": "05:39",
+      "LEAVEHR": "05:42"
+    },
+    {
+      "CITY": "Nam Định",
+      "KM": "1639",
+      "DATE": "15/04/2022",
+      "ARRIVEHR": "06:14",
+      "LEAVEHR": "06:17"
+    },
+    {
+      "CITY": "Phủ Lý",
+      "KM": "1670",
+      "DATE": "15/04/2022",
+      "ARRIVEHR": "06:56",
+      "LEAVEHR": "07:08"
+    },
+    {
+      "CITY": "Hà Nội",
+      "KM": "1726",
+      "DATE": "15/04/2022",
+      "ARRIVEHR": "08:21",
+      "LEAVEHR": "08:21"
+    }
+  ],
+  "SmallTableContent": [
+    {
+      "CITY": "Sài Gòn",
+      "KM": "0",
+      "DATE": "13/04/2022",
+      "ARRIVEHR": "20:10",
+      "LEAVEHR": "20:10"
+    },
+    {
+      "CITY": "Dĩ An",
+      "KM": "19",
+      "DATE": "13/04/2022",
+      "ARRIVEHR": "20:39",
+      "LEAVEHR": "20:42"
+    },
+    {
+      "CITY": "Biên Hòa",
+      "KM": "29",
+      "DATE": "13/04/2022",
+      "ARRIVEHR": "20:54",
+      "LEAVEHR": "20:57"
+    },
+    {
+      "CITY": "...",
+      "KM": "...",
+      "DATE": "...",
+      "ARRIVEHR": "...",
+      "LEAVEHR": "..."
+    }
+  ],
+  "gpsMarkers": [
+    {
       "id": "1",
       "lat": "10.782522909849995",
       "lng": "106.67749116477299",
       "name": "Saigon"
-  }, 
-  {
+    },
+    {
       "id": "2",
       "lat": "21.027430029169917",
       "lng": "105.8351785397227",
       "name": "Hanoi"
-  }, 
-  {
+    },
+    {
       "id": "3",
       "lat": "10.91048586855566",
       "lng": "106.7700021764381",
       "name": "Di An"
-  }, 
-  {
+    },
+    {
       "id": "4",
       "lat": "10.950892026486155",
       "lng": "106.82626529542068",
       "name": "Bien Hoa"
-  }, 
-  {
+    },
+    {
       "id": "5",
       "lat": "10.933770362600766",
       "lng": "107.24441652610201",
       "name": "Long Khanh"
-  }, 
-  {
+    },
+    {
       "id": "6",
       "lat": "10.94183712599927",
       "lng": "108.08225633775021",
       "name": "Phan Thiet"
-  }, 
-  {
+    },
+    {
       "id": "7",
       "lat": "12.248619760484605",
       "lng": "109.1841939819382",
       "name": "Nha Trang"
-  }
-  , 
-  {
+    },
+    {
       "id": "8",
       "lat": "13.08811909077955",
       "lng": "109.29727929728732",
       "name": "Tuy Hoa"
-  }
-  , 
-  {
+    },
+    {
       "id": "9",
       "lat": "13.807288472583728",
       "lng": "109.14373079729492",
       "name": "Dieu Tri"
-  }
-  , 
-  {
+    },
+    {
       "id": "10",
       "lat": "14.438184449803291",
       "lng": "109.01936044332425",
       "name": "Bồng Sơn"
-  }, 
-  {
+    },
+    {
       "id": "11",
       "lat": "15.121164507365517",
       "lng": "108.78152275867305",
       "name": "Quảng Ngãi"
-  },
-  {
+    },
+    {
       "id": "12",
       "lat": "15.557938968130504",
       "lng": "108.48299978382066",
       "name": "Tam Ky"
-  }
-  , 
-  {
+    },
+    {
       "id": "13",
       "lat": "15.81030915635876",
       "lng": "108.23146018751659",
       "name": "Tra Kieu"
-  }, 
-  {
+    },
+    {
       "id": "14",
       "lat": "16.07159654130862",
       "lng": "108.20936321266223",
       "name": "Da Nang"
-  }
-  , 
-  {
+    },
+    {
       "id": "15",
       "lat": "16.457441760330315",
       "lng": "107.57813098968283",
       "name": "Hue"
-  }, 
-  {
+    },
+    {
       "id": "16",
       "lat": "16.811403043084642",
       "lng": "107.11187814150696",
       "name": "Dong Ha"
-  }
-  , 
-  {
+    },
+    {
       "id": "17",
       "lat": "17.469127564219196",
       "lng": "106.59997974336227",
       "name": "Dong Hoi"
-  }, 
-  {
+    },
+    {
       "id": "18",
       "lat": "17.88993521689391",
       "lng": "106.0216335562631",
       "name": "Dong Le"
-  }
-  , 
-  {
+    },
+    {
       "id": "19",
       "lat": "18.688197740004203",
       "lng": "105.66403429735706",
       "name": "Vinh"
-  }   , 
-  {
+    },
+    {
       "id": "20",
       "lat": "19.812919811542447",
       "lng": "105.7679245433963",
       "name": "Thanh Hoa"
-  }  
-  , 
-  {
+    },
+    {
       "id": "21",
       "lat": "20.242190582318173",
       "lng": "105.97495255078849",
       "name": "Ninh Binh"
-  }
-  ,  
-  {
+    },
+    {
       "id": "23",
       "lat": "20.421522668120183",
       "lng": "106.16451479922983",
       "name": "Nam Dinh"
-  } 
-  , 
-  {
+    },
+    {
       "id": "24",
       "lat": "20.540695666662106",
       "lng": "105.91303641272619",
       "name": "Phu Ly"
-  }    
-],
-"ArrayOfDMGa": {
-  "DMGa": [
-    {
-      "Id": "1",
-      "Km": "0",
-      "MaGa": "AHO",
-      "SKeys": "a, ah, anhoa, an hoa",
-      "TenGa": "An Hòa",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "2",
-      "Km": "0",
-      "MaGa": "ATH",
-      "SKeys": "ATH, Amthuong, Am thuong",
-      "TenGa": "Ấm Thượng",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "3",
-      "Km": "0",
-      "MaGa": "BAS",
-      "SKeys": "b, bas, baoson, bao son",
-      "TenGa": "Bảo Sơn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "4",
-      "Km": "0",
-      "MaGa": "BAT",
-      "SKeys": "b, bat, bacthuy, bac thuy",
-      "TenGa": "Bắc Thủy",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "5",
-      "Km": "0",
-      "MaGa": "BCO",
-      "SKeys": "bc, banco, ban co",
-      "TenGa": "Bàn Cờ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "6",
-      "Km": "0",
-      "MaGa": "BGI",
-      "SKeys": "b, bgi, bacgiang, bacgiang",
-      "TenGa": "Bắc Giang",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "7",
-      "Km": "0",
-      "MaGa": "BHA",
-      "SKeys": "B, Bha, baoha, bao ha",
-      "TenGa": "Bảo Hà",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "8",
-      "Km": "0",
-      "MaGa": "BHO",
-      "SKeys": "BHO, b, bienhoa, bien hoa",
-      "TenGa": "Biên Hòa",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "9",
-      "Km": "0",
-      "MaGa": "BLE",
-      "SKeys": "b, ble, bacle, bac le",
-      "TenGa": "Bắc Lệ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "10",
-      "Km": "0",
-      "MaGa": "BNI",
-      "SKeys": "b, bni, bacninh, bac ninh",
-      "TenGa": "Bắc Ninh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "11",
-      "Km": "0",
-      "MaGa": "BSN",
-      "SKeys": "b, BSN, bongson, bong son",
-      "TenGa": "Bồng Sơn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "12",
-      "Km": "0",
-      "MaGa": "BSO",
-      "SKeys": "BSO, bỉm sơn, bim son bimson, thanh hóa, thanh hoa, thanhhoa",
-      "TenGa": "Bỉm Sơn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "13",
-      "Km": "0",
-      "MaGa": "BTH",
-      "SKeys": "Bth, banthi, ban thi",
-      "TenGa": "Bản Thí",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "14",
-      "Km": "0",
-      "MaGa": "CCH",
-      "SKeys": "c, CCH, chi chu",
-      "TenGa": "Chí Chủ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "15",
-      "Km": "0",
-      "MaGa": "CGA",
-      "SKeys": "c, CGA, camgiang, cam giang",
-      "TenGa": "Cẩm Giàng",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "16",
-      "Km": "0",
-      "MaGa": "CGI",
-      "SKeys": "c, CGI, caugiap",
-      "TenGa": "Cầu Giát",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "17",
-      "Km": "0",
-      "MaGa": "CHA",
-      "SKeys": "CHA, cầu hai",
-      "TenGa": "Cầu Hai",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "18",
-      "Km": "0",
-      "MaGa": "CLA",
-      "SKeys": "c, CLA, chi lang",
-      "TenGa": "Chi Lăng",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "19",
-      "Km": "0",
-      "MaGa": "CLE",
-      "SKeys": "c, CLE, chu le",
-      "TenGa": "Chu Lễ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "20",
-      "Km": "0",
-      "MaGa": "CLI",
-      "SKeys": "c, CLI, chi linh",
-      "TenGa": "Chí Linh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "21",
-      "Km": "0",
-      "MaGa": "CLO",
-      "SKeys": "c, CLO",
-      "TenGa": "Cổ Loa",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "22",
-      "Km": "0",
-      "MaGa": "CLY",
-      "SKeys": "c, CLY, camly, cam ly",
-      "TenGa": "Cẩm Lý",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "23",
-      "Km": "0",
-      "MaGa": "CNA",
-      "SKeys": {
+    }
+  ],
+  "ArrayOfDMGa": {
+    "DMGa": [
+      {
+        "Id": "1",
+        "Km": "0",
+        "MaGa": "AHO",
+        "SKeys": "a, ah, anhoa, an hoa",
+        "TenGa": "An Hòa",
+        "ThoiGian": "0001-01-01T00:00:00"
       },
-      "TenGa": "Cà Ná",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "24",
-      "Km": "0",
-      "MaGa": "CPH",
-      "SKeys": "C, CPH, co phuc",
-      "TenGa": "Cổ Phúc",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "25",
-      "Km": "0",
-      "MaGa": "CSY",
-      "SKeys": "c, CSY, cho si",
-      "TenGa": "Chợ Sy",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "26",
-      "Km": "0",
-      "MaGa": "DAN",
-      "SKeys": "d, DAN, dong anh",
-      "TenGa": "Đông Anh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "27",
-      "Km": "0",
-      "MaGa": "DAP",
-      "SKeys": "D, DAP, da phuc",
-      "TenGa": "Đa Phúc",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "28",
-      "Km": "0",
-      "MaGa": "DAT",
-      "SKeys": "DAT,dl,dalat,da lat",
-      "TenGa": "Đà Lạt",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "29",
-      "Km": "0",
-      "MaGa": "DCH",
-      "SKeys": "d, DCH, dong chuoi",
-      "TenGa": "Đồng Chuối",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "30",
-      "Km": "0",
-      "MaGa": "DDA",
-      "SKeys": "D,DDA, dong dang",
-      "TenGa": "Đồng Đăng",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "31",
-      "Km": "0",
-      "MaGa": "DHA",
-      "SKeys": "D,DHA, dong ha",
-      "TenGa": "Đông Hà",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "32",
-      "Km": "0",
-      "MaGa": "DHO",
-      "SKeys": "D,DHO, dong hoi",
-      "TenGa": "Đồng Hới",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "33",
-      "Km": "0",
-      "MaGa": "DIA",
-      "SKeys": "d, dia. dian, di an",
-      "TenGa": "Dĩ An",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "34",
-      "Km": "0",
-      "MaGa": "DLA",
-      "SKeys": "d, DLA, dai lanh",
-      "TenGa": "Ðại Lãnh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "35",
-      "Km": "0",
-      "MaGa": "DLE",
-      "SKeys": "d,DLE, dong le",
-      "TenGa": "Đồng Lê",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "36",
-      "Km": "0",
-      "MaGa": "DMO",
-      "SKeys": "d, DMO, Dong mo",
-      "TenGa": "Đồng Mỏ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "37",
-      "Km": "0",
-      "MaGa": "DNA",
-      "SKeys": "D, DNA, da nang",
-      "TenGa": "Đà Nẵng",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "38",
-      "Km": "0",
-      "MaGa": "DOT",
-      "SKeys": "d, DOT, dong chieu",
-      "TenGa": "Ðông Triều",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "39",
-      "Km": "0",
-      "MaGa": "DPH",
-      "SKeys": "d, DPH, ducpho, duc pho",
-      "TenGa": "Đức Phổ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "40",
-      "Km": "0",
-      "MaGa": "DSA",
-      "SKeys": "d,DSA, dieu sanh",
-      "TenGa": "Diên Sanh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "41",
-      "Km": "0",
-      "MaGa": "DTA",
-      "SKeys": "D, DTA, dong tac",
-      "TenGa": "Ðông Tác",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "42",
-      "Km": "0",
-      "MaGa": "DTH",
-      "SKeys": "d, DTH, doan thuong",
-      "TenGa": "Đoan Thượng",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "43",
-      "Km": "0",
-      "MaGa": "DTR",
-      "SKeys": "d, DTR, dieu tri",
-      "TenGa": "Diêu Trì",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "44",
-      "Km": "0",
-      "MaGa": "DUL",
-      "SKeys": "d, DUL, duclac, duc lac",
-      "TenGa": "Đức Lạc",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "45",
-      "Km": "0",
-      "MaGa": "GBA",
-      "SKeys": "gb, giap bat,giapbat",
-      "TenGa": "Giáp Bát",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "46",
-      "Km": "0",
-      "MaGa": "GHU",
-      "SKeys": "g, GHU, gia huynh",
-      "TenGa": "Gia Huynh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "47",
-      "Km": "0",
-      "MaGa": "GIA",
-      "SKeys": "g, GIA, gia",
-      "TenGa": "Giã",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "48",
-      "Km": "0",
-      "MaGa": "GLA",
-      "SKeys": "g, GLA, gia lam",
-      "TenGa": "Gia Lâm",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "49",
-      "Km": "0",
-      "MaGa": "GRA",
-      "SKeys": "g, GRA, gia ray",
-      "TenGa": "Gia Ray",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "50",
-      "Km": "0",
-      "MaGa": "HDU",
-      "SKeys": "H, HDU, hai duong",
-      "TenGa": "Hải Dương",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "51",
-      "Km": "0",
-      "MaGa": "HLA",
-      "SKeys": "h, HLA, hoan lao",
-      "TenGa": "Hoàn Lão",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "52",
-      "Km": "0",
-      "MaGa": "HLO",
-      "SKeys": "H, HLO, Ha long",
-      "TenGa": "Hạ Long",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "53",
-      "Km": "0",
-      "MaGa": "HNO",
-      "SKeys": "ha noi, hn, hanoi",
-      "TenGa": "Hà Nội",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "54",
-      "Km": "0",
-      "MaGa": "HOD",
-      "SKeys": "h, HOD, hoa duyet",
-      "TenGa": "Hòa Duyệt",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "55",
-      "Km": "0",
-      "MaGa": "HPH",
-      "SKeys": "h, HPH, hai phong",
-      "TenGa": "Hải Phòng",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "56",
-      "Km": "0",
-      "MaGa": "HPO",
-      "SKeys": "h, HPO, huong pho",
-      "TenGa": "Hương Phố",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "57",
-      "Km": "0",
-      "MaGa": "HSY",
-      "SKeys": "h, HSY, hien sy",
-      "TenGa": "Hiền Sỹ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "58",
-      "Km": "0",
-      "MaGa": "HTH",
-      "SKeys": "h, Hth, ha thanh",
-      "TenGa": "Hà Thanh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "59",
-      "Km": "0",
-      "MaGa": "HUE",
-      "SKeys": "huế, hue",
-      "TenGa": "Huế",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "60",
-      "Km": "0",
-      "MaGa": "KEP",
-      "SKeys": "k, KEP",
-      "TenGa": "Kép",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "61",
-      "Km": "0",
-      "MaGa": "KLI",
-      "SKeys": "k, KLI, kim lien",
-      "TenGa": "Kim Liên",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "62",
-      "Km": "0",
-      "MaGa": "KLU",
-      "SKeys": "k, KLU, kim lu",
-      "TenGa": "Kim Lũ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "63",
-      "Km": "0",
-      "MaGa": "LAG",
-      "SKeys": "l, LAG, lac giao",
-      "TenGa": "Lạc Giao",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "64",
-      "Km": "0",
-      "MaGa": "LAK",
-      "SKeys": "l, LAK, la khe",
-      "TenGa": "La Khê",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "65",
-      "Km": "0",
-      "MaGa": "LAS",
-      "SKeys": "l, LAS, lac son",
-      "TenGa": "Lạc Sơn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "66",
-      "Km": "0",
-      "MaGa": "LBI",
-      "SKeys": "LB, LBI, long bien",
-      "TenGa": "Long Biên",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "67",
-      "Km": "0",
-      "MaGa": "LCA",
-      "SKeys": "lc, LCA, lao cai",
-      "TenGa": "Lào Cai",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "68",
-      "Km": "0",
-      "MaGa": "LCO",
-      "SKeys": "LC, LCO, lang co",
-      "TenGa": "Lăng Cô",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "69",
-      "Km": "0",
-      "MaGa": "LDA",
-      "SKeys": "ld, LDA, long dai",
-      "TenGa": "Long Đại",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "70",
-      "Km": "0",
-      "MaGa": "LES",
-      "SKeys": "LE, LES, le son",
-      "TenGa": "Lệ Sơn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "71",
-      "Km": "0",
-      "MaGa": "LGI",
-      "SKeys": "LG, LGI, lam giang",
-      "TenGa": "Lâm Giang",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "72",
-      "Km": "0",
-      "MaGa": "LHA",
-      "SKeys": "l, LHA, la hai",
-      "TenGa": "La Hai",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "73",
-      "Km": "0",
-      "MaGa": "LIM",
-      "SKeys": "LI, LIM, lim",
-      "TenGa": "Lim",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "74",
-      "Km": "0",
-      "MaGa": "LKA",
-      "SKeys": "lk, LKA, lang khay",
-      "TenGa": "Lang Khay",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "75",
-      "Km": "0",
-      "MaGa": "LKH",
-      "SKeys": "l, lk, LKH, long khanh",
-      "TenGa": "Long Khánh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "76",
-      "Km": "0",
-      "MaGa": "LKY",
-      "SKeys": "lK, LKY, le ki",
-      "TenGa": "Lệ Kỳ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "77",
-      "Km": "0",
-      "MaGa": "LMA",
-      "SKeys": "l, LMA, lan mau",
-      "TenGa": "Lan Mẫu",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "78",
-      "Km": "0",
-      "MaGa": "LSO",
-      "SKeys": "ls, LSO, lang son",
-      "TenGa": "Lạng Sơn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "79",
-      "Km": "0",
-      "MaGa": "LTH",
-      "SKeys": "lt, LTH, lang thip",
-      "TenGa": "Lang Thíp",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "80",
-      "Km": "0",
-      "MaGa": "LUS",
-      "SKeys": "l, LU, LUS, luong son",
-      "TenGa": "Lương Sơn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "81",
-      "Km": "0",
-      "MaGa": "LXA",
-      "SKeys": "L, LX, LXA, luu xa",
-      "TenGa": "Lưu Xá",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "82",
-      "Km": "0",
-      "MaGa": "MAA",
-      "SKeys": "ma, MAA, Mau a",
-      "TenGa": "Mậu A",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "83",
-      "Km": "0",
-      "MaGa": "MAK",
-      "SKeys": "m, MA, MAK, mao khe",
-      "TenGa": "Mạo Khê",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "84",
-      "Km": "0",
-      "MaGa": "MCA",
-      "SKeys": "MC, MCA, minh cam",
-      "TenGa": "Minh Cầm",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "85",
-      "Km": "0",
-      "MaGa": "MCH",
-      "SKeys": "mc, MCH, my chanh",
-      "TenGa": "Mỹ Chánh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "86",
-      "Km": "0",
-      "MaGa": "MDU",
-      "SKeys": "m, MD, MDU, my duc",
-      "TenGa": "Mỹ Đức",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "87",
-      "Km": "0",
-      "MaGa": "MKH",
-      "SKeys": "m, MKH, MK, minh khoi",
-      "TenGa": "Minh Khôi",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "88",
-      "Km": "0",
-      "MaGa": "MLA",
-      "SKeys": "m, ML, MLA, ma lam",
-      "TenGa": "Ma Lâm",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "89",
-      "Km": "0",
-      "MaGa": "MLE",
-      "SKeys": "ml, MLE, minh le",
-      "TenGa": "Minh Lệ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "90",
-      "Km": "0",
-      "MaGa": "MMA",
-      "SKeys": "bt,binh thuan,mm, muong man",
-      "TenGa": "Bình Thuận",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "91",
-      "Km": "0",
-      "MaGa": "MTR",
-      "SKeys": "MT, MTR, my trach",
-      "TenGa": "Mỹ Trạch",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "92",
-      "Km": "0",
-      "MaGa": "NBA",
-      "SKeys": "nb, NBA, nga ba",
-      "TenGa": "Ngã Ba",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "93",
-      "Km": "0",
-      "MaGa": "NBI",
-      "SKeys": "nb, ninh binh, ninhbinh, ninh bình",
-      "TenGa": "Ninh Bình",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "94",
-      "Km": "0",
-      "MaGa": "NDI",
-      "SKeys": "n, ND, NDI, nam dinh",
-      "TenGa": "Nam Định",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "95",
-      "Km": "0",
-      "MaGa": "NHO",
-      "SKeys": "NH,NHO, ninh hoa",
-      "TenGa": "Ninh Hoà",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "96",
-      "Km": "0",
-      "MaGa": "NHP",
-      "SKeys": "NHP, ngoi hop",
-      "TenGa": "Ngòi Hóp",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "97",
-      "Km": "0",
-      "MaGa": "NKH",
-      "SKeys": "nk, NKH, nam khe",
-      "TenGa": "Nam Khê",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "98",
-      "Km": "0",
-      "MaGa": "NLA",
-      "SKeys": "NLA, ngoc lam",
-      "TenGa": "Ngọc Lâm",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "99",
-      "Km": "0",
-      "MaGa": "NSO",
-      "SKeys": "ns, NSO, ngan son",
-      "TenGa": "Ngân Sơn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "100",
-      "Km": "0",
-      "MaGa": "NTH",
-      "SKeys": "nt, nth, nui thanh",
-      "TenGa": "Núi Thành",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "101",
-      "Km": "0",
-      "MaGa": "NTR",
-      "SKeys": "NT, NTR, nha trang",
-      "TenGa": "Nha Trang",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "102",
-      "Km": "0",
-      "MaGa": "PCG",
-      "SKeys": "PC, PCG, phu cang",
-      "TenGa": "Phú Cang",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "103",
-      "Km": "0",
-      "MaGa": "PDI",
-      "SKeys": {
+      {
+        "Id": "2",
+        "Km": "0",
+        "MaGa": "ATH",
+        "SKeys": "ATH, Amthuong, Am thuong",
+        "TenGa": "Ấm Thượng",
+        "ThoiGian": "0001-01-01T00:00:00"
       },
-      "TenGa": "Phú Diễn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "104",
-      "Km": "0",
-      "MaGa": "PDU",
-      "SKeys": "PDU, Phu,p",
-      "TenGa": "Phủ Đức",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "105",
-      "Km": "0",
-      "MaGa": "PHI",
-      "SKeys": "PH, PHI, phu hiep",
-      "TenGa": "Phú Hiệp",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "106",
-      "Km": "0",
-      "MaGa": "PHO",
-      "SKeys": "PH, PHO, phu hoa",
-      "TenGa": "Phú Hòa",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "107",
-      "Km": "0",
-      "MaGa": "PHR",
-      "SKeys": "phr, pho trach",
-      "TenGa": "Phò Trạch",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "108",
-      "Km": "0",
-      "MaGa": "PHY",
-      "SKeys": "PHY, PH, pho yen",
-      "TenGa": "Phổ Yên",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "109",
-      "Km": "0",
-      "MaGa": "PLA",
-      "SKeys": "pla, ",
-      "TenGa": "Phước Lãnh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "110",
-      "Km": "0",
-      "MaGa": "PLU",
-      "SKeys": "PLU, pho lu",
-      "TenGa": "Phố Lu",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "111",
-      "Km": "0",
-      "MaGa": "PLY",
-      "SKeys": " phu ly, phuly, hà nam, ha nam, hanam",
-      "TenGa": "Phủ Lý",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "112",
-      "Km": "0",
-      "MaGa": "PMO",
-      "SKeys": "PM, PMO, phuong mo, phuongmo",
-      "TenGa": "Phường Mỗ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "113",
-      "Km": "0",
-      "MaGa": "PTA",
-      "SKeys": "PT, PTA, phu thai",
-      "TenGa": "Phú Thái",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "114",
-      "Km": "0",
-      "MaGa": "PTH",
-      "SKeys": "PT, PTH, phan thiet",
-      "TenGa": "Phan Thiết",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "115",
-      "Km": "0",
-      "MaGa": "PTO",
-      "SKeys": "PT, PTO, phu tho",
-      "TenGa": "Phú Thọ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "116",
-      "Km": "0",
-      "MaGa": "PTR",
-      "SKeys": "ptr, pho trang",
-      "TenGa": "Phố Tráng",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "117",
-      "Km": "0",
-      "MaGa": "PTU",
-      "SKeys": "PTU, PT, PTU",
-      "TenGa": "Phúc Tự",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "118",
-      "Km": "0",
-      "MaGa": "PUT",
-      "SKeys": "PUT, phuc trach",
-      "TenGa": "Phúc Trạch",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "119",
-      "Km": "0",
-      "MaGa": "PVI",
-      "SKeys": "PV, pvi, pho vi",
-      "TenGa": "Phố Vị",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "120",
-      "Km": "0",
-      "MaGa": "PYE",
-      "SKeys": "PYE, PY, phuc yen, phucyen",
-      "TenGa": "Phúc Yên",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "121",
-      "Km": "0",
-      "MaGa": "QNG",
-      "SKeys": "QN, QNG, quangngai, quang ngai",
-      "TenGa": "Quảng Ngãi",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "122",
-      "Km": "0",
-      "MaGa": "QNH",
-      "SKeys": "QN, QNH, quynhon, quy nhon",
-      "TenGa": "Quy Nhơn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "123",
-      "Km": "0",
-      "MaGa": "QTI",
-      "SKeys": "QT, QTI, quang tri, quangtri",
-      "TenGa": "Quảng Trị",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "124",
-      "Km": "0",
-      "MaGa": "QTR",
-      "SKeys": {
+      {
+        "Id": "3",
+        "Km": "0",
+        "MaGa": "BAS",
+        "SKeys": "b, bas, baoson, bao son",
+        "TenGa": "Bảo Sơn",
+        "ThoiGian": "0001-01-01T00:00:00"
       },
-      "TenGa": "Quán Triều",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "125",
-      "Km": "0",
-      "MaGa": "SGO",
-      "SKeys": "sai gòn, saigon, sai gon, hcm, sg, hồ chí minh, ho chi minh, ho chi minh city, hochiminh",
-      "TenGa": "Sài Gòn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "126",
-      "Km": "0",
-      "MaGa": "SHO",
-      "SKeys": "SHO, SH, sen ho, senho",
-      "TenGa": "Sen Hồ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "127",
-      "Km": "0",
-      "MaGa": "SKI",
-      "SKeys": "suoi kiet",
-      "TenGa": "Suối Kiết",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "128",
-      "Km": "0",
-      "MaGa": "SLU",
-      "SKeys": "SLU, SL, Sa lung",
-      "TenGa": "Sa Lung",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "129",
-      "Km": "0",
-      "MaGa": "SMA",
-      "SKeys": "SM, SMA, Song mao, songmao",
-      "TenGa": "Sông Mao",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "130",
-      "Km": "0",
-      "MaGa": "SOH",
-      "SKeys": "SO, SOH, song hoa, songhoa",
-      "TenGa": "Sông Hóa",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "131",
-      "Km": "0",
-      "MaGa": "STH",
-      "SKeys": "sth, son",
-      "TenGa": "Sóng Thần",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "132",
-      "Km": "0",
-      "MaGa": "TAN",
-      "SKeys": "TAN, TA, tien an, tienan",
-      "TenGa": "Tiên An",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "133",
-      "Km": "0",
-      "MaGa": "TAP",
-      "SKeys": "TA, TAP, tanap, tan ap",
-      "TenGa": "Tân Ấp",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "134",
-      "Km": "0",
-      "MaGa": "TBO",
-      "SKeys": "TBO, TB, tu bong",
-      "TenGa": "Tu Bông",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "135",
-      "Km": "0",
-      "MaGa": "TCA",
-      "SKeys": "TC, TCA, thicau, thi cau",
-      "TenGa": "Thị Cầu",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "136",
-      "Km": "0",
-      "MaGa": "TCH",
-      "SKeys": "TC, TCH, thapcham, thap cham",
-      "TenGa": "Tháp Chàm",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "137",
-      "Km": "0",
-      "MaGa": "TGI",
-      "SKeys": "TG, TGI, trung gia, trunggia",
-      "TenGa": "Trung Giã",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "138",
-      "Km": "0",
-      "MaGa": "THA",
-      "SKeys": "tuyhoa, tuy hoa, TH, THA",
-      "TenGa": "Tuy Hoà",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "139",
-      "Km": "0",
-      "MaGa": "THL",
-      "SKeys": "TH, THL, thuong ly, thuongly",
-      "TenGa": "Thượng Lý",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "140",
-      "Km": "0",
-      "MaGa": "THO",
-      "SKeys": "thanh hóa, thanh hoa, thanhhoa",
-      "TenGa": "Thanh Hoá",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "141",
-      "Km": "0",
-      "MaGa": "THU",
-      "SKeys": "TH, THU, trai hut, Traihut",
-      "TenGa": "Trái Hút",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "142",
-      "Km": "0",
-      "MaGa": "TKE",
-      "SKeys": "tienkien, tien kien, TK, TKE",
-      "TenGa": "Tiên Kiên",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "143",
-      "Km": "0",
-      "MaGa": "TKI",
-      "SKeys": "TKI, TK, trakieu, tra kieu",
-      "TenGa": "Trà Kiệu",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "144",
-      "Km": "0",
-      "MaGa": "TKY",
-      "SKeys": "TK, TKY, tam ky, tamky",
-      "TenGa": "Tam Kỳ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "145",
-      "Km": "0",
-      "MaGa": "TLA",
-      "SKeys": "TL, TLA, thuong lam, thuonglam",
-      "TenGa": "Thượng Lâm",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "146",
-      "Km": "0",
-      "MaGa": "TLC",
-      "SKeys": "TL, TLC, thiloc, thi loc",
-      "TenGa": "Thọ Lộc",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "147",
-      "Km": "0",
-      "MaGa": "TLI",
-      "SKeys": "tli, tl, thachloi, thach loi",
-      "TenGa": "Thạch Lỗi",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "148",
-      "Km": "0",
-      "MaGa": "TLU",
-      "SKeys": "TL, TLU, thanhluyen, thanh luyen",
-      "TenGa": "Thanh Luyện",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "149",
-      "Km": "0",
-      "MaGa": "TMA",
-      "SKeys": "TMA,tm,traimat,trai mat",
-      "TenGa": "Trại Mát",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "150",
-      "Km": "0",
-      "MaGa": "TNG",
-      "SKeys": "TNG, TN, thainguyen, thai nguyen",
-      "TenGa": "Thái Nguyên",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "151",
-      "Km": "0",
-      "MaGa": "TNI",
-      "SKeys": "tni, tn, thai nien",
-      "TenGa": "Thái Niên",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "152",
-      "Km": "0",
-      "MaGa": "TSO",
-      "SKeys": "TS, TSO, tuson, tu son",
-      "TenGa": "Từ Sơn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "153",
-      "Km": "0",
-      "MaGa": "TVA",
-      "SKeys": "TV, TVA, thai van, thaivan",
-      "TenGa": "Thái Văn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "154",
-      "Km": "0",
-      "MaGa": "UBI",
-      "SKeys": "U, UB, UBI, uong bi, uongbi",
-      "TenGa": "Uông Bí",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "155",
-      "Km": "0",
-      "MaGa": "VCA",
-      "SKeys": "vca,van,va",
-      "TenGa": "Vân Canh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "156",
-      "Km": "0",
-      "MaGa": "VDI",
-      "SKeys": {
+      {
+        "Id": "4",
+        "Km": "0",
+        "MaGa": "BAT",
+        "SKeys": "b, bat, bacthuy, bac thuy",
+        "TenGa": "Bắc Thủy",
+        "ThoiGian": "0001-01-01T00:00:00"
       },
-      "TenGa": "Văn Điển",
-      "ThoiGian": "0001-01-01T00:00:00"
+      {
+        "Id": "5",
+        "Km": "0",
+        "MaGa": "BCO",
+        "SKeys": "bc, banco, ban co",
+        "TenGa": "Bàn Cờ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "6",
+        "Km": "0",
+        "MaGa": "BGI",
+        "SKeys": "b, bgi, bacgiang, bacgiang",
+        "TenGa": "Bắc Giang",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "7",
+        "Km": "0",
+        "MaGa": "BHA",
+        "SKeys": "B, Bha, baoha, bao ha",
+        "TenGa": "Bảo Hà",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "8",
+        "Km": "0",
+        "MaGa": "BHO",
+        "SKeys": "BHO, b, bienhoa, bien hoa",
+        "TenGa": "Biên Hòa",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "9",
+        "Km": "0",
+        "MaGa": "BLE",
+        "SKeys": "b, ble, bacle, bac le",
+        "TenGa": "Bắc Lệ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "10",
+        "Km": "0",
+        "MaGa": "BNI",
+        "SKeys": "b, bni, bacninh, bac ninh",
+        "TenGa": "Bắc Ninh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "11",
+        "Km": "0",
+        "MaGa": "BSN",
+        "SKeys": "b, BSN, bongson, bong son",
+        "TenGa": "Bồng Sơn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "12",
+        "Km": "0",
+        "MaGa": "BSO",
+        "SKeys": "BSO, bỉm sơn, bim son bimson, thanh hóa, thanh hoa, thanhhoa",
+        "TenGa": "Bỉm Sơn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "13",
+        "Km": "0",
+        "MaGa": "BTH",
+        "SKeys": "Bth, banthi, ban thi",
+        "TenGa": "Bản Thí",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "14",
+        "Km": "0",
+        "MaGa": "CCH",
+        "SKeys": "c, CCH, chi chu",
+        "TenGa": "Chí Chủ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "15",
+        "Km": "0",
+        "MaGa": "CGA",
+        "SKeys": "c, CGA, camgiang, cam giang",
+        "TenGa": "Cẩm Giàng",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "16",
+        "Km": "0",
+        "MaGa": "CGI",
+        "SKeys": "c, CGI, caugiap",
+        "TenGa": "Cầu Giát",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "17",
+        "Km": "0",
+        "MaGa": "CHA",
+        "SKeys": "CHA, cầu hai",
+        "TenGa": "Cầu Hai",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "18",
+        "Km": "0",
+        "MaGa": "CLA",
+        "SKeys": "c, CLA, chi lang",
+        "TenGa": "Chi Lăng",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "19",
+        "Km": "0",
+        "MaGa": "CLE",
+        "SKeys": "c, CLE, chu le",
+        "TenGa": "Chu Lễ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "20",
+        "Km": "0",
+        "MaGa": "CLI",
+        "SKeys": "c, CLI, chi linh",
+        "TenGa": "Chí Linh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "21",
+        "Km": "0",
+        "MaGa": "CLO",
+        "SKeys": "c, CLO",
+        "TenGa": "Cổ Loa",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "22",
+        "Km": "0",
+        "MaGa": "CLY",
+        "SKeys": "c, CLY, camly, cam ly",
+        "TenGa": "Cẩm Lý",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "23",
+        "Km": "0",
+        "MaGa": "CNA",
+        "SKeys": {},
+        "TenGa": "Cà Ná",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "24",
+        "Km": "0",
+        "MaGa": "CPH",
+        "SKeys": "C, CPH, co phuc",
+        "TenGa": "Cổ Phúc",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "25",
+        "Km": "0",
+        "MaGa": "CSY",
+        "SKeys": "c, CSY, cho si",
+        "TenGa": "Chợ Sy",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "26",
+        "Km": "0",
+        "MaGa": "DAN",
+        "SKeys": "d, DAN, dong anh",
+        "TenGa": "Đông Anh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "27",
+        "Km": "0",
+        "MaGa": "DAP",
+        "SKeys": "D, DAP, da phuc",
+        "TenGa": "Đa Phúc",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "28",
+        "Km": "0",
+        "MaGa": "DAT",
+        "SKeys": "DAT,dl,dalat,da lat",
+        "TenGa": "Đà Lạt",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "29",
+        "Km": "0",
+        "MaGa": "DCH",
+        "SKeys": "d, DCH, dong chuoi",
+        "TenGa": "Đồng Chuối",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "30",
+        "Km": "0",
+        "MaGa": "DDA",
+        "SKeys": "D,DDA, dong dang",
+        "TenGa": "Đồng Đăng",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "31",
+        "Km": "0",
+        "MaGa": "DHA",
+        "SKeys": "D,DHA, dong ha",
+        "TenGa": "Đông Hà",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "32",
+        "Km": "0",
+        "MaGa": "DHO",
+        "SKeys": "D,DHO, dong hoi",
+        "TenGa": "Đồng Hới",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "33",
+        "Km": "0",
+        "MaGa": "DIA",
+        "SKeys": "d, dia. dian, di an",
+        "TenGa": "Dĩ An",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "34",
+        "Km": "0",
+        "MaGa": "DLA",
+        "SKeys": "d, DLA, dai lanh",
+        "TenGa": "Ðại Lãnh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "35",
+        "Km": "0",
+        "MaGa": "DLE",
+        "SKeys": "d,DLE, dong le",
+        "TenGa": "Đồng Lê",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "36",
+        "Km": "0",
+        "MaGa": "DMO",
+        "SKeys": "d, DMO, Dong mo",
+        "TenGa": "Đồng Mỏ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "37",
+        "Km": "0",
+        "MaGa": "DNA",
+        "SKeys": "D, DNA, da nang",
+        "TenGa": "Đà Nẵng",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "38",
+        "Km": "0",
+        "MaGa": "DOT",
+        "SKeys": "d, DOT, dong chieu",
+        "TenGa": "Ðông Triều",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "39",
+        "Km": "0",
+        "MaGa": "DPH",
+        "SKeys": "d, DPH, ducpho, duc pho",
+        "TenGa": "Đức Phổ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "40",
+        "Km": "0",
+        "MaGa": "DSA",
+        "SKeys": "d,DSA, dieu sanh",
+        "TenGa": "Diên Sanh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "41",
+        "Km": "0",
+        "MaGa": "DTA",
+        "SKeys": "D, DTA, dong tac",
+        "TenGa": "Ðông Tác",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "42",
+        "Km": "0",
+        "MaGa": "DTH",
+        "SKeys": "d, DTH, doan thuong",
+        "TenGa": "Đoan Thượng",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "43",
+        "Km": "0",
+        "MaGa": "DTR",
+        "SKeys": "d, DTR, dieu tri",
+        "TenGa": "Diêu Trì",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "44",
+        "Km": "0",
+        "MaGa": "DUL",
+        "SKeys": "d, DUL, duclac, duc lac",
+        "TenGa": "Đức Lạc",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "45",
+        "Km": "0",
+        "MaGa": "GBA",
+        "SKeys": "gb, giap bat,giapbat",
+        "TenGa": "Giáp Bát",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "46",
+        "Km": "0",
+        "MaGa": "GHU",
+        "SKeys": "g, GHU, gia huynh",
+        "TenGa": "Gia Huynh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "47",
+        "Km": "0",
+        "MaGa": "GIA",
+        "SKeys": "g, GIA, gia",
+        "TenGa": "Giã",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "48",
+        "Km": "0",
+        "MaGa": "GLA",
+        "SKeys": "g, GLA, gia lam",
+        "TenGa": "Gia Lâm",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "49",
+        "Km": "0",
+        "MaGa": "GRA",
+        "SKeys": "g, GRA, gia ray",
+        "TenGa": "Gia Ray",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "50",
+        "Km": "0",
+        "MaGa": "HDU",
+        "SKeys": "H, HDU, hai duong",
+        "TenGa": "Hải Dương",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "51",
+        "Km": "0",
+        "MaGa": "HLA",
+        "SKeys": "h, HLA, hoan lao",
+        "TenGa": "Hoàn Lão",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "52",
+        "Km": "0",
+        "MaGa": "HLO",
+        "SKeys": "H, HLO, Ha long",
+        "TenGa": "Hạ Long",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "53",
+        "Km": "0",
+        "MaGa": "HNO",
+        "SKeys": "ha noi, hn, hanoi",
+        "TenGa": "Hà Nội",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "54",
+        "Km": "0",
+        "MaGa": "HOD",
+        "SKeys": "h, HOD, hoa duyet",
+        "TenGa": "Hòa Duyệt",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "55",
+        "Km": "0",
+        "MaGa": "HPH",
+        "SKeys": "h, HPH, hai phong",
+        "TenGa": "Hải Phòng",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "56",
+        "Km": "0",
+        "MaGa": "HPO",
+        "SKeys": "h, HPO, huong pho",
+        "TenGa": "Hương Phố",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "57",
+        "Km": "0",
+        "MaGa": "HSY",
+        "SKeys": "h, HSY, hien sy",
+        "TenGa": "Hiền Sỹ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "58",
+        "Km": "0",
+        "MaGa": "HTH",
+        "SKeys": "h, Hth, ha thanh",
+        "TenGa": "Hà Thanh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "59",
+        "Km": "0",
+        "MaGa": "HUE",
+        "SKeys": "huế, hue",
+        "TenGa": "Huế",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "60",
+        "Km": "0",
+        "MaGa": "KEP",
+        "SKeys": "k, KEP",
+        "TenGa": "Kép",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "61",
+        "Km": "0",
+        "MaGa": "KLI",
+        "SKeys": "k, KLI, kim lien",
+        "TenGa": "Kim Liên",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "62",
+        "Km": "0",
+        "MaGa": "KLU",
+        "SKeys": "k, KLU, kim lu",
+        "TenGa": "Kim Lũ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "63",
+        "Km": "0",
+        "MaGa": "LAG",
+        "SKeys": "l, LAG, lac giao",
+        "TenGa": "Lạc Giao",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "64",
+        "Km": "0",
+        "MaGa": "LAK",
+        "SKeys": "l, LAK, la khe",
+        "TenGa": "La Khê",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "65",
+        "Km": "0",
+        "MaGa": "LAS",
+        "SKeys": "l, LAS, lac son",
+        "TenGa": "Lạc Sơn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "66",
+        "Km": "0",
+        "MaGa": "LBI",
+        "SKeys": "LB, LBI, long bien",
+        "TenGa": "Long Biên",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "67",
+        "Km": "0",
+        "MaGa": "LCA",
+        "SKeys": "lc, LCA, lao cai",
+        "TenGa": "Lào Cai",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "68",
+        "Km": "0",
+        "MaGa": "LCO",
+        "SKeys": "LC, LCO, lang co",
+        "TenGa": "Lăng Cô",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "69",
+        "Km": "0",
+        "MaGa": "LDA",
+        "SKeys": "ld, LDA, long dai",
+        "TenGa": "Long Đại",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "70",
+        "Km": "0",
+        "MaGa": "LES",
+        "SKeys": "LE, LES, le son",
+        "TenGa": "Lệ Sơn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "71",
+        "Km": "0",
+        "MaGa": "LGI",
+        "SKeys": "LG, LGI, lam giang",
+        "TenGa": "Lâm Giang",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "72",
+        "Km": "0",
+        "MaGa": "LHA",
+        "SKeys": "l, LHA, la hai",
+        "TenGa": "La Hai",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "73",
+        "Km": "0",
+        "MaGa": "LIM",
+        "SKeys": "LI, LIM, lim",
+        "TenGa": "Lim",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "74",
+        "Km": "0",
+        "MaGa": "LKA",
+        "SKeys": "lk, LKA, lang khay",
+        "TenGa": "Lang Khay",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "75",
+        "Km": "0",
+        "MaGa": "LKH",
+        "SKeys": "l, lk, LKH, long khanh",
+        "TenGa": "Long Khánh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "76",
+        "Km": "0",
+        "MaGa": "LKY",
+        "SKeys": "lK, LKY, le ki",
+        "TenGa": "Lệ Kỳ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "77",
+        "Km": "0",
+        "MaGa": "LMA",
+        "SKeys": "l, LMA, lan mau",
+        "TenGa": "Lan Mẫu",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "78",
+        "Km": "0",
+        "MaGa": "LSO",
+        "SKeys": "ls, LSO, lang son",
+        "TenGa": "Lạng Sơn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "79",
+        "Km": "0",
+        "MaGa": "LTH",
+        "SKeys": "lt, LTH, lang thip",
+        "TenGa": "Lang Thíp",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "80",
+        "Km": "0",
+        "MaGa": "LUS",
+        "SKeys": "l, LU, LUS, luong son",
+        "TenGa": "Lương Sơn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "81",
+        "Km": "0",
+        "MaGa": "LXA",
+        "SKeys": "L, LX, LXA, luu xa",
+        "TenGa": "Lưu Xá",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "82",
+        "Km": "0",
+        "MaGa": "MAA",
+        "SKeys": "ma, MAA, Mau a",
+        "TenGa": "Mậu A",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "83",
+        "Km": "0",
+        "MaGa": "MAK",
+        "SKeys": "m, MA, MAK, mao khe",
+        "TenGa": "Mạo Khê",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "84",
+        "Km": "0",
+        "MaGa": "MCA",
+        "SKeys": "MC, MCA, minh cam",
+        "TenGa": "Minh Cầm",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "85",
+        "Km": "0",
+        "MaGa": "MCH",
+        "SKeys": "mc, MCH, my chanh",
+        "TenGa": "Mỹ Chánh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "86",
+        "Km": "0",
+        "MaGa": "MDU",
+        "SKeys": "m, MD, MDU, my duc",
+        "TenGa": "Mỹ Đức",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "87",
+        "Km": "0",
+        "MaGa": "MKH",
+        "SKeys": "m, MKH, MK, minh khoi",
+        "TenGa": "Minh Khôi",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "88",
+        "Km": "0",
+        "MaGa": "MLA",
+        "SKeys": "m, ML, MLA, ma lam",
+        "TenGa": "Ma Lâm",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "89",
+        "Km": "0",
+        "MaGa": "MLE",
+        "SKeys": "ml, MLE, minh le",
+        "TenGa": "Minh Lệ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "90",
+        "Km": "0",
+        "MaGa": "MMA",
+        "SKeys": "bt,binh thuan,mm, muong man",
+        "TenGa": "Bình Thuận",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "91",
+        "Km": "0",
+        "MaGa": "MTR",
+        "SKeys": "MT, MTR, my trach",
+        "TenGa": "Mỹ Trạch",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "92",
+        "Km": "0",
+        "MaGa": "NBA",
+        "SKeys": "nb, NBA, nga ba",
+        "TenGa": "Ngã Ba",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "93",
+        "Km": "0",
+        "MaGa": "NBI",
+        "SKeys": "nb, ninh binh, ninhbinh, ninh bình",
+        "TenGa": "Ninh Bình",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "94",
+        "Km": "0",
+        "MaGa": "NDI",
+        "SKeys": "n, ND, NDI, nam dinh",
+        "TenGa": "Nam Định",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "95",
+        "Km": "0",
+        "MaGa": "NHO",
+        "SKeys": "NH,NHO, ninh hoa",
+        "TenGa": "Ninh Hoà",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "96",
+        "Km": "0",
+        "MaGa": "NHP",
+        "SKeys": "NHP, ngoi hop",
+        "TenGa": "Ngòi Hóp",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "97",
+        "Km": "0",
+        "MaGa": "NKH",
+        "SKeys": "nk, NKH, nam khe",
+        "TenGa": "Nam Khê",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "98",
+        "Km": "0",
+        "MaGa": "NLA",
+        "SKeys": "NLA, ngoc lam",
+        "TenGa": "Ngọc Lâm",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "99",
+        "Km": "0",
+        "MaGa": "NSO",
+        "SKeys": "ns, NSO, ngan son",
+        "TenGa": "Ngân Sơn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "100",
+        "Km": "0",
+        "MaGa": "NTH",
+        "SKeys": "nt, nth, nui thanh",
+        "TenGa": "Núi Thành",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "101",
+        "Km": "0",
+        "MaGa": "NTR",
+        "SKeys": "NT, NTR, nha trang",
+        "TenGa": "Nha Trang",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "102",
+        "Km": "0",
+        "MaGa": "PCG",
+        "SKeys": "PC, PCG, phu cang",
+        "TenGa": "Phú Cang",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "103",
+        "Km": "0",
+        "MaGa": "PDI",
+        "SKeys": {},
+        "TenGa": "Phú Diễn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "104",
+        "Km": "0",
+        "MaGa": "PDU",
+        "SKeys": "PDU, Phu,p",
+        "TenGa": "Phủ Đức",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "105",
+        "Km": "0",
+        "MaGa": "PHI",
+        "SKeys": "PH, PHI, phu hiep",
+        "TenGa": "Phú Hiệp",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "106",
+        "Km": "0",
+        "MaGa": "PHO",
+        "SKeys": "PH, PHO, phu hoa",
+        "TenGa": "Phú Hòa",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "107",
+        "Km": "0",
+        "MaGa": "PHR",
+        "SKeys": "phr, pho trach",
+        "TenGa": "Phò Trạch",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "108",
+        "Km": "0",
+        "MaGa": "PHY",
+        "SKeys": "PHY, PH, pho yen",
+        "TenGa": "Phổ Yên",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "109",
+        "Km": "0",
+        "MaGa": "PLA",
+        "SKeys": "pla, ",
+        "TenGa": "Phước Lãnh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "110",
+        "Km": "0",
+        "MaGa": "PLU",
+        "SKeys": "PLU, pho lu",
+        "TenGa": "Phố Lu",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "111",
+        "Km": "0",
+        "MaGa": "PLY",
+        "SKeys": " phu ly, phuly, hà nam, ha nam, hanam",
+        "TenGa": "Phủ Lý",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "112",
+        "Km": "0",
+        "MaGa": "PMO",
+        "SKeys": "PM, PMO, phuong mo, phuongmo",
+        "TenGa": "Phường Mỗ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "113",
+        "Km": "0",
+        "MaGa": "PTA",
+        "SKeys": "PT, PTA, phu thai",
+        "TenGa": "Phú Thái",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "114",
+        "Km": "0",
+        "MaGa": "PTH",
+        "SKeys": "PT, PTH, phan thiet",
+        "TenGa": "Phan Thiết",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "115",
+        "Km": "0",
+        "MaGa": "PTO",
+        "SKeys": "PT, PTO, phu tho",
+        "TenGa": "Phú Thọ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "116",
+        "Km": "0",
+        "MaGa": "PTR",
+        "SKeys": "ptr, pho trang",
+        "TenGa": "Phố Tráng",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "117",
+        "Km": "0",
+        "MaGa": "PTU",
+        "SKeys": "PTU, PT, PTU",
+        "TenGa": "Phúc Tự",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "118",
+        "Km": "0",
+        "MaGa": "PUT",
+        "SKeys": "PUT, phuc trach",
+        "TenGa": "Phúc Trạch",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "119",
+        "Km": "0",
+        "MaGa": "PVI",
+        "SKeys": "PV, pvi, pho vi",
+        "TenGa": "Phố Vị",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "120",
+        "Km": "0",
+        "MaGa": "PYE",
+        "SKeys": "PYE, PY, phuc yen, phucyen",
+        "TenGa": "Phúc Yên",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "121",
+        "Km": "0",
+        "MaGa": "QNG",
+        "SKeys": "QN, QNG, quangngai, quang ngai",
+        "TenGa": "Quảng Ngãi",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "122",
+        "Km": "0",
+        "MaGa": "QNH",
+        "SKeys": "QN, QNH, quynhon, quy nhon",
+        "TenGa": "Quy Nhơn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "123",
+        "Km": "0",
+        "MaGa": "QTI",
+        "SKeys": "QT, QTI, quang tri, quangtri",
+        "TenGa": "Quảng Trị",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "124",
+        "Km": "0",
+        "MaGa": "QTR",
+        "SKeys": {},
+        "TenGa": "Quán Triều",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "125",
+        "Km": "0",
+        "MaGa": "SGO",
+        "SKeys": "sai gòn, saigon, sai gon, hcm, sg, hồ chí minh, ho chi minh, ho chi minh city, hochiminh",
+        "TenGa": "Sài Gòn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "126",
+        "Km": "0",
+        "MaGa": "SHO",
+        "SKeys": "SHO, SH, sen ho, senho",
+        "TenGa": "Sen Hồ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "127",
+        "Km": "0",
+        "MaGa": "SKI",
+        "SKeys": "suoi kiet",
+        "TenGa": "Suối Kiết",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "128",
+        "Km": "0",
+        "MaGa": "SLU",
+        "SKeys": "SLU, SL, Sa lung",
+        "TenGa": "Sa Lung",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "129",
+        "Km": "0",
+        "MaGa": "SMA",
+        "SKeys": "SM, SMA, Song mao, songmao",
+        "TenGa": "Sông Mao",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "130",
+        "Km": "0",
+        "MaGa": "SOH",
+        "SKeys": "SO, SOH, song hoa, songhoa",
+        "TenGa": "Sông Hóa",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "131",
+        "Km": "0",
+        "MaGa": "STH",
+        "SKeys": "sth, son",
+        "TenGa": "Sóng Thần",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "132",
+        "Km": "0",
+        "MaGa": "TAN",
+        "SKeys": "TAN, TA, tien an, tienan",
+        "TenGa": "Tiên An",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "133",
+        "Km": "0",
+        "MaGa": "TAP",
+        "SKeys": "TA, TAP, tanap, tan ap",
+        "TenGa": "Tân Ấp",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "134",
+        "Km": "0",
+        "MaGa": "TBO",
+        "SKeys": "TBO, TB, tu bong",
+        "TenGa": "Tu Bông",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "135",
+        "Km": "0",
+        "MaGa": "TCA",
+        "SKeys": "TC, TCA, thicau, thi cau",
+        "TenGa": "Thị Cầu",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "136",
+        "Km": "0",
+        "MaGa": "TCH",
+        "SKeys": "TC, TCH, thapcham, thap cham",
+        "TenGa": "Tháp Chàm",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "137",
+        "Km": "0",
+        "MaGa": "TGI",
+        "SKeys": "TG, TGI, trung gia, trunggia",
+        "TenGa": "Trung Giã",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "138",
+        "Km": "0",
+        "MaGa": "THA",
+        "SKeys": "tuyhoa, tuy hoa, TH, THA",
+        "TenGa": "Tuy Hoà",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "139",
+        "Km": "0",
+        "MaGa": "THL",
+        "SKeys": "TH, THL, thuong ly, thuongly",
+        "TenGa": "Thượng Lý",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "140",
+        "Km": "0",
+        "MaGa": "THO",
+        "SKeys": "thanh hóa, thanh hoa, thanhhoa",
+        "TenGa": "Thanh Hoá",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "141",
+        "Km": "0",
+        "MaGa": "THU",
+        "SKeys": "TH, THU, trai hut, Traihut",
+        "TenGa": "Trái Hút",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "142",
+        "Km": "0",
+        "MaGa": "TKE",
+        "SKeys": "tienkien, tien kien, TK, TKE",
+        "TenGa": "Tiên Kiên",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "143",
+        "Km": "0",
+        "MaGa": "TKI",
+        "SKeys": "TKI, TK, trakieu, tra kieu",
+        "TenGa": "Trà Kiệu",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "144",
+        "Km": "0",
+        "MaGa": "TKY",
+        "SKeys": "TK, TKY, tam ky, tamky",
+        "TenGa": "Tam Kỳ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "145",
+        "Km": "0",
+        "MaGa": "TLA",
+        "SKeys": "TL, TLA, thuong lam, thuonglam",
+        "TenGa": "Thượng Lâm",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "146",
+        "Km": "0",
+        "MaGa": "TLC",
+        "SKeys": "TL, TLC, thiloc, thi loc",
+        "TenGa": "Thọ Lộc",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "147",
+        "Km": "0",
+        "MaGa": "TLI",
+        "SKeys": "tli, tl, thachloi, thach loi",
+        "TenGa": "Thạch Lỗi",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "148",
+        "Km": "0",
+        "MaGa": "TLU",
+        "SKeys": "TL, TLU, thanhluyen, thanh luyen",
+        "TenGa": "Thanh Luyện",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "149",
+        "Km": "0",
+        "MaGa": "TMA",
+        "SKeys": "TMA,tm,traimat,trai mat",
+        "TenGa": "Trại Mát",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "150",
+        "Km": "0",
+        "MaGa": "TNG",
+        "SKeys": "TNG, TN, thainguyen, thai nguyen",
+        "TenGa": "Thái Nguyên",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "151",
+        "Km": "0",
+        "MaGa": "TNI",
+        "SKeys": "tni, tn, thai nien",
+        "TenGa": "Thái Niên",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "152",
+        "Km": "0",
+        "MaGa": "TSO",
+        "SKeys": "TS, TSO, tuson, tu son",
+        "TenGa": "Từ Sơn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "153",
+        "Km": "0",
+        "MaGa": "TVA",
+        "SKeys": "TV, TVA, thai van, thaivan",
+        "TenGa": "Thái Văn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "154",
+        "Km": "0",
+        "MaGa": "UBI",
+        "SKeys": "U, UB, UBI, uong bi, uongbi",
+        "TenGa": "Uông Bí",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "155",
+        "Km": "0",
+        "MaGa": "VCA",
+        "SKeys": "vca,van,va",
+        "TenGa": "Vân Canh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "156",
+        "Km": "0",
+        "MaGa": "VDI",
+        "SKeys": {},
+        "TenGa": "Văn Điển",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "157",
+        "Km": "0",
+        "MaGa": "VEN",
+        "SKeys": "VE, VEN, Vuen , vu en",
+        "TenGa": "Vũ Ẻn",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "158",
+        "Km": "0",
+        "MaGa": "VIN",
+        "SKeys": "vi, vin, vinh",
+        "TenGa": "Vinh",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "159",
+        "Km": "0",
+        "MaGa": "VPH",
+        "SKeys": "V, VP, VPH, vanphu, van phu",
+        "TenGa": "Văn Phú",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "160",
+        "Km": "0",
+        "MaGa": "VTH",
+        "SKeys": "vt, vth,vinhthuy, vinh thuy",
+        "TenGa": "Vĩnh Thủy",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "161",
+        "Km": "0",
+        "MaGa": "VTR",
+        "SKeys": "VT, VTR, viettri, viet  tri",
+        "TenGa": "Việt Trì",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "162",
+        "Km": "0",
+        "MaGa": "VXA",
+        "SKeys": "v, VX, VXA, van xa, vanxa",
+        "TenGa": "Văn Xá",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "163",
+        "Km": "0",
+        "MaGa": "VXO",
+        "SKeys": "vx, vxo, voi xo, voixo",
+        "TenGa": "Voi Xô",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "164",
+        "Km": "0",
+        "MaGa": "VYE",
+        "SKeys": "vinhyen, vinh yen, vy,vye",
+        "TenGa": "Vĩnh Yên",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "165",
+        "Km": "0",
+        "MaGa": "YBA",
+        "SKeys": "yenbai, yen bai, YB, YBA",
+        "TenGa": "Yên Bái",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "166",
+        "Km": "0",
+        "MaGa": "YCU",
+        "SKeys": "YC, YCU, yen cu, yencu",
+        "TenGa": "Yên Cư",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "167",
+        "Km": "0",
+        "MaGa": "YDU",
+        "SKeys": "YD,YDU, yen due, yendue",
+        "TenGa": "Yên Duệ",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "168",
+        "Km": "0",
+        "MaGa": "YED",
+        "SKeys": "YE, YED, yen duong, yenduong",
+        "TenGa": "Yên Dưỡng",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "169",
+        "Km": "0",
+        "MaGa": "YET",
+        "SKeys": "YET, YE, yen trach, yentrach",
+        "TenGa": "Yên Trạch",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "170",
+        "Km": "0",
+        "MaGa": "YTR",
+        "SKeys": "YT, YTR, yen trung, yentrung",
+        "TenGa": "Yên Trung",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "171",
+        "Km": "0",
+        "MaGa": "YVI",
+        "SKeys": "YV, YVI, yen vien, yenvien",
+        "TenGa": "Yên Viên",
+        "ThoiGian": "0001-01-01T00:00:00"
+      },
+      {
+        "Id": "172",
+        "Km": "0",
+        "MaGa": "YXU",
+        "SKeys": "YX, YXU, yenxuan, yen xuan",
+        "TenGa": "Yên Xuân",
+        "ThoiGian": "0001-01-01T00:00:00"
+      }
+    ]
+  },
+  "UserDetails": [
+    {
+      "firstName": "",
+      "lastName": "",
+      "username": "",
+      "pwd": "",
+      "email": "",
+      "country": "Afganistan",
+      "zip": "",
+      "id": 1
     },
     {
-      "Id": "157",
-      "Km": "0",
-      "MaGa": "VEN",
-      "SKeys": "VE, VEN, Vuen , vu en",
-      "TenGa": "Vũ Ẻn",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "158",
-      "Km": "0",
-      "MaGa": "VIN",
-      "SKeys": "vi, vin, vinh",
-      "TenGa": "Vinh",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "159",
-      "Km": "0",
-      "MaGa": "VPH",
-      "SKeys": "V, VP, VPH, vanphu, van phu",
-      "TenGa": "Văn Phú",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "160",
-      "Km": "0",
-      "MaGa": "VTH",
-      "SKeys": "vt, vth,vinhthuy, vinh thuy",
-      "TenGa": "Vĩnh Thủy",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "161",
-      "Km": "0",
-      "MaGa": "VTR",
-      "SKeys": "VT, VTR, viettri, viet  tri",
-      "TenGa": "Việt Trì",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "162",
-      "Km": "0",
-      "MaGa": "VXA",
-      "SKeys": "v, VX, VXA, van xa, vanxa",
-      "TenGa": "Văn Xá",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "163",
-      "Km": "0",
-      "MaGa": "VXO",
-      "SKeys": "vx, vxo, voi xo, voixo",
-      "TenGa": "Voi Xô",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "164",
-      "Km": "0",
-      "MaGa": "VYE",
-      "SKeys": "vinhyen, vinh yen, vy,vye",
-      "TenGa": "Vĩnh Yên",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "165",
-      "Km": "0",
-      "MaGa": "YBA",
-      "SKeys": "yenbai, yen bai, YB, YBA",
-      "TenGa": "Yên Bái",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "166",
-      "Km": "0",
-      "MaGa": "YCU",
-      "SKeys": "YC, YCU, yen cu, yencu",
-      "TenGa": "Yên Cư",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "167",
-      "Km": "0",
-      "MaGa": "YDU",
-      "SKeys": "YD,YDU, yen due, yendue",
-      "TenGa": "Yên Duệ",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "168",
-      "Km": "0",
-      "MaGa": "YED",
-      "SKeys": "YE, YED, yen duong, yenduong",
-      "TenGa": "Yên Dưỡng",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "169",
-      "Km": "0",
-      "MaGa": "YET",
-      "SKeys": "YET, YE, yen trach, yentrach",
-      "TenGa": "Yên Trạch",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "170",
-      "Km": "0",
-      "MaGa": "YTR",
-      "SKeys": "YT, YTR, yen trung, yentrung",
-      "TenGa": "Yên Trung",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "171",
-      "Km": "0",
-      "MaGa": "YVI",
-      "SKeys": "YV, YVI, yen vien, yenvien",
-      "TenGa": "Yên Viên",
-      "ThoiGian": "0001-01-01T00:00:00"
-    },
-    {
-      "Id": "172",
-      "Km": "0",
-      "MaGa": "YXU",
-      "SKeys": "YX, YXU, yenxuan, yen xuan",
-      "TenGa": "Yên Xuân",
-      "ThoiGian": "0001-01-01T00:00:00"
+      "firstName": "sdads",
+      "lastName": "dssd",
+      "username": "ds",
+      "pwd": "sadsd",
+      "email": "adsd",
+      "country": "Afganistan",
+      "zip": "ddasa",
+      "id": 2
     }
   ]
-},
-"UserDetails": {
-  "country": "Afganistan",
-  "email": "",
-  "firstName": "",
-  "lastName": ""
-  ,"pwd": "",
-  "username": "",
-  "zip": ""
-}
 }

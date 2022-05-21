@@ -12,7 +12,7 @@ export class PlaceOrderService {
 
   placeOrder(data:any):Observable<UserDetails>
 {
-  const url = 'https://localhost:3000/UserDetails'
+  const url = 'http://localhost:3000/UserDetails'
   return this.http.post<UserDetails>(url,data);
 }
 }
