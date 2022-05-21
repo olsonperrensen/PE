@@ -10,6 +10,8 @@ import { DarkModeStatusService } from '../dark-mode-status.service';
 import { ProgressBarService } from '../progress-bar/progress-bar.service';
 import { BasketService } from '../basket.service';
 import {Ticket } from './ticket'
+import { GetTableService } from './get-table.service';
+import { TableRow } from './TableRow';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -37,11 +39,18 @@ export class TableComponent implements OnInit{
   faArrowDown = faArrowDownLong;
   ticket:Ticket = {name:'',code:'',price:0};
   ticket_quantity = 0;
-
-  NghiTemp = [
-    {"CITY": "S\u00e0i G\u00f2n", "KM": "0", "DATE": "13/04/2022", "ARRIVEHR": "20:10", "LEAVEHR": "20:10"}, {"CITY": "D\u0129 An", "KM": "19", "DATE": "13/04/2022", "ARRIVEHR": "20:39", "LEAVEHR": "20:42"}, {"CITY": "Bi\u00ean H\u00f2a", "KM": "29", "DATE": "13/04/2022", "ARRIVEHR": "20:54", "LEAVEHR": "20:57"}, {"CITY": "Long Kh\u00e1nh", "KM": "77", "DATE": "13/04/2022", "ARRIVEHR": "21:57", "LEAVEHR": "22:00"}, {"CITY": "B\u00ecnh Thu\u1eadn", "KM": "175", "DATE": "13/04/2022", "ARRIVEHR": "23:51", "LEAVEHR": "23:56"}, {"CITY": "Nha Trang", "KM": "411", "DATE": "14/04/2022", "ARRIVEHR": "04:16", "LEAVEHR": "04:23"}, {"CITY": "Tuy Ho\u00e0", "KM": "528", "DATE": "14/04/2022", "ARRIVEHR": "06:39", "LEAVEHR": "06:42"}, {"CITY": "Di\u00eau Tr\u00ec", "KM": "630", "DATE": "14/04/2022", "ARRIVEHR": "08:39", "LEAVEHR": "08:54"}, {"CITY": "B\u1ed3ng S\u01a1n", "KM": "709", "DATE": "14/04/2022", "ARRIVEHR": "10:21", "LEAVEHR": "10:24"}, {"CITY": "Qu\u1ea3ng Ng\u00e3i", "KM": "798", "DATE": "14/04/2022", "ARRIVEHR": "11:55", "LEAVEHR": "12:00"}, {"CITY": "Tam K\u1ef3", "KM": "861", "DATE": "14/04/2022", "ARRIVEHR": "13:06", "LEAVEHR": "13:09"}, {"CITY": "Tr\u00e0 Ki\u1ec7u", "KM": "901", "DATE": "14/04/2022", "ARRIVEHR": "14:05", "LEAVEHR": "14:08"}, {"CITY": "\u0110\u00e0 N\u1eb5ng", "KM": "935", "DATE": "14/04/2022", "ARRIVEHR": "14:51", "LEAVEHR": "15:16"}, {"CITY": "Hu\u1ebf", "KM": "1038", "DATE": "14/04/2022", "ARRIVEHR": "17:48", "LEAVEHR": "17:55"}, {"CITY": "\u0110\u00f4ng H\u00e0", "KM": "1104", "DATE": "14/04/2022", "ARRIVEHR": "19:14", "LEAVEHR": "19:17"}, {"CITY": "\u0110\u1ed3ng H\u1edbi", "KM": "1204", "DATE": "14/04/2022", "ARRIVEHR": "21:00", "LEAVEHR": "21:15"}, {"CITY": "\u0110\u1ed3ng L\u00ea", "KM": "1290", "DATE": "14/04/2022", "ARRIVEHR": "23:03", "LEAVEHR": "23:06"}, {"CITY": "H\u01b0\u01a1ng Ph\u1ed1", "KM": "1339", "DATE": "15/04/2022", "ARRIVEHR": "00:09", "LEAVEHR": "00:12"}, {"CITY": "Y\u00ean Trung", "KM": "1386", "DATE": "15/04/2022", "ARRIVEHR": "01:10", "LEAVEHR": "01:13"}, {"CITY": "Vinh", "KM": "1407", "DATE": "15/04/2022", "ARRIVEHR": "01:38", "LEAVEHR": "01:48"}, {"CITY": "Thanh Ho\u00e1", "KM": "1551", "DATE": "15/04/2022", "ARRIVEHR": "04:27", "LEAVEHR": "04:30"}, {"CITY": "Ninh B\u00ecnh", "KM": "1611", "DATE": "15/04/2022", "ARRIVEHR": "05:39", "LEAVEHR": "05:42"}, {"CITY": "Nam \u0110\u1ecbnh", "KM": "1639", "DATE": "15/04/2022", "ARRIVEHR": "06:14", "LEAVEHR": "06:17"}, {"CITY": "Ph\u1ee7 L\u00fd", "KM": "1670", "DATE": "15/04/2022", "ARRIVEHR": "06:56", "LEAVEHR": "07:08"}, {"CITY": "H\u00e0 N\u1ed9i", "KM": "1726", "DATE": "15/04/2022", "ARRIVEHR": "08:21", "LEAVEHR": "08:21"}
-  ]
-  NghiTempSlice = this.NghiTemp.slice(0,3);
+  NghiTemp!:TableRow[];
+  NghiTempSlice!:TableRow[];
+  
+  onGetTables()
+  {
+    this.getTable.getTable().subscribe((res:TableRow[]) => {
+      this.NghiTemp = res;
+    });
+    this.getTable.getSmallTable().subscribe((res:TableRow[])=>{
+      this.NghiTempSlice = res;
+    });
+  }
 
   userJourney!:Journey;
 
@@ -56,7 +65,8 @@ export class TableComponent implements OnInit{
   constructor(private router:Router, private aRoute: ActivatedRoute, 
     private journeyDetails:JourneyDetailsService, private journeyCheckup:JourneyCheckupService,
     private R2: Renderer2,private darkModeStatus:DarkModeStatusService, 
-    private progressBar:ProgressBarService, private basketService:BasketService) { }
+    private progressBar:ProgressBarService, private basketService:BasketService, 
+    private getTable: GetTableService) { }
 
     onMouseOver(str:string)
     {
@@ -74,7 +84,10 @@ export class TableComponent implements OnInit{
 
   ngOnInit(): void {
 
-    this.NghiTempSlice.push({CITY: "...", KM: "...", DATE: "...", "ARRIVEHR": "...", "LEAVEHR": "..."})
+    // Prior to observables
+    // this.NghiTempSlice.push({CITY: "...", KM: "...", DATE: "...", "ARRIVEHR": "...", "LEAVEHR": "..."})
+
+    this.onGetTables();
 
     this.darkModeStatus.getStatus().subscribe((status:any) =>
     {
