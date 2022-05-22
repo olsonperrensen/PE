@@ -319,6 +319,7 @@
     "json-parse-better-errors": "^1.0.2",
     "json-parse-even-better-errors": "^2.3.1",
     "json-schema-traverse": "^1.0.0",
+    "json-server": "^0.17.0",
     "json5": "^2.2.1",
     "jsonc-parser": "^3.0.0",
     "jsonfile": "^6.1.0",
