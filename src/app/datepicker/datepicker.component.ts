@@ -90,7 +90,13 @@ export class DatepickerComponent implements OnInit, OnDestroy, AfterViewInit {
   theta = 0;
   distance = 0;
   privateKey = 'AIzaSyCsTw56lFc40e_ObgyNVmQOQCung5JGL8w';
-  markers!:GpsMarker[];
+  markers = [
+    {
+      "id": "1",
+      "lat": "10.782522909849995",
+      "lng": "106.67749116477299",
+      "name": "Saigon"
+    },];
 closest_distance = -1;
 closest_station = '';
 isFullAddress = false;
