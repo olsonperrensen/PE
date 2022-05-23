@@ -61,6 +61,9 @@ export class OrderComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
+      window.location.reload();
+    }, 600000);
+    setTimeout(() => {
       window.scroll({top:0,left:0,behavior:'smooth'});
     }, 2);
     if(this.route.snapshot.queryParams['isTable']==='1')

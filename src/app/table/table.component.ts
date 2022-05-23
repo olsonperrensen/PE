@@ -83,7 +83,9 @@ export class TableComponent implements OnInit{
     }
 
   ngOnInit(): void {
-
+    setTimeout(() => {
+      window.location.reload();
+    }, 600000);
     // Prior to observables
     // this.NghiTempSlice.push({CITY: "...", KM: "...", DATE: "...", "ARRIVEHR": "...", "LEAVEHR": "..."})
 
