@@ -8,7 +8,9 @@ router.register('profile', views.UserProfileViewSet)
 router.register('history', views.HistoryViewSet)
 router.register('ticket', views.TicketViewSet)
 router.register('journey', views.JourneyViewSet)
+router.register('train', views.TrainViewSet)
+router.register('home', views.SearchTrainViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('login', views.UserLoginApiView.as_view()),
-]
+]   
