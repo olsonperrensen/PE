@@ -12,12 +12,12 @@ export class GetTableService {
 
   public getTable(): Observable<TableRow[]>
   {
-    const url = 'http://localhost:3000/TableContent';
+    const url = 'https://train-am.herokuapp.com/TableContent';
     return this.http.get<TableRow[]>(url);
   }
   public getSmallTable(): Observable<TableRow[]>
   {
-    const url = 'http://localhost:3000/SmallTableContent';
+    const url = 'https://train-am.herokuapp.com/SmallTableContent';
     return this.http.get<TableRow[]>(url);
   }
 

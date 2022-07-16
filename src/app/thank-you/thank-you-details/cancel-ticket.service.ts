@@ -8,7 +8,7 @@ export class CancelTicketService {
 
   constructor(private http:HttpClient) { }
 
-  url = 'http://localhost:3000/UserDetails/'
+  url = 'https://train-am.herokuapp.com/UserDetails/'
 
   cancelTicket(id:number)
   { 

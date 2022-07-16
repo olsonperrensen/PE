@@ -10,7 +10,7 @@ export class GetGpsMarkerService {
 
   getGpsMarker()
   {
-    const url = 'http://localhost:3000/gpsMarkers'
+    const url = 'https://train-am.herokuapp.com/gpsMarkers'
     return this.http.get(url)
   }
 }
