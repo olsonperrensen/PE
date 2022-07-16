@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0;">
+    <!--<meta name="viewport" content="width=device-width">-->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/vendor.b8bd5382.css">
+    <link rel="stylesheet" href="styles/main.106b180d.css">
+  <body ng-app="ticketPrintApp" prevent-right-click>
+    <!--[if lt IE 7]>
+			<p class="browsehappy">You are using an 
+				<strong>outdated</strong> browser. Please 
+				<a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+			</p>
+			<![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="{{ENV.UrlWebDashboard}}#/">
+              <img alt="Đường sắt Việt Nam" src="images/logo.22893bf0.png" style="width: 168px; height: 50px">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="js-navbar-collapse" style="margin-left: 140px">
+            <ul class="nav navbar-nav">
+              <!--<li menu-active-url="search$" style="font-size: 16px;"><a href="#/search"><strong>In vé theo mã </strong></a></li><li menu-active-url="search-booking" style="font-size: 16px;"><a href="#/search-booking"><strong>In vé theo TT</strong></a></li>-->
+              <li menu-active-url="thongtinhanhtrinh" style="font-size: 16px">
+                <a ng-href="#/thongtinhanhtrinh/gadi">
+                  <strong>Giờ tàu - Giá vé</strong>
+                </a>
+              </li>
+              <!--<li style="font-size: 16px;" id="menu-dsvn"><a id="menuticketurl" href="#"><strong>Đặt vé </strong></a></li>-->
+              <!--<li style="font-size: 16px;" id="menu-crm"><a id="menucrmurl" href="#"><strong>Hội viên </strong></a></li>-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="marquee hidden-print"></div>
+      <div class="auth-initializing"></div>
+      <div ng-view=""></div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p></p>
+      </div>
+    </div>
+    <iframe id="printf" name="printf" src="print.html" width="0" height="0"></iframe>
+    <script src="scripts/vendor.ea66f8bd.js"></script>
+    <script src="scripts/scripts.12e9df06.js"></script>
+    <script type="text/javascript"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <!--<script>
+        !function (A, n, g, u, l, a, r) {
+            A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+        }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>-->
