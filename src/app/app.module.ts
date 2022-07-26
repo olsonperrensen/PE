@@ -91,7 +91,7 @@ import { NgParticlesModule } from "ng-particles";
     FormsModule,
     AppRoutingModule,
     AgmCoreModule.forRoot(
-      {apiKey: 'AIzaSyCsTw56lFc40e_ObgyNVmQOQCung5JGL8w'}
+      {apiKey: 'LADYGAGA'}
     ),
     NgDynamicBreadcrumbModule,
     AppRoutingModule,
